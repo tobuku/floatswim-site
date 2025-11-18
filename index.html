@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FloatSwim – Drowning Prevention & Early Childhood Water Safety</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="FloatSwim raises awareness about drowning and near-drowning incidents, shares stories of hope, and equips families and communities with actionable water safety tools."
+  />
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-alt: #0b1120;
+      --accent: #38bdf8;
+      --accent-soft: #e0f2fe;
+      --danger-soft: #fee2e2;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --card-bg: #020617;
+      --border-subtle: #1f2937;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--text-main);
+      background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #000 100%);
+    }
+    a {
+      color: var(--accent-soft);
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(2, 6, 23, 0.92);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .shell {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.85rem 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 2px solid var(--accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .brand-tagline {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 1.2rem;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      padding: 2.5rem 0 3.5rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+    .hero-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.75rem;
+      color: var(--accent-soft);
+      margin-bottom: 0.75rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.1rem, 3vw + 1.2rem, 2.7rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+    .hero h1 span {
+      color: var(--accent);
+    }
+    .hero p {
+      margin: 0 0 1.2rem;
+      color: var(--text-muted);
+      max-width: 32rem;
+      font-size: 0.98rem;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.4rem;
+    }
+    .badge {
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      padding: 0.3rem 0.75rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: rgba(15, 23, 42, 0.9);
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 0.4rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.6rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #0f172a;
+    }
+    .btn-outline {
+      border-color: var(--accent-soft);
+      color: var(--accent-soft);
+      background: transparent;
+    }
+    .cta-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-card {
+      border-radius: 1.25rem;
+      border: 1px solid var(--border-subtle);
+      background: linear-gradient(145deg, #020617, #0b1120);
+      padding: 1.5rem 1.4rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.8);
+      font-size: 0.85rem;
+    }
+    .hero-card h2 {
+      font-size: 0.95rem;
+      margin: 0 0 0.75rem;
+      color: var(--accent-soft);
+    }
+    .hero-card p {
+      color: var(--text-muted);
+      margin: 0 0 0.9rem;
+    }
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+    .metric {
+      border-radius: 0.85rem;
+      border: 1px solid var(--border-subtle);
+      padding: 0.65rem 0.7rem;
+      background: radial-gradient(circle at top left, rgba(248, 250, 252, 0.03), rgba(15, 23, 42, 0.98));
+    }
+    .metric-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.1rem;
+    }
+    .metric-value {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    section {
+      margin-bottom: 3.1rem;
+    }
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+    section p.lead {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      max-width: 40rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+      margin-top: 1.3rem;
+    }
+    @media (max-width: 900px) {
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+    .card {
+      border-radius: 1rem;
+      border: 1px solid var(--border-subtle);
+      background: rgba(15, 23, 42, 0.98);
+      padding: 1.1rem 1rem;
+      font-size: 0.88rem;
+    }
+    .card h3 {
+      font-size: 1rem;
+      margin: 0 0 0.35rem;
+    }
+    .card p {
+      margin: 0;
+      color: var(--text-muted);
+    }
+    .pill {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent-soft);
+      margin-bottom: 0.5rem;
+    }
+    ul.tight {
+      list-style: disc;
+      padding-left: 1.2rem;
+      margin: 0.5rem 0 0;
+    }
+    ul.tight li {
+      margin-bottom: 0.25rem;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 1.6rem;
+      margin-top: 1.3rem;
+    }
+    @media (max-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .note-box {
+      border-radius: 1rem;
+      border: 1px dashed var(--accent-soft);
+      padding: 1rem 1.1rem;
+      background: rgba(15, 23, 42, 0.8);
+      font-size: 0.85rem;
+      color: var(--accent-soft);
+    }
+
+    .shop-placeholder {
+      border-radius: 1rem;
+      border: 1px solid var(--border-subtle);
+      background: rgba(15, 23, 42, 0.95);
+      padding: 1.1rem 1rem;
+      font-size: 0.87rem;
+    }
+    .shop-placeholder strong {
+      color: var(--accent-soft);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 1.6rem 0 1.8rem;
+      background: var(--bg-alt);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    footer .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.78rem;
+    }
+    footer a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <div class="nav">
+        <div class="brand">
+          <div class="brand-mark">FS</div>
+          <div class="brand-text">
+            <div class="brand-name">FloatSwim</div>
+            <div class="brand-tagline">Awareness. Safety. Hope.</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#why">Why This Matters</a>
+          <a href="#parents">For Parents</a>
+          <a href="#lessons">Free Lessons</a>
+          <a href="#stories">Stories of Hope</a>
+          <a href="#get-involved">Get Involved</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell">
+      <!-- HERO -->
+      <section class="hero">
+        <div>
+          <div class="hero-kicker">Drowning is fast. Prevention is possible.</div>
+          <h1>
+            A national hub for <span>drowning prevention</span> and early childhood water safety.
+          </h1>
+          <p>
+            FloatSwim exists to track drowning and near-drowning events, amplify survivor stories, and equip families and communities with practical,
+            life-saving water safety tools—starting in infancy.
+          </p>
+          <div class="hero-badges">
+            <span class="badge">Infant & child water safety</span>
+            <span class="badge">Real-world incidents & trends</span>
+            <span class="badge">Free swimming lessons advocacy</span>
+          </div>
+          <div class="cta-row">
+            <a href="#parents" class="btn btn-primary">Water safety for your child</a>
+            <a href="#get-involved" class="btn btn-outline">Partner, teach, or support</a>
+          </div>
+          <div class="cta-note">
+            Built to grow from U.S. coverage to a global, multilingual platform over time.
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Platform vision snapshot">
+          <h2>Where FloatSwim is heading</h2>
+          <p>
+            This early version is a calm starting point. Over time, FloatSwim will add a live incident dashboard, a lesson directory, and advocacy tools
+            to push for universal swimming access.
+          </p>
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="metric-label">Core focus</div>
+              <div class="metric-value">Infants & children</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Approach</div>
+              <div class="metric-value">Data + stories + action</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Tone</div>
+              <div class="metric-value">Calm, compassionate, firm</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Future</div>
+              <div class="metric-value">Global expansion</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- WHY THIS MATTERS -->
+      <section id="why">
+        <h2>Why This Matters</h2>
+        <p class="lead">
+          Drowning is a leading cause of accidental death in young children—and yet it’s silent, fast, and drastically under-discussed. FloatSwim exists
+          to change that by making the invisible visible.
+        </p>
+
+        <div class="two-col">
+          <div>
+            <ul class="tight">
+              <li>Drowning can happen in seconds, in inches of water, often without a sound.</li>
+              <li>Near-drowning events can lead to lifelong medical and emotional impacts.</li>
+              <li>Many tragedies are preventable with awareness, layers of protection, and early instruction.</li>
+            </ul>
+          </div>
+          <div class="note-box">
+            This site will not share graphic imagery or exploit grief. The goal is to honor stories, surface patterns, and move families and communities
+            toward practical, life-saving action.
+          </div>
+        </div>
+      </section>
+
+      <!-- FOR PARENTS -->
+      <section id="parents">
+        <h2>For Parents & Caregivers</h2>
+        <p class="lead">
+          Whether you live near the ocean, have a backyard pool, or just bathe your child at home, water safety starts long before “swim lessons.”
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="pill">Ages 0–12 months</div>
+            <h3>Water awareness, not pressure</h3>
+            <p>
+              Gentle exposure, safe holding positions, and always-within-arm’s-reach supervision in any water setting.
+            </p>
+            <ul class="tight">
+              <li>Never leave an infant near water—tubs, buckets, or pools—unattended.</li>
+              <li>Create a “no distractions near water” family rule (no phones, no scrolling).</li>
+              <li>Learn about infant swim programs in your area and what’s age-appropriate.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="pill">Ages 1–5 years</div>
+            <h3>Layers of protection</h3>
+            <p>
+              Fences, alarms, designated “water watchers,” and instruction converge to protect kids in this high-risk age group.
+            </p>
+            <ul class="tight">
+              <li>Four-sided pool fencing with self-latching gates.</li>
+              <li>Assign one adult as the dedicated water watcher—no multitasking.</li>
+              <li>Start consistent, professional swimming lessons as soon as practical.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="pill">Skills for adults</div>
+            <h3>Be ready to respond</h3>
+            <p>
+              The goal is prevention, but preparation matters. Simple training can dramatically change outcomes during a crisis.
+            </p>
+            <ul class="tight">
+              <li>Learn CPR through the Red Cross or local providers.</li>
+              <li>Know how to safely remove a child from water without putting yourself at risk.</li>
+              <li>Post emergency numbers and address info near pool areas.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FREE LESSONS / DIRECTORY PLACEHOLDER -->
+      <section id="lessons">
+        <h2>Free & Low-Cost Swimming Lessons</h2>
+        <p class="lead">
+          Long-term, FloatSwim will host a searchable directory of free and subsidized swim programs across the United States and, eventually, worldwide.
+        </p>
+
+        <div class="shop-placeholder">
+          <p>
+            In this early phase, this section serves as a placeholder and a call for collaboration. The vision is to connect families with:
+          </p>
+          <ul class="tight">
+            <li>Community center and YMCA programs with sliding-scale or free options.</li>
+            <li>Nonprofit-funded lesson scholarships for infants and children.</li>
+            <li>Certified instructors committed to accessible water safety education.</li>
+          </ul>
+          <p style="margin-top: 0.8rem;">
+            If you represent a swim school, nonprofit, or community program and would like to be included in future directories, please reach out through
+            the contact section below.
+          </p>
+        </div>
+      </section>
+
+      <!-- STORIES -->
+      <section id="stories">
+        <h2>Stories of Hope & Recovery</h2>
+        <p class="lead">
+          Behind every statistic is a family, a child, a community. FloatSwim will highlight survivor stories and near-drowning experiences in a way
+          that respects privacy while sharing life-saving lessons.
+        </p>
+
+        <div class="two-col">
+          <div>
+            <ul class="tight">
+              <li>Survivor and family perspectives on what happened and what changed afterward.</li>
+              <li>Positive examples of communities rallying around prevention.</li>
+              <li>“What we wish we had known” reflections to help other families.</li>
+            </ul>
+          </div>
+          <div class="note-box">
+            If you are interested in sharing your story in the future, you’ll be able to submit it with control over what details are public. The goal is
+            to offer hope, community, and practical insight—not to re-open trauma.
+          </div>
+        </div>
+      </section>
+
+      <!-- GET INVOLVED -->
+      <section id="get-involved">
+        <h2>Get Involved</h2>
+        <p class="lead">
+          This platform will grow through collaboration—parents, instructors, medical professionals, first responders, nonprofits, and sponsors working
+          together with a single aim: fewer lives lost to preventable drowning.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Professionals & Organizations</h3>
+            <p>
+              Pediatricians, swim schools, nonprofits, and local agencies can help shape educational content, directories, and advocacy campaigns.
+            </p>
+            <ul class="tight">
+              <li>Share resources and data.</li>
+              <li>Join as a content or directory partner.</li>
+              <li>Collaborate on pilot programs in high-risk areas.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Parents & Community Leaders</h3>
+            <p>
+              Families and community organizers can amplify water safety norms and push for equitable access to swimming lessons.
+            </p>
+            <ul class="tight">
+              <li>Bring FloatSwim content into parent groups and schools.</li>
+              <li>Advocate locally for funding and access to lessons.</li>
+              <li>Share feedback on what would help most in your area.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Support the Mission</h3>
+            <p>
+              Over time, FloatSwim may be structured as a nonprofit or hybrid model supported by grants, donations, and aligned sponsorships.
+            </p>
+            <ul class="tight">
+              <li>Future donation and sponsorship options.</li>
+              <li>Transparent use of funds toward lessons and tools.</li>
+              <li>Impact reporting as the platform grows.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.4rem;">
+          <p>
+            Contact: <a href="mailto:hello@floatswim.org">hello@floatswim.org</a>  
+            (You can update this email when you’re ready with your real inbox.)
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div>&copy; <span id="year"></span> FloatSwim. All rights reserved.</div>
+      <div>
+        <a href="#why">Why this matters</a> ·
+        <a href="#parents">For parents</a> ·
+        <a href="#lessons">Lessons</a> ·
+        <a href="#stories">Stories</a> ·
+        <a href="#get-involved">Get involved</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
