@@ -1,1 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FloatSwim Dashboard – Drowning & Near-Drowning Awareness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Early prototype of the FloatSwim incident awareness dashboard, designed to eventually show drowning and near-drowning patterns, trends, and filters."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <div class="nav">
+        <div class="brand">
+          <div class="brand-mark">FS</div>
+          <div class="brand-text">
+            <div class="brand-name">FloatSwim</div>
+            <div class="brand-tagline">Awareness. Safety. Hope.</div>
+          </div>
+        </div>
+        <nav>
+          <a href="index.html#top">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="index.html#parents">For Parents</a>
+          <a href="index.html#lessons">Free Lessons</a>
+          <a href="index.html#stories">Stories</a>
+          <a href="index.html#get-involved">Get Involved</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <div class="shell">
+      <!-- DASHBOARD HERO -->
+      <section class="hero">
+        <div>
+          <div class="hero-kicker">Early Prototype</div>
+          <h1>
+            FloatSwim <span>Incident Dashboard</span>
+          </h1>
+          <p>
+            This dashboard is a first-step prototype for visualizing drowning and near-drowning incidents. As it matures, it will pull from real data
+            sources to help families, advocates, and decision-makers see patterns clearly—and act sooner.
+          </p>
+          <div class="hero-badges">
+            <span class="badge">Awareness</span>
+            <span class="badge">Patterns & trends</span>
+            <span class="badge">Early childhood focus</span>
+          </div>
+          <div class="cta-row">
+            <a href="index.html#why" class="btn btn-outline">Back to main site</a>
+          </div>
+          <div class="cta-note">
+            Note: This page currently uses placeholder content while technical data integrations are being designed.
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Dashboard phases">
+          <h2>Dashboard Roadmap</h2>
+          <p>
+            The FloatSwim dashboard will grow in phases, starting with simple awareness and evolving into a real-time, filterable incident map with
+            summaries and trends.
+          </p>
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="metric-label">Phase 1</div>
+              <div class="metric-value">Static prototype</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Phase 2</div>
+              <div class="metric-value">Data feeds & map</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Phase 3</div>
+              <div class="metric-value">Alerts & insights</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Focus</div>
+              <div class="metric-value">Infants & children</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- FILTER BAR -->
+      <section>
+        <h2>Filters (Future-Ready)</h2>
+        <p class="lead">
+          These controls will eventually let you explore incidents by age group, location, water type, and timeframe. For now, they show the intended
+          structure and language of the dashboard.
+        </p>
+
+        <div class="two-col">
+          <div>
+            <div class="note-box">
+              <strong>Planned filters:</strong>
+              <ul class="tight">
+                <li>Age group (Infant, 1–4, 5–12, Teen, Adult)</li>
+                <li>Water type (Pool, Ocean, Lake/River, Home/Bath, Other)</li>
+                <li>Region (State, metro, or zip-based)</li>
+                <li>Timeframe (Today, last 7 days, last 30 days, year-to-date)</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="note-box">
+              This prototype is intentionally non-interactive and anonymous. Real data will be handled with care, especially incidents involving children,
+              and will avoid identifiable private information.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUMMARY CARDS -->
+      <section>
+        <h2>Summary Snapshot (Example Layout)</h2>
+        <p class="lead">
+          When connected to real-world feeds, these tiles will summarize key patterns—helping communities see risk trends without exposing individual
+          families.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="pill">Example metric</div>
+            <h3>Incidents this week</h3>
+            <p>
+              Placeholder for the number of reported drowning and near-drowning incidents in the last 7 days, broken down by age and region.
+            </p>
+          </div>
+          <div class="card">
+            <div class="pill">Example metric</div>
+            <h3>Highest-risk age bracket</h3>
+            <p>
+              This tile will highlight which age range is currently showing the highest incident density, with a particular focus on children under 5.
+            </p>
+          </div>
+          <div class="card">
+            <div class="pill">Example metric</div>
+            <h3>Most common setting</h3>
+            <p>
+              A quick view into whether incidents are happening more often in home pools, natural bodies of water, or other environments over a selected
+              timeframe.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAP & TABLE PLACEHOLDER -->
+      <section>
+        <h2>Map & Incident List (Concept Preview)</h2>
+        <p class="lead">
+          Below is a concept layout for a future map and incident listing. No real incidents are shown here; everything is a structural placeholder to
+          guide design and development.
+        </p>
+
+        <div class="two-col">
+          <div>
+            <div class="shop-placeholder">
+              <strong>Map area (future):</strong>
+              <p style="margin-top: 0.5rem;">
+                This section will host an interactive map with:
+              </p>
+              <ul class="tight">
+                <li>Pins representing incidents within the selected timeframe.</li>
+                <li>Color or icon variations for drowning vs. near-drowning.</li>
+                <li>High-level summaries when hovering or tapping on a region.</li>
+                <li>Zoom controls to switch from national to state-level detail.</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="shop-placeholder">
+              <strong>Incident list (example format):</strong>
+              <p style="margin-top: 0.5rem;">
+                A filterable list without names, focusing on:
+              </p>
+              <ul class="tight">
+                <li>Date and approximate time of incident.</li>
+                <li>Age bracket (e.g., “2–4 years”).</li>
+                <li>Setting (e.g., “Residential pool,” “Lake,” “Bathtub”).</li>
+                <li>Outcome (e.g., “Survived (hospitalized),” “Fatal”).</li>
+              </ul>
+              <p style="margin-top: 0.5rem;">
+                The goal: communicate patterns respectfully, without sensationalism or unnecessary identifying detail.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTEXT & ETHICS -->
+      <section>
+        <h2>Respect, Privacy, and Purpose</h2>
+        <p class="lead">
+          Any data visualized here in the future will be guided by a simple principle: serve prevention and healing, not curiosity or clicks.
+        </p>
+
+        <div class="two-col">
+          <div>
+            <ul class="tight">
+              <li>No graphic imagery or invasive personal details.</li>
+              <li>Emphasis on patterns, risk factors, and prevention opportunities.</li>
+              <li>Clear disclaimers about data sources and limitations.</li>
+            </ul>
+          </div>
+          <div class="note-box">
+            As FloatSwim develops, the dashboard may be reviewed by pediatric, legal, and data privacy advisors to ensure that the way incidents are
+            represented is both accurate and respectful.
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div>&copy; <span id="year"></span> FloatSwim. All rights reserved.</div>
+      <div>
+        <a href="index.html#why">Why this matters</a> ·
+        <a href="index.html#parents">For parents</a> ·
+        <a href="index.html#lessons">Lessons</a> ·
+        <a href="index.html#stories">Stories</a> ·
+        <a href="index.html#get-involved">Get involved</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
