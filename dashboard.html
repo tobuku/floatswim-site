@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>FloatSwim Dashboard – Drowning & Near-Drowning Awareness</title>
+  <title>FloatSwim Dashboard – Early Incident Overview</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Early prototype of the FloatSwim incident awareness dashboard, designed to eventually show drowning and near-drowning patterns, trends, and filters."
+    content="An early prototype dashboard showing simulated drowning and near-drowning incident data for future awareness and trend tracking."
   />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -21,197 +21,136 @@
             <div class="brand-tagline">Awareness. Safety. Hope.</div>
           </div>
         </div>
-   <nav>
-  <a href="index.html">Home</a>
-  <a href="dashboard.html">Dashboard</a>
-  <a href="about.html">About</a>
-  <a href="resources.html">Resources</a>
-  <a href="directory.html">Directory</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a href="share-story.html">Share a Story</a>
-  <a href="index.html#get-involved">Get Involved</a>
-</nav>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="about.html">About</a>
+          <a href="resources.html">Resources</a>
+          <a href="directory.html">Directory</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="share-story.html">Share a Story</a>
+          <a href="index.html#get-involved">Get Involved</a>
+        </nav>
       </div>
     </div>
   </header>
 
   <main>
     <div class="shell">
-      <!-- DASHBOARD HERO -->
+      <!-- HERO -->
       <section class="hero">
         <div>
-          <div class="hero-kicker">Early Prototype</div>
+          <div class="hero-kicker">Early Dashboard Prototype</div>
           <h1>
-            FloatSwim <span>Incident Dashboard</span>
+            A calm, high-level view of <span>drowning and near-drowning incidents</span>.
           </h1>
           <p>
-            This dashboard is a first-step prototype for visualizing drowning and near-drowning incidents. As it matures, it will pull from real data
-            sources to help families, advocates, and decision-makers see patterns clearly—and act sooner.
+            This early dashboard uses simulated data to show how FloatSwim may eventually visualize real incidents: not to sensationalize, but to help
+            families, communities, and partners see patterns more clearly.
           </p>
           <div class="hero-badges">
-            <span class="badge">Awareness</span>
-            <span class="badge">Patterns & trends</span>
-            <span class="badge">Early childhood focus</span>
+            <span class="badge">Demo data only</span>
+            <span class="badge">Privacy-aware design</span>
+            <span class="badge">Built to expand over time</span>
           </div>
           <div class="cta-row">
-            <a href="index.html#why" class="btn btn-outline">Back to main site</a>
-          </div>
-          <div class="cta-note">
-            Note: This page currently uses placeholder content while technical data integrations are being designed.
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="Dashboard phases">
-          <h2>Dashboard Roadmap</h2>
-          <p>
-            The FloatSwim dashboard will grow in phases, starting with simple awareness and evolving into a real-time, filterable incident map with
-            summaries and trends.
-          </p>
-          <div class="hero-metrics">
-            <div class="metric">
-              <div class="metric-label">Phase 1</div>
-              <div class="metric-value">Static prototype</div>
-            </div>
-            <div class="metric">
-              <div class="metric-label">Phase 2</div>
-              <div class="metric-value">Data feeds & map</div>
-            </div>
-            <div class="metric">
-              <div class="metric-label">Phase 3</div>
-              <div class="metric-value">Alerts & insights</div>
-            </div>
-            <div class="metric">
-              <div class="metric-label">Focus</div>
-              <div class="metric-value">Infants & children</div>
-            </div>
-          </div>
-        </aside>
-      </section>
-
-      <!-- FILTER BAR -->
-      <section>
-        <h2>Filters (Future-Ready)</h2>
-        <p class="lead">
-          These controls will eventually let you explore incidents by age group, location, water type, and timeframe. For now, they show the intended
-          structure and language of the dashboard.
-        </p>
-
-        <div class="two-col">
-          <div>
-            <div class="note-box">
-              <strong>Planned filters:</strong>
-              <ul class="tight">
-                <li>Age group (Infant, 1–4, 5–12, Teen, Adult)</li>
-                <li>Water type (Pool, Ocean, Lake/River, Home/Bath, Other)</li>
-                <li>Region (State, metro, or zip-based)</li>
-                <li>Timeframe (Today, last 7 days, last 30 days, year-to-date)</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <div class="note-box">
-              This prototype is intentionally non-interactive and anonymous. Real data will be handled with care, especially incidents involving children,
-              and will avoid identifiable private information.
-            </div>
+            <span class="cta-note">
+              Data source (current demo): a static JSON file at <code>data/incidents.json</code>, served by GitHub Pages.
+            </span>
           </div>
         </div>
       </section>
 
-      <!-- SUMMARY CARDS -->
-      <section>
-        <h2>Summary Snapshot (Example Layout)</h2>
+      <!-- SNAPSHOT METRICS -->
+      <section id="snapshot">
+        <h2>Snapshot Metrics (Demo)</h2>
         <p class="lead">
-          When connected to real-world feeds, these tiles will summarize key patterns—helping communities see risk trends without exposing individual
-          families.
+          These numbers are based on the current demo dataset. In the future, this view may reflect live or regularly updated incident data from
+          carefully selected sources.
         </p>
 
         <div class="grid-3">
           <div class="card">
-            <div class="pill">Example metric</div>
-            <h3>Incidents this week</h3>
-            <p>
-              Placeholder for the number of reported drowning and near-drowning incidents in the last 7 days, broken down by age and region.
+            <div class="pill">Total incidents (demo)</div>
+            <h3 id="metric-total">–</h3>
+            <p class="metric-text">
+              Count of incidents currently in the demo dataset, including both drowning and near-drowning events.
             </p>
           </div>
           <div class="card">
-            <div class="pill">Example metric</div>
-            <h3>Highest-risk age bracket</h3>
-            <p>
-              This tile will highlight which age range is currently showing the highest incident density, with a particular focus on children under 5.
+            <div class="pill">Near-drowning (demo)</div>
+            <h3 id="metric-near">–</h3>
+            <p class="metric-text">
+              Incidents where a person was rescued or revived. These often come with long-term medical or emotional impacts.
             </p>
           </div>
           <div class="card">
-            <div class="pill">Example metric</div>
-            <h3>Most common setting</h3>
+            <div class="pill">Drowning (demo)</div>
+            <h3 id="metric-drown">–</h3>
+            <p class="metric-text">
+              Incidents currently marked as drowning in the demo data. Real-world views will be handled with extreme care and respect.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top: 1.4rem;">
+          <div class="card">
+            <div class="pill">States represented (demo)</div>
+            <h3 id="metric-states">–</h3>
+            <p class="metric-text">
+              Number of distinct U.S. states in the current demo dataset. In the future, this may expand to regions and countries.
+            </p>
+          </div>
+          <div class="card">
+            <div class="pill">Last updated (demo)</div>
+            <h3 id="metric-updated">–</h3>
+            <p class="metric-text">
+              Timestamp from the demo JSON file, indicating when this sample dataset was last changed.
+            </p>
+          </div>
+          <div class="card">
+            <div class="pill">Important note</div>
             <p>
-              A quick view into whether incidents are happening more often in home pools, natural bodies of water, or other environments over a selected
-              timeframe.
+              These numbers are for demonstration only. They do not represent live tracking, and they do not pull directly from official public safety
+              databases yet.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- MAP & TABLE PLACEHOLDER -->
-      <section>
-        <h2>Map & Incident List (Concept Preview)</h2>
+      <!-- INCIDENT LIST -->
+      <section id="incidents">
+        <h2>Incident List (Demo Data)</h2>
         <p class="lead">
-          Below is a concept layout for a future map and incident listing. No real incidents are shown here; everything is a structural placeholder to
-          guide design and development.
+          Each card below represents one incident from the demo dataset at <code>data/incidents.json</code>. Real-world data will be anonymized and
+          aggregated to protect privacy, especially for minors.
         </p>
 
-        <div class="two-col">
-          <div>
-            <div class="shop-placeholder">
-              <strong>Map area (future):</strong>
-              <p style="margin-top: 0.5rem;">
-                This section will host an interactive map with:
-              </p>
-              <ul class="tight">
-                <li>Pins representing incidents within the selected timeframe.</li>
-                <li>Color or icon variations for drowning vs. near-drowning.</li>
-                <li>High-level summaries when hovering or tapping on a region.</li>
-                <li>Zoom controls to switch from national to state-level detail.</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <div class="shop-placeholder">
-              <strong>Incident list (example format):</strong>
-              <p style="margin-top: 0.5rem;">
-                A filterable list without names, focusing on:
-              </p>
-              <ul class="tight">
-                <li>Date and approximate time of incident.</li>
-                <li>Age bracket (e.g., “2–4 years”).</li>
-                <li>Setting (e.g., “Residential pool,” “Lake,” “Bathtub”).</li>
-                <li>Outcome (e.g., “Survived (hospitalized),” “Fatal”).</li>
-              </ul>
-              <p style="margin-top: 0.5rem;">
-                The goal: communicate patterns respectfully, without sensationalism or unnecessary identifying detail.
-              </p>
-            </div>
-          </div>
+        <div id="incident-cards" class="grid-3">
+          <!-- Cards populated by JavaScript -->
         </div>
       </section>
 
-      <!-- CONTEXT & ETHICS -->
+      <!-- FUTURE VIEW -->
       <section>
-        <h2>Respect, Privacy, and Purpose</h2>
+        <h2>Future Dashboard Capabilities</h2>
         <p class="lead">
-          Any data visualized here in the future will be guided by a simple principle: serve prevention and healing, not curiosity or clicks.
+          Over time, this dashboard may evolve to include map views, trend graphs, filters by age and environment, and tools for local organizers and
+          policymakers.
         </p>
 
         <div class="two-col">
           <div>
             <ul class="tight">
-              <li>No graphic imagery or invasive personal details.</li>
-              <li>Emphasis on patterns, risk factors, and prevention opportunities.</li>
-              <li>Clear disclaimers about data sources and limitations.</li>
+              <li>Interactive maps showing anonymized incident clusters and seasonal trends.</li>
+              <li>Filters for age group, water type (pool, lake, ocean, bath), and context.</li>
+              <li>Links from patterns to practical prevention steps and local resources.</li>
+              <li>Exportable summaries to support grant writing and community planning.</li>
             </ul>
           </div>
           <div class="note-box">
-            As FloatSwim develops, the dashboard may be reviewed by pediatric, legal, and data privacy advisors to ensure that the way incidents are
-            represented is both accurate and respectful.
+            The dashboard’s purpose is to inform and equip—not to shock. Every design decision will be guided by respect for families and a focus on
+            prevention.
           </div>
         </div>
       </section>
@@ -232,7 +171,88 @@
   </footer>
 
   <script>
+    // Set footer year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Load incidents from data/incidents.json and populate the dashboard
+    async function loadIncidents() {
+      try {
+        const res = await fetch("data/incidents.json");
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+
+        const data = await res.json();
+        const incidents = Array.isArray(data.incidents) ? data.incidents : [];
+
+        // Update "last updated" metric (if present)
+        if (data.last_updated) {
+          document.getElementById("metric-updated").textContent = data.last_updated;
+        } else {
+          document.getElementById("metric-updated").textContent = "N/A";
+        }
+
+        // Basic metrics
+        const total = incidents.length;
+        const near = incidents.filter((i) =>
+          (i.status || "").toLowerCase().includes("near")
+        ).length;
+        const drown = incidents.filter((i) => {
+          const status = (i.status || "").toLowerCase();
+          return status.includes("drown") && !status.includes("near");
+        }).length;
+        const statesCount = new Set(incidents.map((i) => i.state || "Unknown")).size;
+
+        document.getElementById("metric-total").textContent = total || "0";
+        document.getElementById("metric-near").textContent = near || "0";
+        document.getElementById("metric-drown").textContent = drown || "0";
+        document.getElementById("metric-states").textContent = statesCount || "0";
+
+        // Populate incident cards
+        const container = document.getElementById("incident-cards");
+
+        if (!incidents.length) {
+          container.innerHTML =
+            '<p class="lead">No demo incidents are available yet. The dataset at <code>data/incidents.json</code> is currently empty.</p>';
+          return;
+        }
+
+        container.innerHTML = incidents
+          .map((incident) => {
+            const date = incident.date || "Unknown date";
+            const state = incident.state || "Unknown location";
+            const locationType = incident.location_type || "Water setting not specified";
+            const ageGroup = incident.age_group || "Age not specified";
+            const status = incident.status || "Status not specified";
+            const notes = incident.notes || "No additional notes provided.";
+
+            return `
+              <div class="card">
+                <div class="pill">${date} · ${state}</div>
+                <h3>${locationType}</h3>
+                <ul class="tight">
+                  <li><strong>Age group:</strong> ${ageGroup}</li>
+                  <li><strong>Status:</strong> ${status}</li>
+                  <li><strong>Notes:</strong> ${notes}</li>
+                </ul>
+              </div>
+            `;
+          })
+          .join("");
+      } catch (error) {
+        console.error("Error loading incidents:", error);
+        const container = document.getElementById("incident-cards");
+        container.innerHTML =
+          '<p class="lead">There was a problem loading the demo incident data. This is an early prototype view, and data sources may change.</p>';
+        document.getElementById("metric-total").textContent = "–";
+        document.getElementById("metric-near").textContent = "–";
+        document.getElementById("metric-drown").textContent = "–";
+        document.getElementById("metric-states").textContent = "–";
+        document.getElementById("metric-updated").textContent = "N/A";
+      }
+    }
+
+    loadIncidents();
   </script>
 </body>
 </html>
