@@ -332,15 +332,22 @@ nav a.active {
     footer a:hover {
       color: var(--accent);
     }
-/* Mobile nav spacing */
+/* ------------------------------------------ */
+/* MOBILE NAV + HEADER SPACING IMPROVEMENTS   */
+/* ------------------------------------------ */
 @media (max-width: 600px) {
   nav a {
-    margin-left: 0.6rem;       /* Less spacing between links */
-    font-size: 0.85rem;        /* Slightly smaller font */
+    margin-left: 0.6rem;
+    font-size: 0.85rem;
   }
 
   .nav {
-    flex-wrap: wrap;          /* Allow items to wrap instead of overflowing */
+    flex-wrap: wrap;
     gap: 0.5rem;
   }
+
+  main {
+    padding-top: 3.5rem;
+  }
 }
+
