@@ -72,15 +72,28 @@
       font-size: 0.75rem;
       color: var(--text-muted);
     }
-    nav a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 1.2rem;
-      font-size: 0.9rem;
-    }
-    nav a:hover {
-      color: var(--accent);
-    }
+  
+/* Navigation links */
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 1.2rem;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Highlight the active page */
+nav a.active {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.1rem;
+}
+
+
 
     main {
       padding: 2.5rem 0 3.5rem;
