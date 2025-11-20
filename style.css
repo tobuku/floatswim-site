@@ -332,3 +332,15 @@ nav a.active {
     footer a:hover {
       color: var(--accent);
     }
+/* Mobile nav spacing */
+@media (max-width: 600px) {
+  nav a {
+    margin-left: 0.6rem;       /* Less spacing between links */
+    font-size: 0.85rem;        /* Slightly smaller font */
+  }
+
+  .nav {
+    flex-wrap: wrap;          /* Allow items to wrap instead of overflowing */
+    gap: 0.5rem;
+  }
+}
