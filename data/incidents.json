@@ -1,0 +1,32 @@
+{
+  "last_updated": "2025-01-01T00:00:00Z",
+  "incidents": [
+    {
+      "id": 1,
+      "date": "2025-01-01",
+      "state": "Florida",
+      "location_type": "Backyard pool",
+      "age_group": "1-3 years",
+      "status": "Near-drowning",
+      "notes": "Child pulled from water by caregiver; CPR performed; child recovering."
+    },
+    {
+      "id": 2,
+      "date": "2025-01-01",
+      "state": "California",
+      "location_type": "Apartment pool",
+      "age_group": "4-6 years",
+      "status": "Drowning",
+      "notes": "Local authorities responding; details pending."
+    },
+    {
+      "id": 3,
+      "date": "2025-01-01",
+      "state": "Texas",
+      "location_type": "Lake",
+      "age_group": "Teen",
+      "status": "Near-drowning",
+      "notes": "Strong currents; friend alerted adults in time."
+    }
+  ]
+}
