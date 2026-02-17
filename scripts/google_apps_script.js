@@ -103,6 +103,11 @@ var STATE_ABBREVS = {
 
 // ── Main ─────────────────────────────────────────────────────────────────────
 
+/**
+ * Resumes from where it left off using PropertiesService.
+ * Run multiple times until all 50 states are done.
+ * Call resetProgress() to start over from the beginning.
+ */
 function main() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName(CONFIG.SHEET_NAME);
@@ -110,16 +115,27 @@ function main() {
     throw new Error("Sheet '" + CONFIG.SHEET_NAME + "' not found.");
   }
 
+  var props = PropertiesService.getScriptProperties();
+  var startIndex = parseInt(props.getProperty("lastCompletedQuery") || "-1", 10) + 1;
+
+  if (startIndex >= SEARCH_QUERIES.length) {
+    Logger.log("All " + SEARCH_QUERIES.length + " states already completed. Call resetProgress() to start over.");
+    return;
+  }
+
+  Logger.log("Resuming from query " + (startIndex + 1) + "/" + SEARCH_QUERIES.length);
+
   var existingRows = getExistingRows(sheet);
   var added = 0;
 
-  for (var i = 0; i < SEARCH_QUERIES.length; i++) {
+  for (var i = startIndex; i < SEARCH_QUERIES.length; i++) {
     var query = SEARCH_QUERIES[i];
     Logger.log("Query " + (i + 1) + "/" + SEARCH_QUERIES.length + ": " + query);
 
     var places = fetchOutscraper(query);
     if (!places || places.length === 0) {
       Logger.log("  No results.");
+      props.setProperty("lastCompletedQuery", String(i));
       continue;
     }
 
@@ -138,12 +154,23 @@ function main() {
       added++;
     }
 
+    // Save progress after each successful state
+    props.setProperty("lastCompletedQuery", String(i));
+
     if (i < SEARCH_QUERIES.length - 1) {
       Utilities.sleep(CONFIG.DELAY_MS);
     }
   }
 
-  Logger.log("Done. Added " + added + " new rows.");
+  Logger.log("Done. Added " + added + " new rows. Completed through query " + SEARCH_QUERIES.length + "/" + SEARCH_QUERIES.length);
+}
+
+/**
+ * Resets progress so main() starts from the first state again.
+ */
+function resetProgress() {
+  PropertiesService.getScriptProperties().deleteProperty("lastCompletedQuery");
+  Logger.log("Progress reset. Next main() run will start from query 1.");
 }
 
 // ── Outscraper API ───────────────────────────────────────────────────────────
