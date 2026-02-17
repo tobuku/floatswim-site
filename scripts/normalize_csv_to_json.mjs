@@ -189,6 +189,20 @@ function main() {
 
     rec1.state = normState(rec1.state);
     rec1.cost_type = normCost(rec1.cost_type);
+
+    // Fallback: use source_url (Google Maps link) as website if website is empty
+    if (!rec1.website && rec1.source_url) {
+      rec1.website = rec1.source_url;
+    }
+
+    // Fallback: try to extract state from address field
+    if (!rec1.state && rec1.address) {
+      const stateMatch = rec1.address.match(/\b([A-Z]{2})\s+\d{5}/);
+      if (stateMatch) {
+        rec1.state = stateMatch[1];
+      }
+    }
+
     kept.push(rec1);
   }
 

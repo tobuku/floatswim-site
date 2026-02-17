@@ -140,7 +140,7 @@ function main() {
     }
 
     for (var j = 0; j < places.length; j++) {
-      var row = mapToRow(places[j]);
+      var row = mapToRow(places[j], query);
       if (!row) continue;
 
       var website = row[11];  // website column index
@@ -215,12 +215,27 @@ function fetchOutscraper(query) {
  *   address, city, state, zip, phone, email, website, source_url,
  *   notes, status
  */
-function mapToRow(place) {
+function mapToRow(place, query) {
   if (!place || !place.name) return null;
 
   var state = normalizeState(place.us_state || place.state || "");
+
+  // Fallback: extract state from the query string (e.g. "swim lessons, Alabama")
+  if (!state && query) {
+    var parts = query.split(",");
+    if (parts.length >= 2) {
+      state = normalizeState(parts[parts.length - 1].trim());
+    }
+  }
+
   var notes = buildNotes(place);
   var mapsUrl = place.google_maps_url || place.place_url || "";
+
+  // Use site if available, otherwise fall back to Google Maps URL
+  var website = (place.site || "").trim();
+  if (!website) {
+    website = mapsUrl;
+  }
 
   return [
     (place.name || "").trim(),                          // provider_name
@@ -234,7 +249,7 @@ function mapToRow(place) {
     (place.postal_code || "").toString().trim(),         // zip
     (place.phone || "").trim(),                          // phone
     "",                                                 // email
-    (place.site || "").trim(),                           // website
+    website,                                            // website
     mapsUrl,                                            // source_url
     notes,                                              // notes
     "Approved"                                          // status
