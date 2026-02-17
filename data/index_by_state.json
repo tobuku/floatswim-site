@@ -1,23 +1,13 @@
 {
-  "CA": [
-    "bay-area-swim-project-san-francisco-ca-4ed82e51e8ce"
+  "NA": [
+    "floatswim-seed-source-439dd15b5df0",
+    "infant-swimming-resource-2b3bcad7762a",
+    "swimamerica-20497d316375",
+    "united-states-swim-school-association-5cedbba382fb"
   ],
-  "CO": [
-    "lakewood-ymca-denver-co-9fec6fae50fe"
-  ],
-  "FL": [
-    "sunshine-swim-school-tampa-fl-5870d1bb0478"
-  ],
-  "GA": [
-    "safe-splash-atlanta-atlanta-ga-29dbba71dc08"
-  ],
-  "IL": [
-    "midwest-aquatics-chicago-il-625c5c30f2a3"
-  ],
-  "TX": [
-    "city-of-austin-parks-austin-tx-9567a7fc94f0"
-  ],
-  "WA": [
-    "pacific-swim-academy-seattle-wa-e82b20cdab66"
+  "HI": [
+    "sunsational-swim-school-honolulu-hi-1e5ce01aea42",
+    "swim-baby-hawaii-honolulu-hi-4cbf51fd35f2",
+    "ymca-of-honolulu-honolulu-hi-ff129009b6cb"
   ]
 }
