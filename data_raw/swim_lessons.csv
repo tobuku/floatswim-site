@@ -1,0 +1,9 @@
+provider_name,program_name,provider_type,cost_type,ages,address,city,state,zip,phone,email,website,source_url,notes,status
+Sunshine Swim School,Learn to Swim,Nonprofit,Free,3-12,100 Main St,Tampa,FL,33601,813-555-0101,info@sunshineswim.org,https://sunshineswim.org,https://sunshineswim.org/programs,Year-round program,approved
+Lakewood YMCA,Water Safety for Kids,YMCA,Low cost,1-5,200 Oak Ave,Denver,CO,80201,303-555-0202,swim@lakewoodymca.org,https://lakewoodymca.org,https://lakewoodymca.org/swim,Scholarships available,approved
+City of Austin Parks,Junior Swim Academy,Government,Free,5-14,500 Barton Springs Rd,Austin,TX,78704,512-555-0303,parks@austintexas.gov,https://austintexas.gov/swim,https://austintexas.gov/swim,Summer only,approved
+Safe Splash Atlanta,Infant Water Readiness,Private,Paid,0-3,750 Peachtree St,Atlanta,GA,30308,404-555-0404,hello@safesplash.com,https://safesplash.com,https://safesplash.com/atlanta,Warm water pool,approved
+Bay Area Swim Project,Community Swim,Nonprofit,Scholarship,4-10,300 Harbor Blvd,San Francisco,CA,94102,415-555-0505,swim@bayareaswim.org,https://bayareaswim.org,https://bayareaswim.org/programs,Sliding scale fees,approved
+Midwest Aquatics,Summer Splash,Community,Mixed,3-16,88 Lake Dr,Chicago,IL,60601,312-555-0606,info@midwestaquatics.org,https://midwestaquatics.org,https://midwestaquatics.org/summer,Indoor and outdoor pools,approved
+Pacific Swim Academy,Toddler Swim,Private,Paid,1-4,22 Ocean Way,Seattle,WA,98101,206-555-0707,enroll@pacificswim.com,https://pacificswim.com,https://pacificswim.com/toddler,Heated pool facility,approved
+Draft Provider,Draft Program,Nonprofit,Free,5-10,999 Test St,Nowhere,XX,00000,000-000-0000,test@test.com,https://test.com,https://test.com,This should not appear,draft

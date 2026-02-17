@@ -351,3 +351,54 @@ nav a.active {
   }
 }
 
+/* ------------------------------------------ */
+/* SWIM LESSON DIRECTORY                      */
+/* ------------------------------------------ */
+.fs-dir-head { margin: 1.5rem 0 1rem 0; }
+.fs-dir-title { font-size: 1.6rem; margin: 0; }
+.fs-dir-sub { margin-top: 0.35rem; opacity: 0.85; }
+
+.fs-controls { display: grid; grid-template-columns: 1fr; gap: 0.6rem; margin: 1rem 0; }
+@media (min-width: 780px) { .fs-controls { grid-template-columns: 2fr 1fr 1fr 1fr auto; align-items: center; } }
+
+.fs-input, .fs-select { width: 100%; padding: 0.65rem 0.75rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.15); color: inherit; }
+.fs-input:focus, .fs-select:focus { outline: 2px solid rgba(255,255,255,0.25); outline-offset: 2px; }
+
+.fs-btn { padding: 0.65rem 0.85rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.06); color: inherit; cursor: pointer; }
+.fs-btn:hover { background: rgba(255,255,255,0.10); }
+.fs-btn:disabled { opacity: 0.5; cursor: default; }
+
+.fs-summary { margin: 0.75rem 0; opacity: 0.9; }
+
+.fs-results { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+@media (min-width: 780px) { .fs-results { grid-template-columns: 1fr 1fr; } }
+
+.fs-card { padding: 1rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.10); background: rgba(0,0,0,0.12); }
+.fs-card-title { font-size: 1.05rem; margin-bottom: 0.35rem; }
+.fs-card-meta { opacity: 0.8; margin-bottom: 0.65rem; }
+.fs-card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
+.fs-tag { display: inline-block; padding: 0.2rem 0.5rem; border-radius: 999px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.05); font-size: 0.85rem; }
+
+.fs-empty { padding: 1rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.10); background: rgba(0,0,0,0.12); }
+
+.fs-state-bar { margin: 1rem 0; }
+.fs-state-bar-title { opacity: 0.85; margin-bottom: 0.5rem; }
+.fs-state-links { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.fs-chip { padding: 0.35rem 0.6rem; border-radius: 999px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.05); color: inherit; cursor: pointer; }
+.fs-chip:hover { background: rgba(255,255,255,0.10); }
+
+.fs-pager { display: flex; flex-direction: column; gap: 0.6rem; margin: 1rem 0 2rem 0; }
+@media (min-width: 780px) { .fs-pager { flex-direction: row; align-items: center; justify-content: space-between; } }
+.fs-pager-controls { display: flex; gap: 0.6rem; }
+
+.fs-modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; padding: 1.25rem; background: rgba(0,0,0,0.55); z-index: 9999; }
+.fs-modal.open { display: flex; }
+.fs-modal-panel { width: 100%; max-width: 740px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.12); background: rgba(15,15,18,0.98); padding: 1rem; }
+.fs-modal-top { display: flex; gap: 0.75rem; align-items: flex-start; justify-content: space-between; margin-bottom: 0.75rem; }
+.fs-modal-title { font-size: 1.2rem; }
+.fs-modal-body { display: grid; gap: 0.65rem; }
+.fs-row { display: grid; grid-template-columns: 120px 1fr; gap: 0.75rem; }
+@media (max-width: 520px) { .fs-row { grid-template-columns: 1fr; } }
+.fs-label { opacity: 0.75; }
+.fs-value a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+

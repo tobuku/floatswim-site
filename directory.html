@@ -164,6 +164,9 @@
           </div>
         </div>
       </section>
+
+      <!-- SWIM LESSON DIRECTORY -->
+      <div data-fs-directory></div>
     </div>
   </main>
 
@@ -183,6 +186,318 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
+<script>
+(function () {
+  const stateName = {
+    AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
+    CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia",
+    HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa",
+    KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland",
+    MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri",
+    MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey",
+    NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio",
+    OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
+    SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont",
+    VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming"
+  };
+
+  const els = {};
+  const state = { all: [], byState: {}, q: "", st: "", cost: "", type: "", page: 1, pageSize: 25 };
+
+  function $(id) { return document.getElementById(id); }
+
+  function esc(s) {
+    return String(s || "").replace(/[&<>"']/g, (c) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[c]));
+  }
+
+  function norm(s) { return String(s || "").toLowerCase().trim(); }
+
+  function matchText(rec, q) {
+    if (!q) return true;
+    const t = [rec.provider_name, rec.program_name, rec.city, rec.state, rec.notes, rec.provider_type, rec.cost_type].join(" ");
+    return norm(t).includes(norm(q));
+  }
+
+  function applyFilters(list) {
+    return list.filter((rec) => {
+      if (state.st && rec.state !== state.st) return false;
+      if (state.cost && rec.cost_type !== state.cost) return false;
+      if (state.type && rec.provider_type !== state.type) return false;
+      if (!matchText(rec, state.q)) return false;
+      return true;
+    });
+  }
+
+  function uniqValues(list, key) {
+    const set = new Set();
+    for (const rec of list) {
+      const v = String(rec[key] || "").trim();
+      if (v) set.add(v);
+    }
+    return Array.from(set).sort((a, b) => a.localeCompare(b));
+  }
+
+  function setOptions(selectEl, values, placeholder) {
+    selectEl.innerHTML = "";
+    const opt0 = document.createElement("option");
+    opt0.value = "";
+    opt0.textContent = placeholder;
+    selectEl.appendChild(opt0);
+    for (const v of values) {
+      const opt = document.createElement("option");
+      opt.value = v;
+      opt.textContent = v;
+      selectEl.appendChild(opt);
+    }
+  }
+
+  function setStateOptions() {
+    const states = Object.keys(state.byState).filter((k) => k && k !== "NA").sort((a, b) => a.localeCompare(b));
+    els.filterState.innerHTML = "";
+    const o0 = document.createElement("option");
+    o0.value = "";
+    o0.textContent = "All states";
+    els.filterState.appendChild(o0);
+    for (const st of states) {
+      const o = document.createElement("option");
+      o.value = st;
+      o.textContent = (stateName[st] ? stateName[st] + " " : "") + "(" + state.byState[st].length + ")";
+      els.filterState.appendChild(o);
+    }
+  }
+
+  function openModal(rec) {
+    els.modalTitle.textContent = rec.provider_name || "Provider";
+    els.modalBody.innerHTML = [
+      row("Program", rec.program_name),
+      row("Type", rec.provider_type),
+      row("Cost", rec.cost_type),
+      row("Ages", rec.ages),
+      row("Address", [rec.address, rec.city, rec.state, rec.zip].filter(Boolean).join(", ")),
+      row("Phone", rec.phone),
+      row("Email", rec.email ? '<a href="mailto:' + esc(rec.email) + '">' + esc(rec.email) + "</a>" : ""),
+      row("Website", rec.website ? '<a href="' + esc(rec.website) + '" target="_blank" rel="noopener">Visit provider</a>' : ""),
+      row("Source", rec.source_url ? '<a href="' + esc(rec.source_url) + '" target="_blank" rel="noopener">Source</a>' : ""),
+      rec.notes ? '<div class="fs-modal-notes"><div class="fs-label">Notes</div><div class="fs-value">' + esc(rec.notes) + "</div></div>" : ""
+    ].join("");
+    els.modalOverlay.classList.add("open");
+    els.modalClose.focus();
+  }
+
+  function closeModal() {
+    els.modalOverlay.classList.remove("open");
+  }
+
+  function row(label, value) {
+    const v = value || "";
+    if (!v) return "";
+    return '<div class="fs-row"><div class="fs-label">' + esc(label) + '</div><div class="fs-value">' + v + "</div></div>";
+  }
+
+  function renderStateLinks() {
+    const keys = Object.keys(state.byState).filter((k) => k && k !== "NA").sort((a, b) => a.localeCompare(b));
+    els.stateLinks.innerHTML = "";
+    for (const st of keys) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "fs-chip";
+      btn.textContent = st + " (" + state.byState[st].length + ")";
+      btn.addEventListener("click", () => {
+        state.st = st;
+        els.filterState.value = st;
+        state.page = 1;
+        render();
+      });
+      els.stateLinks.appendChild(btn);
+    }
+  }
+
+  function paginate(list) {
+    const total = list.length;
+    const pages = Math.max(1, Math.ceil(total / state.pageSize));
+    if (state.page > pages) state.page = pages;
+    const start = (state.page - 1) * state.pageSize;
+    const end = start + state.pageSize;
+    return { pageList: list.slice(start, end), total, pages };
+  }
+
+  function renderPagination(pages, total) {
+    els.pager.innerHTML = "";
+    const info = document.createElement("div");
+    info.className = "fs-pager-info";
+    info.textContent = "Results " + total + ". Page " + state.page + " of " + pages + ".";
+    els.pager.appendChild(info);
+
+    const controls = document.createElement("div");
+    controls.className = "fs-pager-controls";
+    const prev = document.createElement("button");
+    prev.type = "button";
+    prev.className = "fs-btn";
+    prev.textContent = "Prev";
+    prev.disabled = state.page <= 1;
+    prev.addEventListener("click", () => { state.page -= 1; render(); });
+
+    const next = document.createElement("button");
+    next.type = "button";
+    next.className = "fs-btn";
+    next.textContent = "Next";
+    next.disabled = state.page >= pages;
+    next.addEventListener("click", () => { state.page += 1; render(); });
+
+    controls.appendChild(prev);
+    controls.appendChild(next);
+    els.pager.appendChild(controls);
+  }
+
+  function renderResults(list) {
+    els.results.innerHTML = "";
+    if (!list.length) {
+      els.results.innerHTML = '<div class="fs-empty">No results.</div>';
+      return;
+    }
+    for (const rec of list) {
+      const card = document.createElement("div");
+      card.className = "fs-card";
+
+      const h = document.createElement("div");
+      h.className = "fs-card-title";
+      h.textContent = rec.provider_name || "Provider";
+
+      const meta = document.createElement("div");
+      meta.className = "fs-card-meta";
+      meta.textContent = [rec.city, rec.state].filter(Boolean).join(", ");
+
+      const tags = document.createElement("div");
+      tags.className = "fs-card-tags";
+      tags.innerHTML = [
+        rec.cost_type ? '<span class="fs-tag">' + esc(rec.cost_type) + "</span>" : "",
+        rec.provider_type ? '<span class="fs-tag">' + esc(rec.provider_type) + "</span>" : ""
+      ].join("");
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "fs-btn";
+      btn.textContent = "View details";
+      btn.addEventListener("click", () => openModal(rec));
+
+      card.appendChild(h);
+      card.appendChild(meta);
+      card.appendChild(tags);
+      card.appendChild(btn);
+      els.results.appendChild(card);
+    }
+  }
+
+  function render() {
+    const filtered = applyFilters(state.all);
+    const { pageList, total, pages } = paginate(filtered);
+    els.count.textContent = String(total);
+    renderResults(pageList);
+    renderPagination(pages, total);
+  }
+
+  async function loadData() {
+    const [allRes, idxRes] = await Promise.all([
+      fetch("./data/swim_lessons.json", { cache: "no-store" }),
+      fetch("./data/index_by_state.json", { cache: "no-store" })
+    ]);
+    if (!allRes.ok) throw new Error("Data load failed. lessons.json");
+    if (!idxRes.ok) throw new Error("Data load failed. index_by_state.json");
+
+    state.all = await allRes.json();
+    state.byState = await idxRes.json();
+
+    setStateOptions();
+    setOptions(els.filterCost, uniqValues(state.all, "cost_type"), "All costs");
+    setOptions(els.filterType, uniqValues(state.all, "provider_type"), "All types");
+    renderStateLinks();
+    render();
+  }
+
+  function wire() {
+    els.q = $("fs-q");
+    els.filterState = $("fs-state");
+    els.filterCost = $("fs-cost");
+    els.filterType = $("fs-type");
+    els.clear = $("fs-clear");
+    els.results = $("fs-results");
+    els.count = $("fs-count");
+    els.pager = $("fs-pager");
+    els.stateLinks = $("fs-state-links");
+    els.modalOverlay = $("fs-modal");
+    els.modalTitle = $("fs-modal-title");
+    els.modalBody = $("fs-modal-body");
+    els.modalClose = $("fs-modal-close");
+
+    els.q.addEventListener("input", (e) => { state.q = e.target.value || ""; state.page = 1; render(); });
+    els.filterState.addEventListener("change", (e) => { state.st = e.target.value || ""; state.page = 1; render(); });
+    els.filterCost.addEventListener("change", (e) => { state.cost = e.target.value || ""; state.page = 1; render(); });
+    els.filterType.addEventListener("change", (e) => { state.type = e.target.value || ""; state.page = 1; render(); });
+
+    els.clear.addEventListener("click", () => {
+      state.q = ""; state.st = ""; state.cost = ""; state.type = ""; state.page = 1;
+      els.q.value = ""; els.filterState.value = ""; els.filterCost.value = ""; els.filterType.value = "";
+      render();
+      els.q.focus();
+    });
+
+    els.modalClose.addEventListener("click", closeModal);
+    els.modalOverlay.addEventListener("click", (e) => { if (e.target === els.modalOverlay) closeModal(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && els.modalOverlay.classList.contains("open")) closeModal(); });
+  }
+
+  function ensureMarkup() {
+    const host = document.querySelector("[data-fs-directory]");
+    if (!host) return;
+    host.innerHTML = [
+      '<div class="fs-dir-head">',
+      '  <h1 class="fs-dir-title">Swim Lesson Directory</h1>',
+      '  <div class="fs-dir-sub">Search by provider, city, or state.</div>',
+      '</div>',
+      '<div class="fs-controls">',
+      '  <input id="fs-q" class="fs-input" type="text" inputmode="search" placeholder="Search" aria-label="Search" />',
+      '  <select id="fs-state" class="fs-select" aria-label="State filter"></select>',
+      '  <select id="fs-cost" class="fs-select" aria-label="Cost filter"></select>',
+      '  <select id="fs-type" class="fs-select" aria-label="Type filter"></select>',
+      '  <button id="fs-clear" class="fs-btn" type="button">Clear</button>',
+      '</div>',
+      '<div class="fs-state-bar" aria-label="States">',
+      '  <div class="fs-state-bar-title">States</div>',
+      '  <div id="fs-state-links" class="fs-state-links"></div>',
+      '</div>',
+      '<div class="fs-summary">Results: <span id="fs-count">0</span></div>',
+      '<div id="fs-results" class="fs-results" aria-live="polite"></div>',
+      '<div id="fs-pager" class="fs-pager"></div>',
+      '<div id="fs-modal" class="fs-modal" role="dialog" aria-modal="true" aria-label="Provider details">',
+      '  <div class="fs-modal-panel" role="document">',
+      '    <div class="fs-modal-top">',
+      '      <div id="fs-modal-title" class="fs-modal-title"></div>',
+      '      <button id="fs-modal-close" class="fs-btn" type="button">Close</button>',
+      '    </div>',
+      '    <div id="fs-modal-body" class="fs-modal-body"></div>',
+      '  </div>',
+      '</div>'
+    ].join("");
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    ensureMarkup();
+    wire();
+    loadData().then(() => {
+      const q = $("fs-q");
+      if (q) q.focus();
+    }).catch((err) => {
+      console.error(err);
+      const host = document.querySelector("[data-fs-directory]");
+      if (host) host.innerHTML = '<div class="fs-empty">Data load error.</div>';
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
 
