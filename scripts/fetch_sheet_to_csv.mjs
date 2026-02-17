@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const SHEET_CSV_URL = "REPLACE_WITH_PUBLISHED_SHEET_CSV_URL";
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1NTCYcugbSS_g7el2cHDqrNYOqJB9r0dF3IbaZtfzWhg/gviz/tq?tqx=out:csv&sheet=swim_lessons";
 
 async function main() {
   if (!SHEET_CSV_URL || SHEET_CSV_URL.includes("REPLACE_WITH")) {
