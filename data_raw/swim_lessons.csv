@@ -1,9 +1,1303 @@
-"provider_name","program_name","provider_type","cost_type","ages","address","city","state","zip","phone","email","website","source_url","notes","status"
-"FloatSwim Seed Source","USA Swimming Find A Team & Lessons","National directory","Mixed","Varies by provider","","","","","","","https://www.usaswimming.org/parents/learn-to-swim","https://www.usaswimming.org/parents/learn-to-swim","USA Swimming parent page points to a provider search page for lessons and teams.","approved"
-"United States Swim School Association","Find a School","National directory","Mixed","Varies by school","","","","","480-837-5525","","https://usswimschools.org/find-a-school/","https://usswimschools.org/find-a-school/","Search form accepts school name plus address, city, or zip.","approved"
-"Infant Swimming Resource","ISR Instructor Locator","National directory","Paid","6 months to 6 years (program focus)","","","","","","","https://locator.infantswim.com/","https://locator.infantswim.com/","Locator supports search by zip code or exact address.","approved"
-"SwimAmerica","Find a Program","National directory","Paid","Varies by program","","","","","","info@swimamerica.org","https://www.swimamerica.org/find-a-program","https://www.swimamerica.org/","Promotes a location finder for SwimAmerica programs.","approved"
-"YMCA of Honolulu","Swim Lessons","Local YMCA chapter","Paid and scholarships vary","6 months and up","","Honolulu","HI","","","","https://www.ymcahonolulu.org/swimming/swim-lessons","https://www.ymcahonolulu.org/swimming/swim-lessons","Chapter swim lessons page, includes group and private options.","approved"
-"Sunsational Swim School","At-Home Private Swim Lessons","Multi-city private instructor network","Paid","All ages (per provider marketing)","","Honolulu","HI","","","","https://www.sunsationalswimschool.com/honolulu--hi--private-swim-lessons","https://www.sunsationalswimschool.com/honolulu--hi--private-swim-lessons","Private in-home lessons listing page for Honolulu.","approved"
-"Swim Baby Hawaii","ISR Hawaii Locations and Instructors","Local provider page","Paid","Infants and young children (ISR focus)","","Honolulu","HI","","(808) 215-5696","a.harrer@infantswim.com","https://www.swimbabyhawaii.com/locations-instructors","https://www.swimbabyhawaii.com/locations-instructors","Example instructor listing with phone and email.","approved"
-"FloatSwim Data Update Instructions","How to add resources to the directory dataset","Internal","Unknown","","","","","","","","","","To add more resources: open the Google Sheet, go to the swim_lessons tab, add a new row with values for each column (provider_name, program_name, provider_type, cost_type, ages, address, city, state, zip, phone, email, website, source_url, notes, status). Set status to approved for the row to appear on the site. GitHub Actions runs daily at 3:17 AM UTC, or trigger manually from the Actions tab. Rows without status=approved are filtered out, use draft or pending to stage entries.","draft"
+provider_name,program_name,provider_type,cost_type,ages,address,city,state,zip,phone,email,website,source_url,notes,status
+FloatSwim Seed Source,USA Swimming Find A Team & Lessons,National directory,Mixed,Varies by provider,,,,,,,https://www.usaswimming.org/parents/learn-to-swim,https://www.usaswimming.org/parents/learn-to-swim,USA Swimming parent page points to a provider search page for lessons and teams.,approved
+United States Swim School Association,Find a School,National directory,Mixed,Varies by school,,,,,480-837-5525,,https://usswimschools.org/find-a-school/,https://usswimschools.org/find-a-school/,"Search form accepts school name plus address, city, or zip.",approved
+Infant Swimming Resource,ISR Instructor Locator,National directory,Paid,6 months to 6 years (program focus),,,,,,,https://locator.infantswim.com/,https://locator.infantswim.com/,Locator supports search by zip code or exact address.,approved
+SwimAmerica,Find a Program,National directory,Paid,Varies by program,,,,,,info@swimamerica.org,https://www.swimamerica.org/find-a-program,https://www.swimamerica.org/,Promotes a location finder for SwimAmerica programs.,approved
+YMCA of Honolulu,Swim Lessons,Local YMCA chapter,Paid and scholarships vary,6 months and up,,Honolulu,HI,,,,https://www.ymcahonolulu.org/swimming/swim-lessons,https://www.ymcahonolulu.org/swimming/swim-lessons,"Chapter swim lessons page, includes group and private options.",approved
+Sunsational Swim School,At-Home Private Swim Lessons,Multi-city private instructor network,Paid,All ages (per provider marketing),,Honolulu,HI,,,,https://www.sunsationalswimschool.com/honolulu--hi--private-swim-lessons,https://www.sunsationalswimschool.com/honolulu--hi--private-swim-lessons,Private in-home lessons listing page for Honolulu.,approved
+Swim Baby Hawaii,ISR Hawaii Locations and Instructors,Local provider page,Paid,Infants and young children (ISR focus),,Honolulu,HI,,(808) 215-5696,a.harrer@infantswim.com,https://www.swimbabyhawaii.com/locations-instructors,https://www.swimbabyhawaii.com/locations-instructors,Example instructor listing with phone and email.,approved
+FloatSwim Data Update Instructions,How to add resources to the directory dataset,Internal,Unknown,,,,,,,,,,"To add more resources: open the Google Sheet, go to the swim_lessons tab, add a new row with values for each column (provider_name, program_name, provider_type, cost_type, ages, address, city, state, zip, phone, email, website, source_url, notes, status). Set status to approved for the row to appear on the site. GitHub Actions runs daily at 3:17 AM UTC, or trigger manually from the Actions tab. Rows without status=approved are filtered out, use draft or pending to stage entries.",draft
+Alabama Swim School,,Swimming school,Unknown,,2244 Pelham Pkwy,Pelham,AL,35124,,,,,"4.9 stars, 214 reviews",Approved
+Rawlins Aquatic Center,,Indoor swimming pool,Unknown,,1401 Colorado St,Rawlins,WY,82301,#ERROR!,,,,"4.7 stars, 39 reviews",Approved
+Aquatic Center,,Sports association,Unknown,,415 Paul W Bryant Dr,Tuscaloosa,AL,35487,#ERROR!,,,,"5 stars, 22 reviews",Approved
+Anniston Aquatic & Fitness Center,,Physical fitness program,Unknown,,130 Summerall Gate Rd,Anniston,AL,36205,#ERROR!,,,,"4.6 stars, 250 reviews",Approved
+Goldfish Swim School - Madison,,Swimming school,Unknown,,7696 Hwy 72 W Suite 110,Madison,AL,35758,#ERROR!,,,,"4.6 stars, 108 reviews",Approved
+Mountainview Aquatic Swim Club,,Swim club,Unknown,,4633 Oak Dr,Gardendale,AL,35071,#ERROR!,,,,"4.8 stars, 46 reviews",Approved
+Oneonta Aquatics Facility,,attractions,Unknown,,28119 AL-75,Oneonta,AL,35121,#ERROR!,,,,"4.5 stars, 52 reviews",Approved
+Bruce Gresly Aquatic Center,,Swimming pool,Unknown,,450 S 9th St,Lander,WY,82520,,,,,"5 stars, 5 reviews",Approved
+Aquatic Center,,Indoor swimming pool,Unknown,,7007 Randall Ave,Francis E. Warren AFB,WY,82005,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Sassy Swimmers/ Alabama Canine Swimming,,Dog trainer,Unknown,,865 Shades Crest Rd,Hoover,AL,35226,#ERROR!,,,,"4.9 stars, 19 reviews",Approved
+SafeSplash Swim School - Huntsville,,Swimming school,Unknown,,3228 Leeman Ferry Rd SW,Huntsville,AL,35801,#ERROR!,,,,"4.7 stars, 12 reviews",Approved
+Goldfish Swim School - Hoover,,Swimming school,Unknown,,5549 Grove Blvd,Hoover,AL,35226,#ERROR!,,,,"4.8 stars, 140 reviews",Approved
+Birmingham Swim League,,Club,Unknown,,2331 Bessemer Rd,Birmingham,AL,35208,#ERROR!,,,,"5 stars, 4 reviews",Approved
+Aqua-Tots Swim School Hoover,,attractions,Unknown,,1694 Montgomery Hwy,Hoover,AL,35216,#ERROR!,,,,"4.9 stars, 34 reviews",Approved
+Adventure Sports II Inc,,Dive shop,Unknown,,1546 E Ann St,Montgomery,AL,36107,#ERROR!,,,,"4.7 stars, 69 reviews",Approved
+Brock's Gap Swim Club (private),,Swim club,Unknown,,1314 Scout Trace,Hoover,AL,35244,#ERROR!,,,,"4.7 stars, 21 reviews",Approved
+Capital City Athletics Swim Club & Learn To Swim Lessons,,Swim club,Unknown,,1213 W Allison Rd,Cheyenne,WY,82007,#ERROR!,,,,"4 stars, 8 reviews",Approved
+Swim Like Fish,,Swimming instructor,Unknown,,924 S Forrest Dr,Birmingham,AL,35209,#ERROR!,,,,"4.9 stars, 30 reviews",Approved
+Woodland Swim Club,,Swim club,Unknown,,446 Cottage Hill Rd,Mobile,AL,36606,#ERROR!,,,,"4.5 stars, 24 reviews",Approved
+Goldfish Swim School - Montgomery,,Swimming school,Unknown,,2460 Berryhill Rd,Montgomery,AL,36117,#ERROR!,,,,"4.7 stars, 32 reviews",Approved
+Swim Alaska,,Swim club,Unknown,,690 Cindy Cir,Wasilla,AK,99654,#ERROR!,,,,"4.1 stars, 21 reviews",Approved
+Lancaster Aquatic Center,,Aquatic center,Unknown,,416 Complex Dr,Lexington,KY,40502,#ERROR!,,,,"4.5 stars, 78 reviews",Approved
+Swim Academy at Little Rock Athletic Club,,Swimming,Unknown,,4610 Sam Peck Rd b,Little Rock,AR,72223,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Aqua-Tots Swim School Louisville,,Swimming school,Unknown,,117 Blankenbaker Pkwy,Douglass Hills,KY,40243,#ERROR!,,,,"4.6 stars, 215 reviews",Approved
+Goldfish Swim School - St. Matthews,,Swimming school,Unknown,,4176 Westport Rd,Louisville,KY,40207,#ERROR!,,,,"4.8 stars, 85 reviews",Approved
+Defiance Area YMCA,,Association / Organization,Unknown,,1599 Palmer Dr #3419,Defiance,OH,43512,#ERROR!,,,,"4 stars, 252 reviews",Approved
+AVIS Alaska Sports Complex Swimming Pool,,Swimming pool,Unknown,,2801 Spirit Way,Anchorage,AK,99508,#ERROR!,,,,"4.8 stars, 5 reviews",Approved
+Aquatic Foundation of Alaska,,Swim club,Unknown,,2801 Spirit Way,Anchorage,AK,99508,#ERROR!,,,,"5 stars, 4 reviews",Approved
+Brighton Swim Academy,,Swimming school,Unknown,,3407 Salterbeck St,Mt Pleasant,SC,29466,#ERROR!,,,,"5 stars, 39 reviews",Approved
+Kentucky Swim Academy,,Swimming school,Unknown,,1935 Stanton Way,Lexington,KY,40511,,,,,"5 stars, 1 reviews",Approved
+Glacier Swim Club,,Club,Unknown,,1619 Glacier Ave,Juneau,AK,99801,#ERROR!,,,,"4.7 stars, 3 reviews",Approved
+The Alaska Club East Gym & Pool,,Gym,Unknown,,5201 E Tudor Rd,Anchorage,AK,99507,#ERROR!,,,,"3.6 stars, 437 reviews",Approved
+Alaska Swimamerica Program,,Swimming instructor,Unknown,,7120 Old Seward Hwy,Anchorage,AK,99518,#ERROR!,,,,"1 stars, 1 reviews",Approved
+Northern Lights Swim Club,,Swimming instructor,Unknown,,5577 Abbott Rd,Anchorage,AK,99507,#ERROR!,,,,"4.3 stars, 6 reviews",Approved
+The Y Ymca,,Gym,Unknown,,5930 Six Mile Ln,Louisville,KY,40218,#ERROR!,,,,"4.7 stars, 30 reviews",Approved
+Swim Fit Alaska,,Personal trainer,Unknown,,,,,,,,,,"5 stars, 2 reviews",Approved
+Life Time Swim School,,Swimming school,Unknown,,8001 Forestview Ln N,Maple Grove,MN,55369,#ERROR!,,,,"3.8 stars, 68 reviews",Approved
+Great Wolf Lodge | Concord,,hotels,Unknown,,10175 Weddington Rd,Concord,NC,28027,#ERROR!,,,,"4.3 stars, 11647 reviews",Approved
+YMCA of Alaska at East Pool,,attractions,Unknown,,4025 E 20th Ave,Anchorage,AK,99508,#ERROR!,,,,"4.1 stars, 38 reviews",Approved
+Kate Kuhns Aquatic Center,,Swimming pool,Unknown,,600 Fairview Ave,Homer,AK,99603,#ERROR!,,,,"4.5 stars, 8 reviews",Approved
+British Swim School of Hilton Garden Inn Fishkill,,Swimming school,Unknown,,25 Westage Dr,Fishkill,NY,12524,#ERROR!,,,,"4.9 stars, 29 reviews",Approved
+Bolle Adult Swim School,,Swimming instructor,Unknown,,5805 W Navajo Dr,Glendale,AZ,85302,#ERROR!,,,,"4.9 stars, 98 reviews",Approved
+Swim Scottsdale,,Swimming instructor,Unknown,,17900 Hayden Rd,Scottsdale,AZ,85255,#ERROR!,,,,"5 stars, 45 reviews",Approved
+Arizona Aqua Stars,,Swim club,Unknown,,850 N Horne St,Mesa,AZ,85213,#ERROR!,,,,"4.7 stars, 6 reviews",Approved
+Scottsdale Aquatic Club,,Swim club,Unknown,,7202 E Cactus Rd,Scottsdale,AZ,85260,#ERROR!,,,,"4.7 stars, 23 reviews",Approved
+Jr's Swim School,,Swimming school,Unknown,,1930 W Pinnacle Peak Rd,Phoenix,AZ,85027,#ERROR!,,,,"4.9 stars, 50 reviews",Approved
+Aqua-Tots Swim School Mesa,,Swimming school,Unknown,,1122 S Greenfield Rd,Mesa,AZ,85206,#ERROR!,,,,"4.9 stars, 249 reviews",Approved
+Swim with Steph,,Swimming instructor,Unknown,,14153 N 101st St Suit 101,Scottsdale,AZ,85260,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Swim & Play Fishkill,,Swimming school,Unknown,,544 US-9,Fishkill,NY,12524,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Aqua-Tots Swim School Paradise Valley,,Swimming school,Unknown,,12825 N Tatum Blvd,Phoenix,AZ,85032,#ERROR!,,,,"4.7 stars, 360 reviews",Approved
+Aqua Pros Swim School AZ,,Swimming school,Unknown,,1126 S Gilbert Rd,Mesa,AZ,85204,#ERROR!,,,,"5 stars, 16 reviews",Approved
+Aqua-Tots Swim School Central Phoenix,,Swimming school,Unknown,,7824 N 12th St,Phoenix,AZ,85020,#ERROR!,,,,"4.6 stars, 126 reviews",Approved
+Mesa Aquatics Club Masters - Kino Location,,Swim club,Unknown,,848 N Horne,Mesa,AZ,85203,#ERROR!,,,,"4.5 stars, 17 reviews",Approved
+Swimhaus Swim School,,Swimming school,Unknown,,868 N Gilbert Rd Suite 100,Gilbert,AZ,85234,#ERROR!,,,,"4.8 stars, 247 reviews",Approved
+Arizona Swimming Inc,,Non-profit organization,Unknown,,301 E Bethany Home Rd,Phoenix,AZ,85012,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Aqua-Tots Swim School Surprise,,Swimming school,Unknown,,13833 W Bell Rd,Surprise,AZ,85374,#ERROR!,,,,"4.8 stars, 245 reviews",Approved
+Hubbard Family Swim School,,Swimming school,Unknown,,13832 N 32nd St Suite 100,Phoenix,AZ,85032,#ERROR!,,,,"4.8 stars, 373 reviews",Approved
+Flying Fish Arizona Swim Team and Swim Lessons,,Swim club,Unknown,,23 W Calle Concordia,Oro Valley,AZ,85704,,,,,"5 stars, 3 reviews",Approved
+Arizona Infant Swim,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Kim Courtney's Swim School,,Swimming instructor,Unknown,,28155 N 74th St,Scottsdale,AZ,85266,#ERROR!,,,,"4 stars, 20 reviews",Approved
+Arkansas Swim Academy,,Swimming school,Unknown,,3709 W Southern Hills Blvd,Rogers,AR,72758,#ERROR!,,,,"4.7 stars, 164 reviews",Approved
+University Of Idaho Swim Center,,Swimming pool,Unknown,,1030 S Rayburn St,Moscow,ID,83844,#ERROR!,,,,"4.6 stars, 75 reviews",Approved
+Searcy Swim Center,,Indoor swimming pool,Unknown,,525 Recreation Wy,Searcy,AR,72143,#ERROR!,,,,"4.6 stars, 288 reviews",Approved
+London School of Aquatics,,Indoor swimming pool,Unknown,,505 Georgetown Rd,London,AR,72847,#ERROR!,,,,"4.6 stars, 7 reviews",Approved
+Western Oregon University Aquatic Center,,Swimming facility,Unknown,,332 Jackson St W,Monmouth,OR,97361,#ERROR!,,,,,Approved
+Baker County YMCA - Sam-O-Swim Center,,Indoor swimming pool,Unknown,,580 Baker St,Baker City,OR,97814,#ERROR!,,,,"4.3 stars, 56 reviews",Approved
+Goldfish Swim School - Rogers NWA,,Swimming school,Unknown,,4319 S Pleasant Crossing Blvd Unit 105,Rogers,AR,72758,#ERROR!,,,,"4.7 stars, 160 reviews",Approved
+SLV Swim Center,,Swimming instructor,Unknown,,9050 CA-9,Ben Lomond,CA,95005,#ERROR!,,,,"4.4 stars, 13 reviews",Approved
+California Sports Center Swim Complex,,Swimming facility,Unknown,,1283 Sunnyvale Saratoga Rd,Sunnyvale,CA,94087,,,,,"4.4 stars, 42 reviews",Approved
+Rachel Taylor Swim School,,Swimming school,Unknown,,7 S Cambridge Dr,Lemoore,CA,93245,#ERROR!,,,,"4.8 stars, 27 reviews",Approved
+Cuesta College Swimming Pool,,Swimming pool,Unknown,,CA-1,San Luis Obispo,CA,93405,#ERROR!,,,,"4.7 stars, 32 reviews",Approved
+CALI PIRANHA SWIM TEAM,,Swim club,Unknown,,3306 Senior Center Dr,Oceanside,CA,92056,#ERROR!,,,,"5 stars, 6 reviews",Approved
+Lucky Duck Swim School,,Swimming school,Unknown,,2421 Marine Ave,Gardena,CA,90249,#ERROR!,,,,"4.3 stars, 61 reviews",Approved
+Stan State Aquatics,,Aquatic center,Unknown,,,Turlock,CA,95382,#ERROR!,,,,"4.8 stars, 6 reviews",Approved
+Castro Valley Swim Center,,Swimming pool,Unknown,,,Castro Valley,CA,94546,,,,,"4.2 stars, 11 reviews",Approved
+Southern California Swimming,,Youth organization,Unknown,,29000 S Western Ave Suite #304,Rancho Palos Verdes,CA,90275,#ERROR!,,,,,Approved
+Swimphi Hawthorne,,Swimming school,Unknown,,12501 S Inglewood Ave,Hawthorne,CA,90250,,,,,"5 stars, 1 reviews",Approved
+Main Street Swim School: Rancho Palos Verdes,,Swimming school,Unknown,,28901 S Western Ave,Rancho Palos Verdes,CA,90275,#ERROR!,,,,"5 stars, 28 reviews",Approved
+Needles Aquatics Center,,attractions,Unknown,,1101 Civic Center Dr,Needles,CA,92363,#ERROR!,,,,"4.1 stars, 40 reviews",Approved
+Safe Aquatics,,Swimming school,Unknown,,14587 Brookhill Rd,Madera,CA,93636,#ERROR!,,,,"5 stars, 16 reviews",Approved
+Orangecrest Swim School,,Swimming instructor,Unknown,,8860 Stony Brook Cir,Riverside,CA,92508,,,,,"4.6 stars, 10 reviews",Approved
+Dolphin Aquatics Swim Team,,Swim club,Unknown,,29751 Crown Valley Pkwy,Laguna Niguel,CA,92677,#ERROR!,,,,"5 stars, 4 reviews",Approved
+Joseph E. Gallo Recreation & Wellness Center,,Wellness center,Unknown,,Muir Pass Road,Merced,CA,95340,#ERROR!,,,,"4.5 stars, 48 reviews",Approved
+Aqua Gliders Swim School,,Swimming instructor,Unknown,,727 W 6th St,Gilroy,CA,95020,#ERROR!,,,,"5 stars, 23 reviews",Approved
+Porterville City Pool,,attractions,Unknown,,97 N Park Dr,Porterville,CA,93257,#ERROR!,,,,"4.4 stars, 229 reviews",Approved
+Lindsay Wellness Center,,Wellness center,Unknown,,860 North Sequoia,Lindsay,CA,93247,#ERROR!,,,,"4.4 stars, 103 reviews",Approved
+Yosemite Marlins Swim Club,,Club,Unknown,,,Oakhurst,CA,93644,#ERROR!,,,,"4 stars, 2 reviews",Approved
+Colorado Springs Swim Lessons,,Swimming instructor,Unknown,,4515 Barnes Rd,Colorado Springs,CO,80917,#ERROR!,,,,"1 stars, 1 reviews",Approved
+Little Kickers Swim School,,Swimming instructor,Unknown,,1423 S Holly St,Denver,CO,80222,#ERROR!,,,,"4.9 stars, 420 reviews",Approved
+Swim With Kathy,,Swimming instructor,Unknown,,225 N Columbus Dr,Chicago,IL,60601,#ERROR!,,,,"5 stars, 5 reviews",Approved
+British Swim School at Spark by Hilton - Colorado Springs,,Swimming school,Unknown,,7245 Commerce Center Dr,Colorado Springs,CO,80919,#ERROR!,,,,"4.9 stars, 35 reviews",Approved
+British Swim School at LA Fitness – South Loop,,Swimming school,Unknown,,1101 S Canal St,Chicago,IL,60607,#ERROR!,,,,"4.3 stars, 21 reviews",Approved
+Pikes Peak Athletics Training Center,,Swimming pool,Unknown,,602 Elkton Dr,Colorado Springs,CO,80907,#ERROR!,,,,"4.5 stars, 131 reviews",Approved
+Colorado Swim School,,Swimming school,Unknown,,5075 W 120th Ave,Broomfield,CO,80020,#ERROR!,,,,"4.5 stars, 111 reviews",Approved
+First Class Swim School,,Swimming school,Unknown,,100 E 14th St,Chicago,IL,60605,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Pikes Peak Athletics - The Country Club of Colorado Location,,Swimming facility,Unknown,,125 Clubhouse Dr,Colorado Springs,CO,80906,#ERROR!,,,,"5 stars, 9 reviews",Approved
+Country Creek Swim School,,Swimming instructor,Unknown,,8805 Country Creek Trail,Colorado Springs,CO,80924,#ERROR!,,,,"5 stars, 6 reviews",Approved
+Cheyenne Mountain Aquatics Swim Team,,Swim club,Unknown,,Clubhouse Dr,Colorado Springs,CO,80906,#ERROR!,,,,"5 stars, 4 reviews",Approved
+Little Fins Swim School - Garden of the Gods (Formerly Mermaid Cove),,Swimming school,Unknown,,4465 Northpark Dr #150,Colorado Springs,CO,80907,#ERROR!,,,,"4.7 stars, 107 reviews",Approved
+Student Aquatic Center,,Swimming pool,Unknown,,750 New Madrid St,Cape Girardeau,MO,63701,#ERROR!,,,,"4.5 stars, 10 reviews",Approved
+Worden Aquatics,,Swimming instructor,Unknown,,801 Percy Warner Blvd,Nashville,TN,37205,#ERROR!,,,,"4.9 stars, 120 reviews",Approved
+Diventures,,attractions,Unknown,,4940 Rusina Rd,Colorado Springs,CO,80907,#ERROR!,,,,"4.8 stars, 250 reviews",Approved
+Wulf Recreation Center,,Recreation center,Unknown,,5300 S Olive Rd,Evergreen,CO,80439,#ERROR!,,,,"4.3 stars, 169 reviews",Approved
+Foothills Park & Recreation District,,Recreation center,Unknown,,6612 S Ward St,Littleton,CO,80127,#ERROR!,,,,"4.5 stars, 176 reviews",Approved
+The Trails Recreation Center,,Recreation center,Unknown,,16799 E Lake Ave,Centennial,CO,80016,#ERROR!,,,,"4.5 stars, 1251 reviews",Approved
+Silverthorne Recreation Center,,Recreation center,Unknown,,430 Rainbow Dr,Silverthorne,CO,80498,#ERROR!,,,,"4.6 stars, 583 reviews",Approved
+The School of Swimming,,Swimming instructor,Unknown,,901 France St,Rocky Hill,CT,6067,#ERROR!,,,,"5 stars, 24 reviews",Approved
+Youth Development & Aquatic Center - Regional YMCA of Western Connecticut,,Swimming pool,Unknown,,10 Huckleberry Hill Rd,Brookfield,CT,6804,#ERROR!,,,,"4.4 stars, 46 reviews",Approved
+Goldfish Swim School - Norwalk,,Swimming school,Unknown,,112 Main St,Norwalk,CT,6851,#ERROR!,,,,"4.8 stars, 166 reviews",Approved
+Bulldog Swim Academy,,Swimming school,Unknown,,303 Huntington St,New Haven,CT,6511,#ERROR!,,,,"4.5 stars, 24 reviews",Approved
+Swim Lessons with Amanda,,Swimming instructor,Unknown,,51 Hawthorn Way,Wethersfield,CT,6109,#ERROR!,,,,"4.8 stars, 39 reviews",Approved
+CT Swim Lessons,,Swimming instructor,Unknown,,85 Jones St,Amston,CT,6231,,,,,"5 stars, 3 reviews",Approved
+LIVE2SWIM,,Swimming school,Unknown,,94 Old State Rd,Brookfield,CT,6804,#ERROR!,,,,"4.7 stars, 44 reviews",Approved
+urSwim at LA Fitness Trumbull,,Swimming instructor,Unknown,,5065 Main St,Trumbull,CT,6611,#ERROR!,,,,"5 stars, 39 reviews",Approved
+Briar Cliff Swim Club,,Swim club,Unknown,,1960107,Avon,CT,6001,,,,,"4.8 stars, 6 reviews",Approved
+Blue Marlins of Greater New Haven,,Swim club,Unknown,,360 Amity Rd,Woodbridge,CT,6525,#ERROR!,,,,,Approved
+Goldfish Swim School - Cromwell,,Swimming school,Unknown,,51 Shunpike Rd,Cromwell,CT,6416,#ERROR!,,,,"4.8 stars, 77 reviews",Approved
+Goldfish Swim School - Manchester,,Swimming school,Unknown,,1147 Tolland Turnpike,Manchester,CT,6042,#ERROR!,,,,"4.5 stars, 158 reviews",Approved
+Fairfield Area Swim School,,Swimming school,Unknown,,1073 N Benson Rd,Fairfield,CT,6824,,,,,"5 stars, 3 reviews",Approved
+SafeSplash + SwimLabs Swim School - Newington,,Swimming school,Unknown,,77 Pane Rd,Newington,CT,6111,#ERROR!,,,,"4.9 stars, 75 reviews",Approved
+Hudson Valley Swim Danbury,,Swimming school,Unknown,,12 Boughton St,Danbury,CT,6810,#ERROR!,,,,"4.8 stars, 17 reviews",Approved
+British Swim School at LA Fitness - Farmington,,Swimming school,Unknown,,1600 SE Rd,Farmington,CT,6032,#ERROR!,,,,"5 stars, 16 reviews",Approved
+McCann Natatorium,,attractions,Unknown,,70 Park Cir,Milford,CT,6460,#ERROR!,,,,"4.4 stars, 46 reviews",Approved
+Wings Over Water School,,Swimming school,Unknown,,2221 Black Rock Tpke,Fairfield,CT,6825,#ERROR!,,,,"4.2 stars, 76 reviews",Approved
+Swim Center at Westminster School,,Swimming facility,Unknown,,"1880, 995 Hopmeadow St",Simsbury,CT,6070,#ERROR!,,,,"4.6 stars, 25 reviews",Approved
+Goldfish Swim School - Pike Creek,,Swimming school,Unknown,,4760 Limestone Rd,Wilmington,DE,19808,#ERROR!,,,,"5 stars, 128 reviews",Approved
+Trident Swim Club,,Swim club,Unknown,,2000 S Otterbein Ave,Rowland Heights,CA,91748,,,,,"5 stars, 1 reviews",Approved
+Premier Swim Academy- Diamond Bar,,Swimming instructor,Unknown,,1673 Maple Hill Rd,Diamond Bar,CA,91765,#ERROR!,,,,"4.6 stars, 72 reviews",Approved
+The Delaware Swim School,,Swimming school,Unknown,,202 Lantana Dr,Hockessin,DE,19707,#ERROR!,,,,"3.5 stars, 31 reviews",Approved
+Waterworks Swim School Diamond Bar,,Swimming school,Unknown,,20801 Golden Springs Dr,Diamond Bar,CA,91789,#ERROR!,,,,"5 stars, 3 reviews",Approved
+British Swim School at LA Fitness - Bear,,Swimming school,Unknown,,900 Eden Cir,Bear,DE,19701,#ERROR!,,,,"5 stars, 18 reviews",Approved
+Blake Swim School,,Swimming school,Unknown,,15835 Gale Ave,Hacienda Heights,CA,91745,#ERROR!,,,,"4.3 stars, 188 reviews",Approved
+Swimtelligent Swim Club,,Swimming school,Unknown,,408 N Azusa Ave,West Covina,CA,91791,#ERROR!,,,,"4.8 stars, 131 reviews",Approved
+Swim School Inc,,Swimming school,Unknown,,669 S Union St,Wilmington,DE,19805,#ERROR!,,,,"4.4 stars, 7 reviews",Approved
+Hockessin Athletic Club,,Fitness center,Unknown,,100 Fitness Way,Hockessin,DE,19707,#ERROR!,,,,"4.2 stars, 125 reviews",Approved
+Central YMCA,,Gym,Unknown,,501 W 11th St,Wilmington,DE,19801,#ERROR!,,,,"4.5 stars, 321 reviews",Approved
+AquaRx,,Swimming school,Unknown,,21400 Pathfinder Rd,Diamond Bar,CA,91765,#ERROR!,,,,"5 stars, 5 reviews",Approved
+Goldfish Swim School - North Wilmington,,Swimming school,Unknown,,5333 Concord Pike,Wilmington,DE,19803,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Bear-Glasgow Family YMCA,,Gym,Unknown,,351 George Williams Way,Newark,DE,19702,#ERROR!,,,,"4.4 stars, 328 reviews",Approved
+Sussex academy Aquatics Center,,Swimming facility,Unknown,,21150 Airport Road,Georgetown,DE,19947,#ERROR!,,,,"4.7 stars, 72 reviews",Approved
+Waterworks Swim School La Habra,,Swimming school,Unknown,,1621 W Imperial Hwy,La Habra,CA,90631,#ERROR!,,,,"4 stars, 4 reviews",Approved
+Western Family YMCA,,Gym,Unknown,,2600 Capitol Tr,Newark,DE,19711,#ERROR!,,,,"4.5 stars, 299 reviews",Approved
+Brandywine YMCA,,Gym,Unknown,,3 Mt Lebanon Rd,Wilmington,DE,19803,#ERROR!,,,,"4.3 stars, 239 reviews",Approved
+Flora Pool,,Swimming pool,Unknown,,2525 Green St,Dubuque,IA,52001,#ERROR!,,,,"4.4 stars, 182 reviews",Approved
+SouthWest Aquatics,,Swimming school,Unknown,,205 Windermere Rd,Winter Garden,FL,34787,#ERROR!,,,,"4.7 stars, 216 reviews",Approved
+Watermelon Swim Wesley Chapel,,Swimming school,Unknown,,30016 County Line Rd,Wesley Chapel,FL,33543,#ERROR!,,,,"4.8 stars, 543 reviews",Approved
+SwimSRQ,,Swimming instructor,Unknown,,3600 Torrey Pines Blvd,Sarasota,FL,34238,#ERROR!,,,,"5 stars, 168 reviews",Approved
+Little Aquatics Swim Lessons,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.8 stars, 721 reviews",Approved
+Florida Swim Center,,Swimming school,Unknown,,18090 Collins Ave T#14,Sunny Isles Beach,FL,33160,#ERROR!,,,,"4.9 stars, 107 reviews",Approved
+Swim Dynamic Lakeland,,attractions,Unknown,,5825 Brannen Rd S,Lakeland,FL,33813,#ERROR!,,,,"4.9 stars, 56 reviews",Approved
+Florida Aquatics Swimming and Training (FAST),,Swimming facility,Unknown,,4635 SW 67th Ave,Ocala,FL,34474,#ERROR!,,,,"4.7 stars, 270 reviews",Approved
+Aqua Chick Swimming-Swimming Lessons,,Swimming instructor,Unknown,,1510 Fox Hill Pl,Valrico,FL,33596,#ERROR!,,,,"5 stars, 29 reviews",Approved
+SwimSRQ: Swim Lessons at LA Fitness Lakewood Ranch,,Swimming school,Unknown,,11661 State Road 70 E,Lakewood Ranch,FL,34202,#ERROR!,,,,"4.9 stars, 58 reviews",Approved
+Florida Swim School,,Swimming school,Unknown,,1082 S Rogers Cir,Boca Raton,FL,33487,#ERROR!,,,,"4.3 stars, 93 reviews",Approved
+Maureen's Swim Academy,,Swimming instructor,Unknown,,8143 Honeybee Ln,Tampa,FL,33635,#ERROR!,,,,"4.9 stars, 263 reviews",Approved
+Swim Safely Swim School,,Swimming school,Unknown,,US-27 #50,Clermont,FL,34711,#ERROR!,,,,"4.7 stars, 11 reviews",Approved
+Florida Elite Swimming,,Swim club,Unknown,,3032 Collier Pkwy,Land O' Lakes,FL,34639,,,,,"4 stars, 9 reviews",Approved
+ISR Florida Aquatics,,Swimming instructor,Unknown,,2928 Red Coat Cir,Brandon,FL,33511,#ERROR!,,,,"5 stars, 2 reviews",Approved
+"Watch Me Swim, LLC. Survival Swimming Lessons & Beyond!",,Swimming instructor,Unknown,,11501 McMullen Rd,Riverview,FL,33569,#ERROR!,,,,"4.9 stars, 116 reviews",Approved
+SwimSRQ: swim lessons in sarasota,,Swimming instructor,Unknown,,5880 Rand Blvd #102,Sarasota,FL,34238,#ERROR!,,,,"5 stars, 19 reviews",Approved
+"Aqua Buddies Swim School, LLC",,Swimming instructor,Unknown,,420 Tazewell Dr,Port Charlotte,FL,33954,#ERROR!,,,,"4.9 stars, 212 reviews",Approved
+Swim Florida at Lehigh Acres Community Pool,,Swim club,Unknown,,1400 W 5th St,Lehigh Acres,FL,33972,#ERROR!,,,,"5 stars, 1 reviews",Approved
+The Swim Center,,Swimming instructor,Unknown,,1090 Regency Plaza Blvd #100,McDonough,GA,30253,#ERROR!,,,,"4.8 stars, 133 reviews",Approved
+Atlanta Swim Academy,,Swimming school,Unknown,,732 Johnson Ferry Rd,Marietta,GA,30068,#ERROR!,,,,"4.9 stars, 1037 reviews",Approved
+Aqua-Tots Swim School Briarcliff,,Swimming school,Unknown,,2153-A Briarcliff Rd NE,Atlanta,GA,30329,#ERROR!,,,,"4.6 stars, 280 reviews",Approved
+Aqua-Tots Swim School Atlanta Westside Village,,Swimming school,Unknown,,2260 Marietta Blvd NW,Atlanta,GA,30318,#ERROR!,,,,"4.6 stars, 81 reviews",Approved
+"Georgia Dolphins of Henry County, Forest Park",,Swimming school,Unknown,,Bryans Dr,McDonough,GA,30252,#ERROR!,,,,"5 stars, 49 reviews",Approved
+Middle Georgia Little Swimmers,,attractions,Unknown,,307 Brantley Ridge,Warner Robins,GA,31088,#ERROR!,,,,"3 stars, 6 reviews",Approved
+SwimKids of Georgia Inc,,attractions,Unknown,,1505 Redi Rd,Cumming,GA,30040,#ERROR!,,,,"4.7 stars, 169 reviews",Approved
+The Richmond Hill Swim Club,,Swimming facility,Unknown,,9998 Ford Ave #7,Richmond Hill,GA,31324,#ERROR!,,,,"4.3 stars, 50 reviews",Approved
+Swimmerman Swim School,,Swimming school,Unknown,,553 Amsterdam Ave NE Suite 2,Atlanta,GA,30306,#ERROR!,,,,"4.9 stars, 50 reviews",Approved
+Aquatic Solutions Georgia,,Swimming instructor,Unknown,,301 Gold Creek Trail,Woodstock,GA,30188,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Swim Warriors Incorporated,,Swimming school,Unknown,,471 Quill Dr,Dawsonville,GA,30534,#ERROR!,,,,"4.9 stars, 160 reviews",Approved
+Georgia Swim School LLC,,Swimming school,Unknown,,139 Altama Connector #185,Brunswick,GA,31525,#ERROR!,,,,"5 stars, 22 reviews",Approved
+"Aquatic Consultants of Ga, Inc",,Swimming instructor,Unknown,,2221 Peachtree Rd NE # D336,Atlanta,GA,30309,#ERROR!,,,,"4.9 stars, 32 reviews",Approved
+Blue Tide Swim Team,,Swim club,Unknown,,144 Columbia Ave,Americus,GA,31709,#ERROR!,,,,"4.1 stars, 7 reviews",Approved
+AquatiKids of Atlanta,,Swimming instructor,Unknown,,2878 Ridgemore Rd NW,Atlanta,GA,30318,#ERROR!,,,,"5 stars, 86 reviews",Approved
+Johnson Aquatic Center,,Outdoor swimming pool,Unknown,,807 W Bryan St,Douglas,GA,31533,#ERROR!,,,,"4.3 stars, 12 reviews",Approved
+Calhoun Aquatic Center,,Swimming facility,Unknown,,106 Yellow Jacket Dr,Calhoun,GA,30701,#ERROR!,,,,"4.7 stars, 40 reviews",Approved
+Oconee Swim Academy,,Swimming instructor,Unknown,,1545 S Bishop Farms Pkwy,Watkinsville,GA,30677,#ERROR!,,,,"5 stars, 8 reviews",Approved
+Warner Robins Aquanauts Swim,,Swimming school,Unknown,,210 Cohen Walker Dr,Warner Robins,GA,31088,#ERROR!,,,,"4.9 stars, 20 reviews",Approved
+Swim Lessons Hawaii,,Swimming school,Unknown,,1200 Ala Moana Blvd #380,Honolulu,HI,96814,#ERROR!,,,,"5 stars, 121 reviews",Approved
+Wes Deist Aquatic Center,,attractions,Unknown,,149 7th St,Idaho Falls,ID,83401,,,,,"4.1 stars, 525 reviews",Approved
+British Swim School,,Swimming school,Unknown,,2363 Eagle Dr,Idaho Falls,ID,83406,#ERROR!,,,,"5 stars, 12 reviews",Approved
+Cascade Aquatic & Recreation Center,,Recreation center,Unknown,,333 Kelly's Pkwy,Cascade,ID,83611,#ERROR!,,,,"4.8 stars, 212 reviews",Approved
+Goldfish Swim School - Boise,,Swimming school,Unknown,,1001 N Milwaukee St,Boise,ID,83704,#ERROR!,,,,"4.9 stars, 226 reviews",Approved
+Idaho Falls Swim Team,,Swimming instructor,Unknown,,545 Shoup Ave,Idaho Falls,ID,83402,#ERROR!,,,,,Approved
+Club Apple,,Fitness center,Unknown,,2030 Jennie Lee Dr,Idaho Falls,ID,83404,#ERROR!,,,,"4.2 stars, 830 reviews",Approved
+Pirates and Mermaids Swim Academy LLC,,Swimming school,Unknown,,5060 W 5200 S,Rexburg,ID,83440,#ERROR!,,,,"5 stars, 75 reviews",Approved
+Flow Aquatics Swim School,,Swimming school,Unknown,,1875 Century Way,Boise,ID,83709,#ERROR!,,,,"4.8 stars, 55 reviews",Approved
+BYU–Idaho Hart Swimming Pool,,Swimming pool,Unknown,,311 S 1st W,Rexburg,ID,83460,#ERROR!,,,,"4.3 stars, 24 reviews",Approved
+Ashton City Pool,,attractions,Unknown,,305 1st St,Ashton,ID,83420,#ERROR!,,,,"4.5 stars, 34 reviews",Approved
+Recreation Center,,Recreation center,Unknown,,520 Memorial Dr,Idaho Falls,ID,83402,#ERROR!,,,,"4.7 stars, 22 reviews",Approved
+Idaho Falls Family YMCA,,Fitness center,Unknown,,155 N Corner Ave,Idaho Falls,ID,83402,#ERROR!,,,,"3.2 stars, 60 reviews",Approved
+Lincoln County Swimming Pool,,Swimming pool,Unknown,,512 N Rail St W,Shoshone,ID,83352,#ERROR!,,,,"4.5 stars, 48 reviews",Approved
+"Lifestyle Swimming Instruction, LLC",,Swimming school,Unknown,,1811 S Canonero Wy,Boise,ID,83709,#ERROR!,,,,"4.6 stars, 99 reviews",Approved
+Idaho Central (Greater Boise) Aquatic Center,,Aquatic center,Unknown,,3575 S Findley Ave,Boise,ID,83705,#ERROR!,,,,"4.1 stars, 93 reviews",Approved
+Mountain Wave Swimming,,Swimming school,Unknown,,3938 E 240 N Ste 4,Rigby,ID,83442,#ERROR!,,,,"4.9 stars, 35 reviews",Approved
+Legrande Aqua Plunge,,Swimming pool,Unknown,,77 N Main St,Malad City,ID,83252,#ERROR!,,,,"4.6 stars, 34 reviews",Approved
+Bear Lake Swim School,,Swimming school,Unknown,,716 Jackson St,Montpelier,ID,83254,#ERROR!,,,,,Approved
+Salmon Swimming Pool,,Outdoor swimming pool,Unknown,,,Salmon,ID,83467,#ERROR!,,,,"4 stars, 28 reviews",Approved
+Youngstrom's Swimming Lessons,,Swimming instructor,Unknown,,1990 Geneva Wy,Emmett,ID,83617,#ERROR!,,,,"5 stars, 10 reviews",Approved
+Main Street Swim School: Mission Valley,,Swimming school,Unknown,,2348 Russell Park Way,San Diego,CA,92108,#ERROR!,,,,"4.9 stars, 95 reviews",Approved
+Blue Gems Swim School,,Swimming school,Unknown,,7510 W Irving Park Rd,Norridge,IL,60706,#ERROR!,,,,"4.9 stars, 384 reviews",Approved
+Chicago Blue Dolphins,,Swimming instructor,Unknown,,2222 N Elston Ave,Chicago,IL,60614,#ERROR!,,,,"4.9 stars, 227 reviews",Approved
+"S.H.I.N.E. Swim Academy, formerly Rob Knight's Swim America",,Swimming instructor,Unknown,,904 Four Seasons Rd,Bloomington,IL,61701,#ERROR!,,,,"5 stars, 4 reviews",Approved
+Chicago Swim School Mokena,,Swimming school,Unknown,,10200 191st St,Mokena,IL,60448,#ERROR!,,,,"4.6 stars, 75 reviews",Approved
+Campus Rec Swim Lessons,,Swimming instructor,Unknown,,"Activities and Recreation Center, 201 E Peabody Dr",Champaign,IL,61820,#ERROR!,,,,"5 stars, 1 reviews",Approved
+PRO Swim Academy,,Swimming school,Unknown,,681 Meacham Rd,Elk Grove Village,IL,60007,#ERROR!,,,,"4.7 stars, 289 reviews",Approved
+Aqua-Tots Swim School Peoria,,attractions,Unknown,,7713 N Orange Prairie Rd,Peoria,IL,61615,#ERROR!,,,,"4.7 stars, 43 reviews",Approved
+British Swim School of Oak Brook & Chicago Midway,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.9 stars, 89 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,4207 N Western Ave,Chicago,IL,60618,#ERROR!,,,,"4.8 stars, 713 reviews",Approved
+Five Points Washington,,Community center,Unknown,,360 N Wilmor Rd,Washington,IL,61571,#ERROR!,,,,"4.5 stars, 807 reviews",Approved
+Goldfish Swim School - Naperville,,Swimming school,Unknown,,1688 Quincy Ave,Naperville,IL,60540,#ERROR!,,,,"4.7 stars, 234 reviews",Approved
+Alli Jo's Swim School,,Swimming school,Unknown,,N Rogers Rd,Spring Valley,CA,91977,#ERROR!,,,,"5 stars, 161 reviews",Approved
+Lakeside Swim School,,Swimming instructor,Unknown,,1040 W Granville Ave,Chicago,IL,60660,#ERROR!,,,,"4.8 stars, 53 reviews",Approved
+"Safe Swim Academy - Swim School in Eastlake, Chula Vista",,Swimming school,Unknown,,2070 Otay Lakes Rd,Chula Vista,CA,91915,#ERROR!,,,,"5 stars, 64 reviews",Approved
+British Swim School of Oswego AmericInn,,Swimming school,Unknown,,1050 Douglas Rd,Oswego,IL,60543,#ERROR!,,,,"5 stars, 24 reviews",Approved
+The Swim Advantage,,Swimming school,Unknown,,16336 104th Ave Suit A,Orland Park,IL,60467,#ERROR!,,,,"4.9 stars, 87 reviews",Approved
+Superior Training,,Swimming school,Unknown,,7580 S Quincy St,Willowbrook,IL,60527,#ERROR!,,,,"4.8 stars, 86 reviews",Approved
+Goldfish Swim School - Plainfield,,Swimming school,Unknown,,12315 Rhea Dr,Plainfield,IL,60585,#ERROR!,,,,"4.8 stars, 300 reviews",Approved
+Aqua-Tots Swim School Wheaton,,Swimming school,Unknown,,1245 Butterfield Rd,Wheaton,IL,60189,#ERROR!,,,,"4.8 stars, 110 reviews",Approved
+Aqua-Tots Swim School North Indianapolis,,Swimming school,Unknown,,4825 E 96th St,Indianapolis,IN,46240,#ERROR!,,,,"4.9 stars, 200 reviews",Approved
+Indiana Swimming,,Swim club,Unknown,,11550 N Meridian St,Carmel,IN,46032,#ERROR!,,,,"4.5 stars, 4 reviews",Approved
+Goldfish Swim School - Carmel,,Swimming school,Unknown,,271 Merchants Square Dr Suite A-110,Carmel,IN,46032,#ERROR!,,,,"4.8 stars, 228 reviews",Approved
+Franklin Swim School,,Swimming instructor,Unknown,,2600 Cumberland Dr,Franklin,IN,46131,,,,,,Approved
+Westfield Aquatics Center,,Swimming facility,Unknown,,851 E 181st St,Westfield,IN,46074,,,,,"4.5 stars, 43 reviews",Approved
+Carmel Swim Academy,,Swimming school,Unknown,,830 City Center Dr,Carmel,IN,46032,#ERROR!,,,,"4.7 stars, 24 reviews",Approved
+IU Natatorium at IU Indianapolis,,Aquatic center,Unknown,,901 W New York St,Indianapolis,IN,46202,#ERROR!,,,,"4.8 stars, 520 reviews",Approved
+Emler Swim School Stony Creek,,Swimming school,Unknown,,15550 Stony Creek Way,Noblesville,IN,46060,#ERROR!,,,,"4.7 stars, 229 reviews",Approved
+Carmel Swim Club,,attractions,Unknown,,515 E Main St Suite 100,Carmel,IN,46032,#ERROR!,,,,"4.6 stars, 39 reviews",Approved
+Aquatic Center,,Swimming pool,Unknown,,1216 S Indiana Ave,Goshen,IN,46526,#ERROR!,,,,"4.5 stars, 19 reviews",Approved
+British Swim School at Hampton Inn & Suites - Avon,,Swimming school,Unknown,,193 Angelina Way,Avon,IN,46123,#ERROR!,,,,"5 stars, 29 reviews",Approved
+British Swim School,,Swimming school,Unknown,,36 E 8th St,Hobart,IN,46342,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Indy Swim Studio,,Swimming instructor,Unknown,,10830 Bennett Pkwy Ext suite g,Zionsville,IN,46077,#ERROR!,,,,"4.4 stars, 7 reviews",Approved
+Nassau Swim Club,,Swim club,Unknown,,1001 N 500 W Rd,Muncie,IN,47304,#ERROR!,,,,"4.7 stars, 19 reviews",Approved
+Eichling Aquatics Wing,,Indoor swimming pool,Unknown,,S 900 E,Upland,IN,46989,,,,,"4.8 stars, 4 reviews",Approved
+Aquatic Abilities Swimming,,Swimming school,Unknown,,1463 Queensborough Dr,Carmel,IN,46033,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Little Fish Swim,,Swimming instructor,Unknown,,,,,,,,,,"5 stars, 7 reviews",Approved
+Central Iowa Swim,,Swimming school,Unknown,,10815 NW 105 Ct,Granger,IA,50109,#ERROR!,,,,,Approved
+Tama-Toledo Family Aquatic Center,,Swimming facility,Unknown,,1306 S Church St,Toledo,IA,52342,#ERROR!,,,,"4.4 stars, 65 reviews",Approved
+Aqua-Tots Swim School Des Moines,,Swimming school,Unknown,,7125 Mills Civic Pkwy,West Des Moines,IA,50266,#ERROR!,,,,"4.3 stars, 158 reviews",Approved
+Conrad Family Aquatic Center,,Sports complex,Unknown,,112 Boyd St,Conrad,IA,50621,#ERROR!,,,,"4.9 stars, 7 reviews",Approved
+Eldora Aquatic Center,,attractions,Unknown,,709 14th Ave,Eldora,IA,50627,#ERROR!,,,,"4.6 stars, 45 reviews",Approved
+Meyer Municipal Aquatic Center,,Swimming facility,Unknown,,101 E Rocksylvania Ave,Iowa Falls,IA,50126,#ERROR!,,,,"4.5 stars, 50 reviews",Approved
+Linn-Mar Aquatic Center,,Swimming facility,Unknown,,"3457 North, 10th St",Marion,IA,52302,#ERROR!,,,,"4.8 stars, 104 reviews",Approved
+Williamsburg Aquatic Center,,Aquatic center,Unknown,,910 Franklin St,Williamsburg,IA,52361,#ERROR!,,,,"4.6 stars, 31 reviews",Approved
+Humboldt Family Aquatic Centre,,attractions,Unknown,,14 S 3rd St,Humboldt,IA,50548,#ERROR!,,,,"4.6 stars, 43 reviews",Approved
+Mercer Park Aquatic Center Scanlon Gymnasium,,Gym,Unknown,,2701 Bradford Dr,Iowa City,IA,52240,#ERROR!,,,,"4.3 stars, 12 reviews",Approved
+Des Moines Swim Lessons - Central Iowa Aquatics Swim School,,Swimming school,Unknown,,205 S 64th St #8623,West Des Moines,IA,50266,#ERROR!,,,,,Approved
+Fairbank Aquatic Center,,Outdoor swimming pool,Unknown,,100-148 S 5th St,Fairbank,IA,50629,#ERROR!,,,,"4.5 stars, 28 reviews",Approved
+Coe College Swim Lessons,,Swimming school,Unknown,,1220 1st Ave NE,Cedar Rapids,IA,52402,,,,,"4 stars, 4 reviews",Approved
+Eagle Grove Aquatic Center,,attractions,Unknown,,"Greenwood Park, 810 NE 2nd St",Eagle Grove,IA,50533,#ERROR!,,,,"4.4 stars, 40 reviews",Approved
+Diventures,,attractions,Unknown,,1895 W Penn St,North Liberty,IA,52317,#ERROR!,,,,"4.9 stars, 187 reviews",Approved
+Emler Swim School of Kansas City - Westwood,,Swimming school,Unknown,,2848 W 47th Ave,Kansas City,KS,66103,#ERROR!,,,,"4.9 stars, 458 reviews",Approved
+Emler Swim School of Kansas City - Northland,,Swimming school,Unknown,,8350 N Broadway,Kansas City,MO,64118,#ERROR!,,,,"4.9 stars, 131 reviews",Approved
+Turner Aquatic Center,,Swimming facility,Unknown,,2211 S 55th St,Kansas City,KS,66106,#ERROR!,,,,"4.6 stars, 107 reviews",Approved
+Shelbyville Family Aquatic Center,,attractions,Unknown,,415 E North 9th St,Shelbyville,IL,62565,#ERROR!,,,,"4.7 stars, 63 reviews",Approved
+Aqua-Tots Swim School Prairie Village,,Swimming instructor,Unknown,,5364 W 95th St,Prairie Village,KS,66207,#ERROR!,,,,"4.8 stars, 98 reviews",Approved
+Lawrence Swim School,,Swimming instructor,Unknown,,510 N 1700 Rd,Lawrence,KS,66049,#ERROR!,,,,"4.8 stars, 8 reviews",Approved
+The Park Hill Aquatic Center,,attractions,Unknown,,8152 N Congress Ave,Kansas City,MO,64153,#ERROR!,,,,"4.5 stars, 42 reviews",Approved
+Goldfish Swim School - Overland Park,,Swimming school,Unknown,,7541 W 119th St,Overland Park,KS,66213,#ERROR!,,,,"4.9 stars, 341 reviews",Approved
+Aqua-Tots Swim School Olathe,,Swimming school,Unknown,,11943 S Strang Line Rd,Olathe,KS,66062,#ERROR!,,,,"4.8 stars, 356 reviews",Approved
+Topeka Swim Association,,Swim club,Unknown,,530 SW Tuffy Kellogg Dr #03/02,Topeka,KS,66606,#ERROR!,,,,"4.5 stars, 46 reviews",Approved
+Emler Swim School of Kansas City-Leawood,,Swimming school,Unknown,,3612 W 135th St space d201,Leawood,KS,66224,#ERROR!,,,,"4.9 stars, 413 reviews",Approved
+City of Burlingame Swimming,,attractions,Unknown,,300 N Dacotah St,Burlingame,KS,66413,#ERROR!,,,,"4.4 stars, 21 reviews",Approved
+Goldfish Swim School - Lenexa,,Swimming school,Unknown,,8566 Maurer Rd,Lenexa,KS,66219,#ERROR!,,,,"4.8 stars, 186 reviews",Approved
+Kansas City Blazers Swim Team,,Sports club,Unknown,,6501 Antioch Rd,Merriam,KS,66202,#ERROR!,,,,"5 stars, 5 reviews",Approved
+SuperStar Aquatics,,Swimming instructor,Unknown,,1023 E 7th St,Pittsburg,KS,66762,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Tsunami Swim Team of Kc,,Sports club,Unknown,,6603 Royal St,Pleasant Valley,MO,64068,,,,,"5 stars, 1 reviews",Approved
+Lacrosse Swimming Pool,,Swimming pool,Unknown,,110 4th St,La Crosse,KS,67548,#ERROR!,,,,"4.4 stars, 12 reviews",Approved
+Kicking Kiddos Swimming Lessons,,Swimming instructor,Unknown,,3002 N Kansas Ave,Topeka,KS,66617,#ERROR!,,,,"5 stars, 7 reviews",Approved
+Flying Fish Swim School,,Swimming school,Unknown,,421 SW Van Buren St,Topeka,KS,66603,#ERROR!,,,,,Approved
+"SafeSplash Kansas City, Zona Rosa",,Swimming school,Unknown,,8680 NW Prairie View Rd,Kansas City,MO,64153,#ERROR!,,,,"4.7 stars, 84 reviews",Approved
+British Swim School at Home2 Suites by Hilton - Lexington Keeneland Airport,,Swimming school,Unknown,,960 Midnight Pass,Lexington,KY,40513,#ERROR!,,,,"5 stars, 21 reviews",Approved
+"Goldfish Swim School - Nicholasville Rd., Lexington",,Swimming school,Unknown,,2520 Nicholasville Rd Suite 30,Lexington,KY,40503,#ERROR!,,,,"4.9 stars, 67 reviews",Approved
+ISR Kentucky Aquatics,,Swimming instructor,Unknown,,3882 Mall Rd,Lexington,KY,40503,,,,,"5 stars, 70 reviews",Approved
+Aqua-Tots Swim School Lexington,,Swimming school,Unknown,,220 Ruccio Way Ste. 150,Lexington,KY,40503,#ERROR!,,,,"4.7 stars, 243 reviews",Approved
+Aqua-Tots Swim School Lexington-Hamburg,,Swimming school,Unknown,,2300 Sir Barton Way,Lexington,KY,40509,#ERROR!,,,,"4.9 stars, 174 reviews",Approved
+Kentucky Swim Academy,,Swimming school,Unknown,,1935 Stanton Way,Lexington,KY,40511,,,,,"5 stars, 1 reviews",Approved
+Southland Aquatic Center,,attractions,Unknown,,625 Hill N Dale Rd,Lexington,KY,40503,#ERROR!,,,,"4.4 stars, 292 reviews",Approved
+Lebanon Aquatic Center,,Indoor swimming pool,Unknown,,525 Graham Mem Dr,Lebanon,KY,40033,#ERROR!,,,,"4.4 stars, 138 reviews",Approved
+Lexington Dolphins Swim Team,,Sports club,Unknown,,730 Millpond Rd,Lexington,KY,40514,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Swim Life of NKY,,Swimming school,Unknown,,7333 Burlington Pike,Florence,KY,41042,#ERROR!,,,,"5 stars, 24 reviews",Approved
+Bear Paddle Swim School - Florence,,Swimming school,Unknown,,4012 Seligman Dr,Florence,KY,41042,#ERROR!,,,,"4.3 stars, 121 reviews",Approved
+Bear Paddle Swim School - Louisville,,attractions,Unknown,,2915 S Hurstbourne Pkwy Suite A,Louisville,KY,40220,#ERROR!,,,,"4.2 stars, 118 reviews",Approved
+Boles Natatorium - Centre College Swimming Pool,,Swimming pool,Unknown,,310 College St,Danville,KY,40422,#ERROR!,,,,"4.6 stars, 20 reviews",Approved
+SafeSplash + SwimLabs - Louisville (Springhurst),,Swimming school,Unknown,,3572 Springhurst Blvd,Louisville,KY,40241,#ERROR!,,,,"4.9 stars, 188 reviews",Approved
+Lexington Athletic Club,,Fitness center,Unknown,,3882 Mall Rd,Lexington,KY,40503,#ERROR!,,,,"3.4 stars, 107 reviews",Approved
+Diventures Swim School - TownePlace Suites by Marriott Lexington Keeneland/Airport,,Swimming school,Unknown,,980 Midnight Pass,Lexington,KY,40513,#ERROR!,,,,,Approved
+Love Swimming Swim School,,Swimming school,Unknown,,5221 S Front St,New Orleans,LA,70115,#ERROR!,,,,"4.6 stars, 29 reviews",Approved
+"Goldfish Swim School - Covington, LA",,Swimming school,Unknown,,50 Park Pl,Covington,LA,70433,#ERROR!,,,,"5 stars, 56 reviews",Approved
+Crawfish Swim School- Siegen,,Swimming school,Unknown,,8556 Siegen Ln,Baton Rouge,LA,70810,#ERROR!,,,,"4.9 stars, 46 reviews",Approved
+The Pool School- Swimming Lessons,,Swimming school,Unknown,,11314 Cloverland Ave,Baton Rouge,LA,70809,#ERROR!,,,,"4.9 stars, 15 reviews",Approved
+Tadpole Academy Swim School,,Swimming school,Unknown,,18465 Perkins Rd,Prairieville,LA,70769,#ERROR!,,,,"4.9 stars, 218 reviews",Approved
+Crawfish Aquatics in Lafayette,,Swim club,Unknown,,107 Susan St,Lafayette,LA,70506,#ERROR!,,,,"4.4 stars, 113 reviews",Approved
+Northshore Swim,,Swimming school,Unknown,,690 Albert St,Mandeville,LA,70448,#ERROR!,,,,"4.9 stars, 121 reviews",Approved
+Ms Rick's Swim School,,Swimming school,Unknown,,4680 NE Evangeline Thruway,Carencro,LA,70520,#ERROR!,,,,"4.6 stars, 11 reviews",Approved
+Fishys Aquatics Swimming Lessons,,Swimming instructor,Unknown,,13102 Babin Rd,Gonzales,LA,70737,#ERROR!,,,,"5 stars, 66 reviews",Approved
+Crawfish Aquatics Swim Team (Bluebonnet),,Swim club,Unknown,,7150 Bluebonnet Blvd,Baton Rouge,LA,70810,#ERROR!,,,,"4.6 stars, 66 reviews",Approved
+Crawfish Swim School- Prairieville,,Swimming school,Unknown,,15077 LA-73 B,Prairieville,LA,70769,#ERROR!,,,,"4.8 stars, 30 reviews",Approved
+South Louisiana Swim Team,,Swim club,Unknown,,4828 Utica St,Metairie,LA,70006,#ERROR!,,,,"4.9 stars, 29 reviews",Approved
+City of Lafayette Aquatics,,Swimming instructor,Unknown,,1919 Eraste Landry Rd,Lafayette,LA,70506,#ERROR!,,,,"4.5 stars, 13 reviews",Approved
+Jump Swim Schools Shreveport USA,,Swimming school,Unknown,,7141 Youree Dr #100,Shreveport,LA,71105,#ERROR!,,,,"4.9 stars, 144 reviews",Approved
+Swim-Smart @ Harrys,,Swimming school,Unknown,,4709 Airline Dr,Metairie,LA,70001,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Dupuy Swim Lessons,,Swimming school,Unknown,,6969 LA-1,Addis,LA,70710,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Riverside Swimming Club,,Swimming pool,Unknown,,420 Corona Dr,Lafayette,LA,70503,#ERROR!,,,,"4.6 stars, 67 reviews",Approved
+British Swim School at Lambeth House Pool,,Swimming school,Unknown,,150 Broadway St,New Orleans,LA,70118,#ERROR!,,,,"5 stars, 23 reviews",Approved
+Gert Town Natatorium,,Indoor swimming pool,Unknown,,3411 Broadway St,New Orleans,LA,70125,#ERROR!,,,,"4.8 stars, 147 reviews",Approved
+Southside Swim Club,,Swimming instructor,Unknown,,2815 Mackey Ln,Shreveport,LA,71118,#ERROR!,,,,"4.7 stars, 52 reviews",Approved
+InstaSwim,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.9 stars, 177 reviews",Approved
+Goldfish Swim School - Portland,,Swimming school,Unknown,,512 Warren Ave,Portland,ME,4103,#ERROR!,,,,"4.8 stars, 141 reviews",Approved
+Southern Maine Swim Academy,,Swimming instructor,Unknown,,64 Dow Hwy,Eliot,ME,3903,,,,,"5 stars, 14 reviews",Approved
+Goldfish Swim School - Astoria,,Swimming school,Unknown,,33-12 36th Ave,Astoria,NY,11106,#ERROR!,,,,"4.1 stars, 181 reviews",Approved
+Maine Splash Swim School,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Goldfish Swim School - UES E. 80th Street,,Swimming school,Unknown,,1534 2nd Ave,New York,NY,10021,#ERROR!,,,,"4.9 stars, 54 reviews",Approved
+Little Waves Swim Academy,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 8 reviews",Approved
+YWCA Central Maine,,Non-profit organization,Unknown,,130 East Ave,Lewiston,ME,4240,#ERROR!,,,,"4.3 stars, 85 reviews",Approved
+Goldfish Swim School - Gowanus (Brooklyn),,Swimming school,Unknown,,620 Degraw St,Brooklyn,NY,11217,#ERROR!,,,,"4.8 stars, 261 reviews",Approved
+Lura E Hoit Pool,,attractions,Unknown,,146 Western Ave,Hampden,ME,4444,#ERROR!,,,,"4.5 stars, 129 reviews",Approved
+Beth Pancoe Aquatic Center,,Aquatic center,Unknown,,175 13th St,Bangor,ME,4401,#ERROR!,,,,"4.4 stars, 149 reviews",Approved
+Waterbark Wellness,,Gym,Unknown,,6 Commercial St,Rockport,ME,4856,#ERROR!,,,,"5 stars, 5 reviews",Approved
+Deering Oaks Kids' Pool,,Swimming pool,Unknown,,110-108 ME-25,Portland,ME,4102,,,,,"4.5 stars, 8 reviews",Approved
+John P. Davan Pool,,Indoor swimming pool,Unknown,,426 Bridge St,Westbrook,ME,4092,#ERROR!,,,,"4.7 stars, 11 reviews",Approved
+YMCA of Southern Maine - Northern York County Branch,,Non-profit organization,Unknown,,3 Pomerleau St,Biddeford,ME,4005,#ERROR!,,,,"3.6 stars, 42 reviews",Approved
+Swim Time,,Swimming instructor,Unknown,,969 Spring St,Westbrook,ME,4092,#ERROR!,,,,"3.2 stars, 9 reviews",Approved
+Red Cross Beach,,Swimming lake,Unknown,,Red Cross Alley,Greenville,ME,4441,,,,,"4.8 stars, 11 reviews",Approved
+Chebeague Recreation Center,,Recreation center,Unknown,,382 N Rd,Chebeague Island,ME,4017,#ERROR!,,,,"4.3 stars, 8 reviews",Approved
+South Portland Community Center,,Recreation center,Unknown,,21 Nelson Rd,South Portland,ME,4106,#ERROR!,,,,"4.6 stars, 180 reviews",Approved
+Pearl Krongard’s Swim School,,Swimming instructor,Unknown,,8910 Stanford Blvd,Columbia,MD,21045,#ERROR!,,,,"4.3 stars, 73 reviews",Approved
+Goldfish Swim School - Columbia,,Swimming school,Unknown,,9315 Snowden River Pkwy,Columbia,MD,21046,#ERROR!,,,,"4.6 stars, 344 reviews",Approved
+Rockville Swim & Fitness Center,,Swimming facility,Unknown,,355 Martins Ln,Rockville,MD,20850,#ERROR!,,,,"4.4 stars, 554 reviews",Approved
+Goldfish Swim School - Rockville,,Swimming school,Unknown,,1701 Rockville Pike,Rockville,MD,20852,#ERROR!,,,,"4.6 stars, 259 reviews",Approved
+Shippey Aquatic Center,,Swimming facility,Unknown,,1817-1857 Dabney Dr,Pasadena,TX,77502,#ERROR!,,,,"5 stars, 16 reviews",Approved
+Center Lane Swim School,,Swimming school,Unknown,,175 Mitchells Chance Rd,Edgewater,MD,21037,#ERROR!,,,,"4.9 stars, 49 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,8910 Old Annapolis Rd Ste A,Columbia,MD,21045,#ERROR!,,,,"4.8 stars, 133 reviews",Approved
+Miss Jesse Swims,,Swimming school,Unknown,,Kerger Rd,Ellicott City,MD,21043,#ERROR!,,,,"5 stars, 17 reviews",Approved
+Goldfish Swim School - Silver Spring,,Swimming school,Unknown,,11800 Tech Rd,Silver Spring,MD,20904,#ERROR!,,,,"4.7 stars, 335 reviews",Approved
+KIDS FIRST Swim School - Severna Park,,Swimming school,Unknown,,470 Ritchie Hwy,Severna Park,MD,21146,#ERROR!,,,,"4.3 stars, 96 reviews",Approved
+British Swim School at LA Fitness - Severn,,Swimming school,Unknown,,7858-A Quarterfield Rd,Severn,MD,21144,#ERROR!,,,,"4.9 stars, 18 reviews",Approved
+West Laurel Swim Club,,Swim club,Unknown,,7203 Brooklyn Bridge Rd,Laurel,MD,20707,#ERROR!,,,,"4.6 stars, 67 reviews",Approved
+Fairland Sports and Aquatics Complex,,Sports complex,Unknown,,13820 Old Gunpowder Rd,Laurel,MD,20707,#ERROR!,,,,"4.4 stars, 395 reviews",Approved
+A1 Swimming,,Swimming school,Unknown,,7510 Maple Ave,Takoma Park,MD,20912,#ERROR!,,,,"4.8 stars, 43 reviews",Approved
+West Arundel Swim Club,,Swim club,Unknown,,259 Old Line Ave,Laurel,MD,20724,#ERROR!,,,,"4.5 stars, 39 reviews",Approved
+North Arundel Aquatic Center,,attractions,Unknown,,7888 Crain Hwy,Glen Burnie,MD,21061,#ERROR!,,,,"3.8 stars, 381 reviews",Approved
+SafeSplash Swim School – Owings Mills,,Swimming school,Unknown,,10040 Reisterstown Rd,Owings Mills,MD,21117,#ERROR!,,,,"4.8 stars, 22 reviews",Approved
+Pointer Ridge Swim & Racquet Club,,Swim club,Unknown,,16505 Poole Ln,Bowie,MD,20716,#ERROR!,,,,"4.6 stars, 27 reviews",Approved
+KIDS FIRST Swim School - Bowie,,Swimming school,Unknown,,6836 Race Track Rd,Bowie,MD,20715,#ERROR!,,,,"4 stars, 78 reviews",Approved
+Aqua-Tots Swim School Pasadena,,Swimming school,Unknown,,5968 Fairmont Pkwy,Pasadena,TX,77505,#ERROR!,,,,"4.7 stars, 76 reviews",Approved
+Mark`s Swim Academy,,Swimming instructor,Unknown,,"Atkinson pool, 40 Fairbank Cir",Sudbury,MA,1776,#ERROR!,,,,"4.9 stars, 27 reviews",Approved
+British Swim School at Boston Sports Club – Boylston,,Swimming school,Unknown,,501 Boylston St,Boston,MA,2116,#ERROR!,,,,"4.9 stars, 61 reviews",Approved
+British Swim School at DoubleTree Hilton – Milford,,Swimming school,Unknown,,11 Beaver St,Milford,MA,1757,#ERROR!,,,,"5 stars, 39 reviews",Approved
+Tiburon Swim Academy,,Swimming school,Unknown,,249 Lexington St,Waltham,MA,2452,#ERROR!,,,,"4.9 stars, 24 reviews",Approved
+British Swim School at LA Fitness - Saugus,,Swimming school,Unknown,,1450 Broadway,Saugus,MA,1906,#ERROR!,,,,"4.9 stars, 46 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,90 Pleasant Valley St,Methuen,MA,1844,#ERROR!,,,,"4.9 stars, 466 reviews",Approved
+British Swim School at Hart Center Pool at the Luth Athletic Complex,,Swimming school,Unknown,,1 College St,Worcester,MA,1610,#ERROR!,,,,"5 stars, 44 reviews",Approved
+Goldfish Swim School - Brookline,,Swimming school,Unknown,,20 Webster Pl,Brookline,MA,2445,#ERROR!,,,,"4.6 stars, 175 reviews",Approved
+British Swim School at Atkinson Pool – Sudbury,,Swimming school,Unknown,,40 Fairbank Cir,Sudbury,MA,1776,,,,,"5 stars, 27 reviews",Approved
+MIT Recreation - Swim Lessons,,Swimming school,Unknown,,120 Vassar St,Cambridge,MA,2139,#ERROR!,,,,"4.4 stars, 28 reviews",Approved
+Goldfish Swim School - Milford,,Swimming school,Unknown,,350 E Main St,Milford,MA,1757,#ERROR!,,,,"4.8 stars, 248 reviews",Approved
+Goldfish Swim School - Burlington,,Swimming school,Unknown,,10 B St,Burlington,MA,1803,#ERROR!,,,,"4.7 stars, 226 reviews",Approved
+Goldfish Swim School - Braintree,,Swimming school,Unknown,,579 Granite St,Braintree,MA,2184,#ERROR!,,,,"4.7 stars, 183 reviews",Approved
+Goldfish Swim School - Marlborough,,Swimming school,Unknown,,43 Apex Dr,Marlborough,MA,1752,#ERROR!,,,,"4.6 stars, 148 reviews",Approved
+SafeSplash Swim School - Lexington,,Swimming school,Unknown,,"Located In Aloft Hotel, 727 Marrett Rd",Lexington,MA,2421,#ERROR!,,,,"5 stars, 14 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,235 Old Connecticut Path,Framingham,MA,1701,#ERROR!,,,,"4.7 stars, 13 reviews",Approved
+Goldfish Swim School - Danvers,,Swimming school,Unknown,,"Liberty Tree Mall, 100 Independence Way Suite 137",Danvers,MA,1923,#ERROR!,,,,"4.9 stars, 120 reviews",Approved
+Boston University Swimming Lessons,,Swimming school,Unknown,,915 Commonwealth Ave,Boston,MA,2215,#ERROR!,,,,"4.3 stars, 12 reviews",Approved
+Aqua-Tots Swim School Norwood,,Swimming school,Unknown,,995 Providence Hwy,Norwood,MA,2062,#ERROR!,,,,"4.7 stars, 127 reviews",Approved
+Charles River Aquatics,,Swim club,Unknown,,900 Worcester St,Wellesley,MA,2482,#ERROR!,,,,"4.3 stars, 46 reviews",Approved
+British Swim School at LA Fitness - Shelby,,Swimming school,Unknown,,7500 26 Mile Rd,Shelby Township,MI,48316,#ERROR!,,,,"5 stars, 62 reviews",Approved
+Goldfish Swim School - Rochester,,Swimming school,Unknown,,550 South St,Rochester,MI,48307,#ERROR!,,,,"4.7 stars, 240 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,3609 Midway Dr,San Diego,CA,92110,#ERROR!,,,,"4.9 stars, 261 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,13805 Lakeside Cir,Sterling Heights,MI,48313,#ERROR!,,,,"4.8 stars, 360 reviews",Approved
+British Swim School – Dearborn Heights,,Swimming school,Unknown,,922 N Beech Daly Rd,Dearborn Heights,MI,48127,#ERROR!,,,,"4.8 stars, 124 reviews",Approved
+Aqua-Tots Swim School Dearborn,,Swimming school,Unknown,,24365 Michigan Ave,Dearborn,MI,48124,#ERROR!,,,,"4.7 stars, 472 reviews",Approved
+Goldfish Swim School - Grand Rapids,,Swimming school,Unknown,,2845 Thornhills Ave SE Suite S,Grand Rapids,MI,49546,#ERROR!,,,,"4.8 stars, 312 reviews",Approved
+"Noonan Family Swim School Inc - Linda Vista, CA",,Swimming instructor,Unknown,,2230 E Jewett St,San Diego,CA,92111,#ERROR!,,,,"4.9 stars, 74 reviews",Approved
+Goldfish Swim School -West Bloomfield,,Swimming school,Unknown,,6335-A Orchard Lake Rd,West Bloomfield Township,MI,48322,#ERROR!,,,,"4.8 stars, 194 reviews",Approved
+Goldfish Swim School - Birmingham,,Swimming school,Unknown,,2388 Cole St,Birmingham,MI,48009,#ERROR!,,,,"4.8 stars, 283 reviews",Approved
+Swim101 at the Great Lakes Athletic Club,,Swimming school,Unknown,,3800 Baldwin Rd,Lake Orion,MI,48359,#ERROR!,,,,"4.3 stars, 19 reviews",Approved
+Goldfish Swim School - Grandville,,Swimming school,Unknown,,4950 Wilson Ave SW,Wyoming,MI,49418,#ERROR!,,,,"4.8 stars, 171 reviews",Approved
+Aqua-Tots Swim School Farmington Hills,,Swimming school,Unknown,,31221 W 14 Mile Rd,Farmington Hills,MI,48334,#ERROR!,,,,"4.8 stars, 426 reviews",Approved
+Sunsational Swim School,,Swimming instructor,Unknown,,3052 Clairemont Dr,San Diego,CA,92109,#ERROR!,,,,"4.8 stars, 196 reviews",Approved
+Royal Swimming,,Swimming school,Unknown,,610 W 13 Mile Rd,Madison Heights,MI,48071,#ERROR!,,,,"4.8 stars, 20 reviews",Approved
+Oakland University Aquatic Center,,Indoor swimming pool,Unknown,,Pioneer Dr,Rochester,MI,48309,#ERROR!,,,,"4.4 stars, 44 reviews",Approved
+Aqua Tots Swim School Edina,,attractions,Unknown,,7645 Metro Blvd,Edina,MN,55439,#ERROR!,,,,"4.9 stars, 35 reviews",Approved
+British Swim School at LA Fitness - Richfield,,Swimming school,Unknown,,6501 Lyndale Ave S,Minneapolis,MN,55423,#ERROR!,,,,"5 stars, 38 reviews",Approved
+AMI Swim School,,Swimming instructor,Unknown,,1860 University Ave W,St Paul,MN,55104,,,,,"5 stars, 31 reviews",Approved
+Foss Swim School - St. Paul,,Swimming school,Unknown,,1166 University Ave W,St Paul,MN,55104,#ERROR!,,,,"4.8 stars, 142 reviews",Approved
+Goldfish Swim School - Minnetonka,,Swimming school,Unknown,,4729 County Rd 101,Minnetonka,MN,55345,#ERROR!,,,,"4.9 stars, 101 reviews",Approved
+Goldfish Swim School - Oakdale,,Swimming school,Unknown,,7055 10th St N Suite 100,Oakdale,MN,55128,#ERROR!,,,,"4.8 stars, 309 reviews",Approved
+Foss Swim School - Richfield,,Swimming school,Unknown,,2902 W 66th St,Richfield,MN,55423,#ERROR!,,,,"4.6 stars, 142 reviews",Approved
+Wise Swim School,,Swimming instructor,Unknown,,5992 149th St W,Apple Valley,MN,55124,#ERROR!,,,,"4.4 stars, 48 reviews",Approved
+Wise Swim School,,Swimming facility,Unknown,,10491 165th St W,Lakeville,MN,55044,#ERROR!,,,,"4.3 stars, 22 reviews",Approved
+Foss Swim School - Maple Grove,,Swimming school,Unknown,,9455 Garland Ln N,Maple Grove,MN,55311,#ERROR!,,,,"4.4 stars, 192 reviews",Approved
+Aqua-Tots Swim School Eagan,,Swimming school,Unknown,,2115 Cliff Rd,Eagan,MN,55122,#ERROR!,,,,"4.6 stars, 139 reviews",Approved
+Grove Cove Aquatic Center,,attractions,Unknown,,12951 Weaver Lake Rd,Maple Grove,MN,55369,#ERROR!,,,,"4.4 stars, 281 reviews",Approved
+Foss Swim School - St. Louis Park,,Swimming school,Unknown,,8438 MN-7,St Louis Park,MN,55426,#ERROR!,,,,"4.7 stars, 118 reviews",Approved
+Jean K Freeman Aquatic Center,,Aquatic center,Unknown,,1910 University Ave SE,Minneapolis,MN,55455,#ERROR!,,,,"4.7 stars, 92 reviews",Approved
+Making Waves Swim School,,Swimming school,Unknown,,1651 Jefferson Pkwy,Northfield,MN,55057,,,,,"5 stars, 2 reviews",Approved
+Foss Swim School - Apple Valley,,Swimming school,Unknown,,14969 Florence Trail Suite 200,Apple Valley,MN,55124,#ERROR!,,,,"4.7 stars, 27 reviews",Approved
+Foss Swim School - Woodbury,,Swimming school,Unknown,,10150 Hudson Rd #114,Woodbury,MN,55129,#ERROR!,,,,"4.5 stars, 140 reviews",Approved
+Foss Swim School - Plymouth,,Swimming school,Unknown,,3155 Empire Ln N,Plymouth,MN,55447,#ERROR!,,,,"4.5 stars, 105 reviews",Approved
+Goldfish Swim School - Eagan,,Swimming school,Unknown,,1278 Town Centre Dr #160,Eagan,MN,55123,#ERROR!,,,,"4.7 stars, 146 reviews",Approved
+Oxford Swim Club,,Club,Unknown,,306-310 Bramlett Blvd,Oxford,MS,38655,,,,,"4.8 stars, 13 reviews",Approved
+Tupelo Aquatic Center,,Aquatic center,Unknown,,692 N Veterans Memorial Blvd,Tupelo,MS,38804,#ERROR!,,,,"4.2 stars, 208 reviews",Approved
+Sunkist Swim Team,,Swimming pool,Unknown,,690 Liberty Rd,Flowood,MS,39232,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Mississippi Makos Swim Team,,Swim club,Unknown,,2625 Courthouse Cir,Flowood,MS,39232,#ERROR!,,,,,Approved
+Maley Swim School,,Swimming school,Unknown,,501 Lake Harbour Dr,Ridgeland,MS,39157,#ERROR!,,,,"4.4 stars, 35 reviews",Approved
+Biloxi Elite Swim Team,,Swim club,Unknown,,1384 Father Ryan Ave,Biloxi,MS,39530,#ERROR!,,,,"4.9 stars, 11 reviews",Approved
+Lil Shrimps Swim Academy,,Swimming instructor,Unknown,,17218 Doc Lizana Rd,Gulfport,MS,39503,#ERROR!,,,,"5 stars, 7 reviews",Approved
+Laurel Swim Association,,Association / Organization,Unknown,,,Laurel,MS,39443,#ERROR!,,,,"5 stars, 4 reviews",Approved
+SafeSplash Swim School - Southaven,,Swimming school,Unknown,,6753 Airways Blvd,Southaven,MS,38671,#ERROR!,,,,"3 stars, 2 reviews",Approved
+Biloxi Natatorium,,attractions,Unknown,,1384 Father Ryan Ave,Biloxi,MS,39530,#ERROR!,,,,"4.3 stars, 240 reviews",Approved
+Delta State University Swimming Pool,,Swimming pool,Unknown,,1417 Maple St,Cleveland,MS,38732,#ERROR!,,,,"4.8 stars, 53 reviews",Approved
+Stark Recreation Center,,Recreation center,Unknown,,521 S 11th St,Columbus,MS,39701,#ERROR!,,,,"4.7 stars, 41 reviews",Approved
+Total Body Submersion,,Swimming school,Unknown,,125 Camp Pioneer Rd,Pearl,MS,39208,#ERROR!,,,,"4.7 stars, 28 reviews",Approved
+Crossgates Pool,,Swimming facility,Unknown,,113 Woodgate Dr,Brandon,MS,39042,#ERROR!,,,,"4.7 stars, 35 reviews",Approved
+Philadelphia Athletic Club,,Gym,Unknown,,113 Lakeside Dr,Philadelphia,MS,39350,#ERROR!,,,,"4.3 stars, 45 reviews",Approved
+Olive Branch Family YMCA,,Non-profit organization,Unknown,,8555 Goodman Rd,Olive Branch,MS,38654,#ERROR!,,,,"4.4 stars, 361 reviews",Approved
+South Campus Recreation Center - University of Mississippi,,Recreation center,Unknown,,980 Whirlpool Dr,Oxford,MS,38655,#ERROR!,,,,"4.6 stars, 57 reviews",Approved
+Moncrief Park,,attractions,Unknown,,"Moncrief Park, Moncrief Park St",Starkville,MS,39759,#ERROR!,,,,"4.4 stars, 111 reviews",Approved
+Oxford YMCA,,Non-profit organization,Unknown,,703 N Lamar Blvd,Oxford,MS,38655,#ERROR!,,,,"4.4 stars, 12 reviews",Approved
+Twin Rivers Recreation,,Recreation center,Unknown,,503 W Barton Ave,Greenwood,MS,38930,#ERROR!,,,,"4.4 stars, 23 reviews",Approved
+Barron Swim School,,Swimming instructor,Unknown,,330 Midfield Cir,O'Fallon,MO,63368,#ERROR!,,,,"4.9 stars, 106 reviews",Approved
+MizzouRec,,Recreation center,Unknown,,1000 Rollins St,Columbia,MO,65203,#ERROR!,,,,"4.4 stars, 466 reviews",Approved
+Rockwood Swim Club,,Swim club,Unknown,,16025 Clayton Rd,Manchester,MO,63011,#ERROR!,,,,"4.7 stars, 29 reviews",Approved
+Missouri State Aquatics,,Swim club,Unknown,,731 E Monroe St,Springfield,MO,65806,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Barron Swim School,,Swimming school,Unknown,,11158 Lindbergh Business Ct,St. Louis,MO,63123,#ERROR!,,,,"5 stars, 286 reviews",Approved
+Westlake Aquatic Center,,Swimming facility,Unknown,,134 N Fairgrounds Rd,Gravois Mills,MO,65037,#ERROR!,,,,"4.7 stars, 88 reviews",Approved
+Carondelet Park Rec Complex,,Gym,Unknown,,930 Holly Hills Ave,St. Louis,MO,63111,#ERROR!,,,,"4.3 stars, 570 reviews",Approved
+Ackermann's Swim Camp,,Summer camp organizer,Unknown,,1044 Curran Ave,Kirkwood,MO,63122,#ERROR!,,,,"4.6 stars, 10 reviews",Approved
+Chesterfield Family Aquatic Center,,attractions,Unknown,,16365 Lydia Hill Dr,Chesterfield,MO,63017,#ERROR!,,,,"4.5 stars, 241 reviews",Approved
+Goldfish Swim School - Warson Woods,,Swimming school,Unknown,,9967 Manchester Rd,Warson Woods,MO,63122,#ERROR!,,,,"5 stars, 152 reviews",Approved
+Tiger Typhoon Aquatic Center,,Swimming pool,Unknown,,"Jr. Drive, 105 J.H. Williamson, 105 Jh Williamson Jr Dr",St Robert,MO,65584,#ERROR!,,,,"4.2 stars, 184 reviews",Approved
+Eldon Aquatic Center,,attractions,Unknown,,500 Franklin Ave,Eldon,MO,65026,#ERROR!,,,,"4.5 stars, 287 reviews",Approved
+Tiny Fins Survival Swim,,Swimming school,Unknown,,1869 N State Hwy CC,Nixa,MO,65714,#ERROR!,,,,"5 stars, 180 reviews",Approved
+Columbia Swim Club,,Swim club,Unknown,,1104 N Providence Rd,Columbia,MO,65203,,,,,"4.7 stars, 9 reviews",Approved
+Wilson's Beach Club,,Swimming pool,Unknown,,4600 Forum Blvd,Columbia,MO,65203,#ERROR!,,,,"4.3 stars, 77 reviews",Approved
+Diventures,,attractions,Unknown,,5225 S Campbell Ave,Springfield,MO,65810,#ERROR!,,,,"4.8 stars, 355 reviews",Approved
+Chesterfield Family Center,,attractions,Unknown,,2511 W Republic Rd,Springfield,MO,65807,#ERROR!,,,,"4.5 stars, 858 reviews",Approved
+Renaud Center,,Fitness center,Unknown,,"2650 Tri, Sports Cir",O'Fallon,MO,63368,#ERROR!,,,,"4.3 stars, 364 reviews",Approved
+Montana Swim Academy at Holiday Inn Express & Suites Great Falls,,Swimming school,Unknown,,1625 Market Pl Dr,Great Falls,MT,59404,#ERROR!,,,,,Approved
+Take Me To The Water Swim School,,Swimming school,Unknown,,"The Montana, 247 W 87th St",New York,NY,10024,#ERROR!,,,,"3.7 stars, 6 reviews",Approved
+LowCountry Swim School,,Baby swimming school,Unknown,,,,,,#ERROR!,,,,"4.8 stars, 54 reviews",Approved
+City of Bozeman Swim Center,,attractions,Unknown,,1211 W Main St,Bozeman,MT,59715,#ERROR!,,,,"4.3 stars, 92 reviews",Approved
+Roundup Swimming Pool,,attractions,Unknown,,800-898 2nd St E,Roundup,MT,59072,,,,,"4.5 stars, 48 reviews",Approved
+Helena Dolphins Swim Team,,Sports club,Unknown,,1280 N Montana Ave,Helena,MT,59601,#ERROR!,,,,"5 stars, 20 reviews",Approved
+Lions Club Park-swimming pool,,Swimming pool,Unknown,,R3H2+PWJ,Big Timber,MT,59011,,,,,"5 stars, 1 reviews",Approved
+Whitehall community pool,,Swimming pool,Unknown,,3 Yellowstone Trail,Whitehall,MT,59759,,,,,"4.5 stars, 2 reviews",Approved
+Barracuda Swim Club LLC,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 11 reviews",Approved
+Bitterroot Aquatic Center,,Swimming pool,Unknown,,59 Kurtz Ln,Hamilton,MT,59840,#ERROR!,,,,"4.2 stars, 52 reviews",Approved
+Circle Swimming Pool,,Swimming pool,Unknown,,"Circle Park, 1300 Park Dr",Circle,MT,59215,#ERROR!,,,,"4.5 stars, 2 reviews",Approved
+Granite Health and Fitness (Granite Sport),,Gym,Unknown,,3838 Avenue B,Billings,MT,59102,#ERROR!,,,,"4.6 stars, 247 reviews",Approved
+South Park,,attractions,Unknown,,"South Broadway, 6th Ave S",Billings,MT,59101,#ERROR!,,,,"4 stars, 558 reviews",Approved
+Capital City Health Club,,Fitness center,Unknown,,1280 N Montana Ave,Helena,MT,59601,#ERROR!,,,,"3.8 stars, 248 reviews",Approved
+Bozeman Hot Springs,,Gym,Unknown,,81123 Gallatin Rd,Bozeman,MT,59718,#ERROR!,,,,"4.4 stars, 2802 reviews",Approved
+Swimtastic Swim School - Omaha (Northwest),,Swimming school,Unknown,,2920 N 118th St,Omaha,NE,68164,#ERROR!,,,,"4.9 stars, 119 reviews",Approved
+Goldfish Swim School - West Omaha,,Swimming school,Unknown,,2502 S 133rd Plaza #102,Omaha,NE,68144,#ERROR!,,,,"4.9 stars, 255 reviews",Approved
+Swimtastic Swim School - Lincoln,,Swimming school,Unknown,,7911 Pioneers Blvd,Lincoln,NE,68506,#ERROR!,,,,"4.8 stars, 125 reviews",Approved
+Aqua-Tots Swim School Omaha,,Swimming school,Unknown,,14242 Fort St,Omaha,NE,68164,#ERROR!,,,,"4.5 stars, 152 reviews",Approved
+LifeSTROKES Swim School,,Swimming school,Unknown,,1601 Normandy Ct,Lincoln,NE,68512,#ERROR!,,,,"4.9 stars, 91 reviews",Approved
+Country Swim School,,Swimming instructor,Unknown,,16844 S 120th St,Bennet,NE,68317,#ERROR!,,,,"4.9 stars, 16 reviews",Approved
+Goldfish Swim School - Sarpy County,,Swimming school,Unknown,,10601 S 72nd St,Papillion,NE,68046,#ERROR!,,,,"4.9 stars, 79 reviews",Approved
+Sides Sisters Swim School,,Swimming school,Unknown,,10802 Forrest Dr,Omaha,NE,68144,,,,,"4.8 stars, 12 reviews",Approved
+Rhonda's Swim Academy,,Swimming school,Unknown,,3725 Randolph St,Lincoln,NE,68510,#ERROR!,,,,"4 stars, 26 reviews",Approved
+Swimtastic Swim School - Omaha (Southwest),,Swimming school,Unknown,,7051 S 181st St,Omaha,NE,68136,#ERROR!,,,,"4.9 stars, 119 reviews",Approved
+Aqua-Tots Swim School Bellevue,,Swimming school,Unknown,,3512 Samson Way,Bellevue,NE,68123,#ERROR!,,,,"4.3 stars, 62 reviews",Approved
+Swimtastic Swim School - Elkhorn,,Swimming instructor,Unknown,,3404 N 191st Ave,Omaha,NE,68022,#ERROR!,,,,"4.6 stars, 33 reviews",Approved
+Swimtastic Swim School - La Vista,,Swimming school,Unknown,,9810 Giles Rd,La Vista,NE,68128,#ERROR!,,,,"4.9 stars, 92 reviews",Approved
+The Salvation Army Omaha Kroc Center,,Community center,Unknown,,2825 Y St,Omaha,NE,68107,#ERROR!,,,,"4.5 stars, 486 reviews",Approved
+Dillon Family Aquatic Center,,Indoor swimming pool,Unknown,,806 N Lincoln Ave,Fremont,NE,68025,#ERROR!,,,,"4.5 stars, 46 reviews",Approved
+(Private) Rockbrook Swimming Pool,,Swim club,Unknown,,10800 W Center Rd,Omaha,NE,68144,#ERROR!,,,,"4.6 stars, 46 reviews",Approved
+Nebraska City Water Park,,Swimming pool,Unknown,,,Nebraska City,NE,68410,#ERROR!,,,,"4.7 stars, 114 reviews",Approved
+Diventures,,attractions,Unknown,,4303 S 121st Plaza,Omaha,NE,68137,#ERROR!,,,,"4.7 stars, 268 reviews",Approved
+Papillion Landing Community Recreation Center,,Recreation center,Unknown,,1046 W Lincoln St,Papillion,NE,68046,#ERROR!,,,,"4.5 stars, 449 reviews",Approved
+Bellevue Swim Club- Nebraska,,Club,Unknown,,1501 Thurston Ave,Bellevue,NE,68123,#ERROR!,,,,"3 stars, 2 reviews",Approved
+Little Guppies Aquatics Private Swim Lessons,,Swimming school,Unknown,,1815 Campbellton Hwy,Rehobeth,AL,36301,,,,,"5 stars, 1 reviews",Approved
+Alpine Hills Swim Club,,Swimming pool,Unknown,,5760 Honor St,Mobile,AL,36608,#ERROR!,,,,"4.8 stars, 11 reviews",Approved
+Stevens Swim School,,Swimming school,Unknown,,1110 Camille Terrace E,Northport,AL,35473,#ERROR!,,,,,Approved
+Fairhope Swim,,Swimming instructor,Unknown,,803 N Greeno Rd,Fairhope,AL,36532,#ERROR!,,,,,Approved
+"Ashley’s Swim Academy, LLC",,Swimming school,Unknown,,975 Eleanor Terrace,Childersburg,AL,35044,#ERROR!,,,,"5 stars, 13 reviews",Approved
+Aquadome Pool,,Swimming pool,Unknown,,1202 5th Ave SW,Decatur,AL,35601,#ERROR!,,,,"4.2 stars, 85 reviews",Approved
+West Mobile Swim Club,,Swim club,Unknown,,1355 Snow Rd,Mobile,AL,36695,#ERROR!,,,,"4.6 stars, 59 reviews",Approved
+Redstone Aquatics Center,,Indoor swimming pool,Unknown,,3705 Aerobee Rd,Huntsville,AL,35805,#ERROR!,,,,"5 stars, 14 reviews",Approved
+Polar Paradise Pool,,Indoor swimming pool,Unknown,,Bldg. 690,Joint Base Elmendorf-Richardson,AK,99505,#ERROR!,,,,"4.4 stars, 46 reviews",Approved
+Gateway Aquatic Center,,Aquatic center,Unknown,,601 Schoenbar Rd,Ketchikan,AK,99901,#ERROR!,,,,"4.7 stars, 48 reviews",Approved
+Dimond Park Aquatic Center,,Swimming facility,Unknown,,3045 Diamond Pk Lp,Juneau,AK,99801,#ERROR!,,,,"4.4 stars, 218 reviews",Approved
+Palmer Pool,,Indoor swimming pool,Unknown,,1170 W Bogard Rd,Palmer,AK,99645,#ERROR!,,,,"4.4 stars, 49 reviews",Approved
+Mary Siah Recreation Center,,Recreation center,Unknown,,965 14th Ave,Fairbanks,AK,99701,#ERROR!,,,,"4.4 stars, 116 reviews",Approved
+Yukon Kuskokwim Fitness Center - YKFC,,Physical fitness program,Unknown,,267 Akiachak Dr,Bethel,AK,99559,#ERROR!,,,,"4.7 stars, 75 reviews",Approved
+Dimond Pool,,attractions,Unknown,,2909 W 88th Ave,Anchorage,AK,99502,#ERROR!,,,,"3.9 stars, 50 reviews",Approved
+Wasilla High School Swimming Pool,,Swimming facility,Unknown,,701 E Bogard Rd,Wasilla,AK,99654,#ERROR!,,,,"4.4 stars, 55 reviews",Approved
+Moseley Sports Center,,Sports complex,Unknown,,4400 University Dr,Anchorage,AK,99508,#ERROR!,,,,"4.5 stars, 8 reviews",Approved
+Alaska K9 Aquatics,,Dog trainer,Unknown,,549 W International Airport Rd b9,Anchorage,AK,99518,#ERROR!,,,,"4.8 stars, 68 reviews",Approved
+Hubbard Family Swim School,,Swimming instructor,Unknown,,1061 N Dobson Rd #101,Mesa,AZ,85201,#ERROR!,,,,"4.9 stars, 210 reviews",Approved
+SWIMkids USA,,Swimming school,Unknown,,2725 W Guadalupe Rd,Mesa,AZ,85202,#ERROR!,,,,"4.7 stars, 120 reviews",Approved
+Kidtastics,,Swimming school,Unknown,,"Mobile Services Mailing Address only, 8485 E McDonald Dr",Scottsdale,AZ,85250,#ERROR!,,,,"5 stars, 106 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,1328 N Cooper Rd,Gilbert,AZ,85233,#ERROR!,,,,"4.9 stars, 278 reviews",Approved
+Gold Medal Swim School,,Swimming school,Unknown,,6909 W Ray Rd #27,Chandler,AZ,85226,#ERROR!,,,,"4.8 stars, 257 reviews",Approved
+Swim First Private Swim Lessons,,Swimming instructor,Unknown,,East Valley,Gilbert,AZ,85234,#ERROR!,,,,"4.9 stars, 39 reviews",Approved
+Goldfish Swim School - Gilbert,,Swimming school,Unknown,,4588 S Higley Rd,Gilbert,AZ,85297,#ERROR!,,,,"4.8 stars, 109 reviews",Approved
+Aqua-Tots Swim School Old Town Scottsdale,,Swimming school,Unknown,,7624 E Indian School Rd,Scottsdale,AZ,85251,#ERROR!,,,,"4.9 stars, 141 reviews",Approved
+Aqua-Tots Swim School Ahwatukee,,Swimming school,Unknown,,4735 E Ray Rd,Phoenix,AZ,85044,#ERROR!,,,,"4.8 stars, 330 reviews",Approved
+Trojan Swim Academy,,Swimming instructor,Unknown,,U A L R Campus Dr,Little Rock,AR,72204,,,,,"4.5 stars, 2 reviews",Approved
+Survival Swimmers,,Swimming school,Unknown,,1800 W Brooks Pl,Rogers,AR,72758,#ERROR!,,,,"5 stars, 8 reviews",Approved
+Fayetteville Athletic Club,,Fitness center,Unknown,,2920 E Zion Rd,Fayetteville,AR,72703,#ERROR!,,,,"4 stars, 123 reviews",Approved
+Pine Bluff Aquatic Center,,Swimming pool,Unknown,,400 E 11th Ave,Pine Bluff,AR,71601,#ERROR!,,,,"4.5 stars, 140 reviews",Approved
+Shrimply the Best NWA Survival Swimming,,Swimming school,Unknown,,4012 Saint Johns Wood St,Springdale,AR,72764,#ERROR!,,,,"5 stars, 46 reviews",Approved
+Safety Before Skill Swim School - WLR,,Swimming instructor,Unknown,,4701 Sam Peck Rd,Little Rock,AR,72223,#ERROR!,,,,"4.3 stars, 52 reviews",Approved
+The School of Yaya's Fishes,,Swimming school,Unknown,,5047 AR-158,Lake City,AR,72437,#ERROR!,,,,"4.8 stars, 6 reviews",Approved
+Clarksville Aquatic Center,,attractions,Unknown,,1611 W Oakland St,Clarksville,AR,72830,#ERROR!,,,,"4.3 stars, 545 reviews",Approved
+Little Rock Athletic Club,,Fitness center,Unknown,,4610 Sam Peck Rd,Little Rock,AR,72223,#ERROR!,,,,"4.8 stars, 727 reviews",Approved
+Pocahontas Aquatic Center Indoor Facility,,Swimming facility,Unknown,,300 Geneva Dr,Pocahontas,AR,72455,#ERROR!,,,,"4.6 stars, 255 reviews",Approved
+Russellville Aquatic Center,,attractions,Unknown,,1300 N Phoenix Ave,Russellville,AR,72801,#ERROR!,,,,"4.4 stars, 284 reviews",Approved
+Maumelle Aquatic Center,,Swimming pool,Unknown,,1100 Edgewood Dr,Maumelle,AR,72113,#ERROR!,,,,"4.6 stars, 78 reviews",Approved
+Cabot Aquatic Park,,Water park,Unknown,,1245 Bill Foster Memorial Hwy W,Cabot,AR,72023,#ERROR!,,,,"4.3 stars, 575 reviews",Approved
+Spa City ISR,,Swimming instructor,Unknown,,276 Pittman Rd,Hot Springs,AR,71913,#ERROR!,,,,"5 stars, 6 reviews",Approved
+Parting Waters,,Swimming instructor,Unknown,,6401 Boone Rd,Bryant,AR,72022,#ERROR!,,,,"5 stars, 1 reviews",Approved
+British Swim School at California Total Fitness - Manteca,,Swimming school,Unknown,,1090 N Main St,Manteca,CA,95336,#ERROR!,,,,"4.9 stars, 81 reviews",Approved
+Swim To Shore Swim School,,Swimming school,Unknown,,25395 Madison Ave #101,Murrieta,CA,92562,#ERROR!,,,,"4.9 stars, 77 reviews",Approved
+French Valley Swim Academy,,Swimming school,Unknown,,36560 Penfield Ln,Winchester,CA,92596,#ERROR!,,,,"4.8 stars, 152 reviews",Approved
+Sunsational Swim School - Private Swim Lessons,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 465 reviews",Approved
+K&K Swimming LA,,Swimming school,Unknown,,7300 Franklin Ave APT 448,Los Angeles,CA,90046,#ERROR!,,,,"4.9 stars, 64 reviews",Approved
+Safe Waves Swim School,,Swimming school,Unknown,,6454 Hesperia Ave,Reseda,CA,91335,#ERROR!,,,,"5 stars, 45 reviews",Approved
+Premier Swim Academy,,Swimming school,Unknown,,7827 Haven Ave,Rancho Cucamonga,CA,91730,#ERROR!,,,,"4.6 stars, 129 reviews",Approved
+Sunsational Swim School - Private Swim Lessons at Home - Lifeguard Service,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.6 stars, 19 reviews",Approved
+Little Whale Swim School,,Swimming school,Unknown,,4106 El Camino Ave,Sacramento,CA,95821,#ERROR!,,,,"4.5 stars, 161 reviews",Approved
+Aqua-Tots Swim School Rancho Cucamonga,,Swimming school,Unknown,,8750 Base Line Rd,Rancho Cucamonga,CA,91701,#ERROR!,,,,"4.8 stars, 279 reviews",Approved
+Swell Swim School,,Swimming school,Unknown,,6894 E Clinton Ave,Fresno,CA,93727,#ERROR!,,,,"4.8 stars, 73 reviews",Approved
+Fit Fins Swim School,,Swimming school,Unknown,,908 W Arrow Hwy,San Dimas,CA,91773,#ERROR!,,,,"5 stars, 11 reviews",Approved
+Blake Swim School,,Swimming school,Unknown,,170 W Foothill Blvd,Monrovia,CA,91016,#ERROR!,,,,"4.6 stars, 113 reviews",Approved
+5 Cities Swim School,,Swimming school,Unknown,,425 Traffic Way,Arroyo Grande,CA,93420,#ERROR!,,,,"4.9 stars, 238 reviews",Approved
+Sunshine Swim Lessons,,Swimming instructor,Unknown,,125 Harbor Way,Santa Barbara,CA,93101,#ERROR!,,,,"5 stars, 39 reviews",Approved
+Jim Herrick Swim School,,Swimming school,Unknown,,11846 Kling St,Valley Village,CA,91607,#ERROR!,,,,"4.6 stars, 31 reviews",Approved
+Bakersfield Swim Academy,,attractions,Unknown,,3311 Allen Rd,Bakersfield,CA,93314,#ERROR!,,,,"4.7 stars, 116 reviews",Approved
+Emler Swim School of Colorado Springs - Briargate,,Swimming school,Unknown,,5470 Powers Center Point #130,Colorado Springs,CO,80920,#ERROR!,,,,"4.7 stars, 115 reviews",Approved
+Colorado Clownfish Swim Club,,Swimming school,Unknown,,8310 W Coal Mine Ave,Littleton,CO,80123,#ERROR!,,,,"4.6 stars, 139 reviews",Approved
+Little Fins Swim School,,Swimming school,Unknown,,1625 Medical Center Point #160,Colorado Springs,CO,80907,#ERROR!,,,,"4.8 stars, 425 reviews",Approved
+Goldfish Swim School - Washington Park,,Swimming school,Unknown,,300 E Alameda Ave B,Denver,CO,80209,#ERROR!,,,,"4.8 stars, 58 reviews",Approved
+British Swim School of 24 Hour Fitness – Lafayette,,Swimming school,Unknown,,851 US-287,Lafayette,CO,80026,#ERROR!,,,,"4.9 stars, 108 reviews",Approved
+Blue Dolphin Swim School,,Swimming school,Unknown,,7655 W 108th Ave,Westminster,CO,80021,#ERROR!,,,,"4.7 stars, 102 reviews",Approved
+Aqua Star Swim Lessons,,Swimming school,Unknown,,4625 W Warren Ave,Denver,CO,80219,#ERROR!,,,,"5 stars, 35 reviews",Approved
+British Swim School at Courtyard by Marriott - Colorado Springs South,,Swimming school,Unknown,,2570 Tenderfoot Hill St,Colorado Springs,CO,80906,#ERROR!,,,,"5 stars, 19 reviews",Approved
+Swimming Simply,,Swimming instructor,Unknown,,3974 Youngfield St,Wheat Ridge,CO,80033,#ERROR!,,,,"4.3 stars, 75 reviews",Approved
+Makara Swim School,,Swimming school,Unknown,,305 Melba St #1413,Dallas,TX,75208,#ERROR!,,,,"5 stars, 12 reviews",Approved
+Dolphinz Swim School,,Swimming school,Unknown,,18920 Plaza Dr,Parker,CO,80134,#ERROR!,,,,"4.4 stars, 70 reviews",Approved
+Dallas Swim,,Swimming instructor,Unknown,,2201 N Stemmons Fwy,Dallas,TX,75207,#ERROR!,,,,"4.9 stars, 110 reviews",Approved
+Goldfish Swim School - Central Park,,Swimming school,Unknown,,9119 50th Ave,Denver,CO,80238,#ERROR!,,,,"4.6 stars, 232 reviews",Approved
+Denver Divers and The Swim School of Denver,,attractions,Unknown,,557 Milwaukee St,Denver,CO,80206,#ERROR!,,,,"4.8 stars, 134 reviews",Approved
+urSwim at LA Fitness Milford,,Gym,Unknown,,1201 Boston Post Rd #2090,Milford,CT,6460,#ERROR!,,,,"4.7 stars, 20 reviews",Approved
+Bristol City Indoor Pool,,attractions,Unknown,,325 Mix St,Bristol,CT,6010,#ERROR!,,,,"4.8 stars, 33 reviews",Approved
+Infant Aquatics CT,,Swimming instructor,Unknown,,12 State St,Ansonia,CT,6401,#ERROR!,,,,"5 stars, 49 reviews",Approved
+Madison Racquet & Swim Club,,Club,Unknown,,36 Scotland Rd,Madison,CT,6443,#ERROR!,,,,"4.5 stars, 33 reviews",Approved
+Bulldog Swim Academy,,Swimming school,Unknown,,200 Indian River Rd,Orange,CT,6477,#ERROR!,,,,"4.8 stars, 17 reviews",Approved
+Gregory Manor Swim Club,,Club,Unknown,,31 Topfield Rd,Danbury,CT,6811,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Connecticut Aquatic Club,,Swim club,Unknown,,"Gym, 1084 Shennecossett Rd",Groton,CT,6340,,,,,"4.9 stars, 8 reviews",Approved
+Canyons Aquatic Club,,Swim club,Unknown,,26455 Rockwell Canyon Rd,Santa Clarita,CA,91355,#ERROR!,,,,"3.8 stars, 5 reviews",Approved
+Waterworks Swim School Santa Clarita,,Swimming school,Unknown,,26455 Golden Valley Rd,Santa Clarita,CA,91350,#ERROR!,,,,"5 stars, 1 reviews",Approved
+British Swim School at Newark Senior Center,,Swimming school,Unknown,,200 Whitechapel Dr,Newark,DE,19713,#ERROR!,,,,"5 stars, 128 reviews",Approved
+Diamond State Aquatics,,Swimming school,Unknown,,1001 Rockland Rd,Wilmington,DE,19803,#ERROR!,,,,,Approved
+Swim Lessons With Karl,,Swimming instructor,Unknown,,26408 Doveweed Way,Santa Clarita,CA,91350,#ERROR!,,,,"5 stars, 18 reviews",Approved
+Academy Swim Club,,Swimming school,Unknown,,28079 Smyth Dr,Valencia,CA,91355,#ERROR!,,,,"4.5 stars, 56 reviews",Approved
+UNIVERSITY OF DELAWARE WOMEN'S SWIMMING AND DIVING,,Academic department,Unknown,,26 N College Ave,Newark,DE,19716,,,,,,Approved
+Harry W. Rawstrom Natatorium,,Swimming pool,Unknown,,26 N College Ave,Newark,DE,19716,#ERROR!,,,,"4.3 stars, 9 reviews",Approved
+Dfit Plus,,Fitness center,Unknown,,2150 New Castle Ave,New Castle,DE,19720,#ERROR!,,,,"3.8 stars, 99 reviews",Approved
+D-Fit,,Fitness center,Unknown,,4905 Mermaid Blvd,Wilmington,DE,19808,#ERROR!,,,,"4 stars, 145 reviews",Approved
+Crestmoor Swim Club,,Club,Unknown,,640 W Summit Ave,Wilmington,DE,19804,#ERROR!,,,,"4.5 stars, 77 reviews",Approved
+Ashbourne Swim Club,,attractions,Unknown,,900 Darley Rd,Wilmington,DE,19810,#ERROR!,,,,"4.4 stars, 51 reviews",Approved
+Aqua-Tots Swim School Sarasota,,Swimming school,Unknown,,3750 S Tuttle Ave,Sarasota,FL,34239,#ERROR!,,,,"4.9 stars, 327 reviews",Approved
+Baby Otter Swim School - West Palm Beach & Surrounding Areas,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.9 stars, 78 reviews",Approved
+Little Aquatics Swim Lessons,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.8 stars, 721 reviews",Approved
+Florida Swim Company,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.8 stars, 144 reviews",Approved
+Watermelon Swim Riverview,,Swimming school,Unknown,,10459 Gibsonton Dr,Riverview,FL,33578,#ERROR!,,,,"4.9 stars, 561 reviews",Approved
+Aquachamps Swim School,,Swimming school,Unknown,,509 NE 43rd St,Oakland Park,FL,33334,#ERROR!,,,,"4.8 stars, 222 reviews",Approved
+Swim Gym of Lakewood Ranch LLC,,Baby swimming school,Unknown,,5002 Lena Rd Unit #102,Bradenton,FL,34211,#ERROR!,,,,"4.9 stars, 126 reviews",Approved
+Baby Otter Swim School - Southwest Orlando,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 26 reviews",Approved
+Miracle Swimming School for Adults,,Swimming school,Unknown,,"1217 East Ave, South 207",Sarasota,FL,34239,#ERROR!,,,,"4.9 stars, 50 reviews",Approved
+SwimRight Academy Miami,,Swimming school,Unknown,,18900 NE 25th Ave,Miami,FL,33180,#ERROR!,,,,"4.8 stars, 201 reviews",Approved
+Miami Swimming Academy,,Swim club,Unknown,,711 N Federal Hwy,Hallandale Beach,FL,33009,#ERROR!,,,,"4.9 stars, 56 reviews",Approved
+Water Wings Swim,,Swimming instructor,Unknown,,2850 Glenwood Ave SE,Atlanta,GA,30317,#ERROR!,,,,"5 stars, 57 reviews",Approved
+Gabrielsen Natatorium,,Indoor swimming pool,Unknown,,330 River Rd,Athens,GA,30602,,,,,"4.7 stars, 20 reviews",Approved
+Gwinnett Swim,,Swimming school,Unknown,,5396 Lanier Islands Pkwy,Buford,GA,30518,#ERROR!,,,,"4.8 stars, 106 reviews",Approved
+Student Recreation Center,,Recreation center,Unknown,,1300 Sustella Ave,Valdosta,GA,31601,#ERROR!,,,,"4.5 stars, 68 reviews",Approved
+Ace Aquatic Club,,Swimming pool,Unknown,,3050 Jim Owens Rd NW,Kennesaw,GA,30152,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Dive N' Dash Adult swimming lessons,,attractions,Unknown,,3675 Macland Rd #1336,Powder Springs,GA,30127,#ERROR!,,,,"4.9 stars, 63 reviews",Approved
+Cobb Aquatic Center,,Aquatic center,Unknown,,520 Fairground St SE,Marietta,GA,30060,#ERROR!,,,,"4.4 stars, 296 reviews",Approved
+Goode Strokes Swim School,,Swimming school,Unknown,,6088 Covington Hwy,Lithonia,GA,30058,#ERROR!,,,,"5 stars, 8 reviews",Approved
+The Oconee Club Pool,,Swimming pool,Unknown,,1011 Robinhood Rd,Watkinsville,GA,30677,#ERROR!,,,,"4.9 stars, 13 reviews",Approved
+Dynamo Swim School,,Swimming instructor,Unknown,,450 East Lake Dr,Decatur,GA,30030,#ERROR!,,,,"4.8 stars, 4 reviews",Approved
+Goldfish Swim School - Nampa,,Swimming school,Unknown,,1205 N Galleria Dr,Nampa,ID,83687,#ERROR!,,,,"5 stars, 70 reviews",Approved
+Lava Hot Springs Olympic Swimming Complex,,attractions,Unknown,,195 N Center St,Lava Hot Springs,ID,83246,#ERROR!,,,,"4.6 stars, 2404 reviews",Approved
+Aqua-Tots Swim School Boise,,Swimming school,Unknown,,3116 E State St,Eagle,ID,83616,#ERROR!,,,,"4.6 stars, 164 reviews",Approved
+Water Wings Swim School,,Swimming school,Unknown,,875 E Plaza Dr,Eagle,ID,83616,#ERROR!,,,,"4.6 stars, 42 reviews",Approved
+Green Canyon Hot Springs and Resort,,attractions,Unknown,,2432 N Canyon Creek Rd,Newdale,ID,83436,#ERROR!,,,,"4.3 stars, 596 reviews",Approved
+Starfish Swim School,,Swimming school,Unknown,,2275 W Clearvue Ct,Eagle,ID,83616,#ERROR!,,,,"5 stars, 18 reviews",Approved
+Harward Recreation Center,,Recreation center,Unknown,,131 Constitution Way,Nampa,ID,83686,#ERROR!,,,,"4.5 stars, 991 reviews",Approved
+Swim4Life Swim Academy,,Swimming instructor,Unknown,,7780 N Mineral Dr,Coeur d'Alene,ID,83815,#ERROR!,,,,"5 stars, 31 reviews",Approved
+SafeSplash+SwimLabs of Coeur d' Alene,,Swimming school,Unknown,,3810 N Schreiber Way,Coeur d'Alene,ID,83815,#ERROR!,,,,"4.6 stars, 70 reviews",Approved
+FLOAT Swim Academy,,Swimming instructor,Unknown,,7780 N Mineral Dr,Coeur d'Alene,ID,83815,#ERROR!,,,,"5 stars, 87 reviews",Approved
+Cullman Wellness and Aquatic Center,,Recreation center,Unknown,,1636 Field of Miracles Dr SW,Cullman,AL,35055,#ERROR!,,,,"4.4 stars, 700 reviews",Approved
+Haley's Little Fish,,Swimming instructor,Unknown,,7942 American Way,Daphne,AL,36526,#ERROR!,,,,"5 stars, 63 reviews",Approved
+"Ready, Set, Splash! Swim Lessons - Athens location",,Swimming instructor,Unknown,,22423 US-72,Athens,AL,35613,#ERROR!,,,,"5 stars, 5 reviews",Approved
+Huntsville Aquatics Center,,attractions,Unknown,,2213 Drake Ave SW,Huntsville,AL,35805,#ERROR!,,,,"4.6 stars, 445 reviews",Approved
+Goldfish Swim School - East Salt Lake,,Swimming school,Unknown,,2264 E 3300 S,Salt Lake City,UT,84109,#ERROR!,,,,"4.8 stars, 125 reviews",Approved
+SwimKids,,Swimming school,Unknown,,4679 S 2225 E,Holladay,UT,84117,#ERROR!,,,,"4.6 stars, 357 reviews",Approved
+Olympus High Aquatics,,Swimming school,Unknown,,16344510070000,Holladay,UT,84124,,,,,"4.3 stars, 4 reviews",Approved
+Aqua-Tots Swim School Midvale,,Swimming school,Unknown,,7220 Union Park Ave,Midvale,UT,84047,#ERROR!,,,,"4.7 stars, 192 reviews",Approved
+Northcrest Swim Club,,Swim club,Unknown,,839 Hilltop Rd,Salt Lake City,UT,84103,#ERROR!,,,,"4.6 stars, 23 reviews",Approved
+"The Swim Academy Murray, Kaysville, and Layton",,Swimming,Unknown,,6200 S 2000 E,Holladay,UT,84121,#ERROR!,,,,"4.8 stars, 75 reviews",Approved
+Aqua Tots Swim School Jordan Landing,,attractions,Unknown,,7552 S Plz Ctr Dr,West Jordan,UT,84088,#ERROR!,,,,"4.9 stars, 158 reviews",Approved
+Park City Aquatic Center,,attractions,Unknown,,2465 Kilby Rd,Park City,UT,84098,#ERROR!,,,,"4.6 stars, 57 reviews",Approved
+Utah's Aquatics Academy,,Sports school,Unknown,,10300 S Redwood Rd,South Jordan,UT,84095,#ERROR!,,,,"4.6 stars, 408 reviews",Approved
+Stingray Swim Team,,Swim club,Unknown,,1890 Tanana Lp E,Fairbanks,AK,99709,#ERROR!,,,,"4.3 stars, 3 reviews",Approved
+Swim Fit Alaska,,Personal trainer,Unknown,,,,,,,,,,"5 stars, 2 reviews",Approved
+Swimmers Edge SLC,,Swimming school,Unknown,,202 E Murray Park Ave,Murray,UT,84107,#ERROR!,,,,"5 stars, 5 reviews",Approved
+British Swim School at LA Fitness - West Seattle,,Swimming school,Unknown,,3900 SW Alaska St,Seattle,WA,98116,#ERROR!,,,,"4.2 stars, 10 reviews",Approved
+Hollywood Swimming Pool,,attractions,Unknown,,1122 Cole Ave,Los Angeles,CA,90038,#ERROR!,,,,"4.1 stars, 257 reviews",Approved
+Arizona Swimming Gauchos,,Sports club,Unknown,,6000 W Olive Ave,Glendale,AZ,85302,#ERROR!,,,,"4.6 stars, 10 reviews",Approved
+Life Time,,Gym,Unknown,,5602 Naaman Forest Blvd,Garland,TX,75044,#ERROR!,,,,"3.9 stars, 713 reviews",Approved
+Phoenix Swim Club,,Swim club,Unknown,,3901 E Stanford Dr,Paradise Valley,AZ,85253,#ERROR!,,,,"4.6 stars, 52 reviews",Approved
+Infant Swimming Resource (ISR) w/ Becki Pinckard - Chandler,,Swimming instructor,Unknown,,Lindsay/Riggs,Chandler,AZ,85249,#ERROR!,,,,"5 stars, 5 reviews",Approved
+British Swim School at EoS Fitness,,Swimming school,Unknown,,4185 S Gilbert Rd,Chandler,AZ,85249,#ERROR!,,,,"5 stars, 12 reviews",Approved
+Alma Aquatic Park,,attractions,Unknown,,731 City Park Rd,Alma,AR,72921,#ERROR!,,,,"4.5 stars, 566 reviews",Approved
+Sunsational Swim School - Private Swim Lessons,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 465 reviews",Approved
+Peninsula Swim School,,Swimming school,Unknown,,1602 Stafford St,Redwood City,CA,94063,#ERROR!,,,,"4.3 stars, 60 reviews",Approved
+Sunshine Swim & Fitness Center,,Swimming facility,Unknown,,9360 Elk Grove Florin Rd #4,Elk Grove,CA,95624,#ERROR!,,,,"4.5 stars, 96 reviews",Approved
+Los Angeles Swim Academy,,Swimming school,Unknown,,1233 N McCadden Pl,Los Angeles,CA,90038,#ERROR!,,,,"5 stars, 1 reviews",Approved
+The Northern California Swimstitute,,Swimming instructor,Unknown,,11335-B Folsom Blvd,Rancho Cordova,CA,95742,#ERROR!,,,,"4.5 stars, 73 reviews",Approved
+Life Time Northern California Swim Team,,Sports club,Unknown,,1435 E Roseville Pkwy,Roseville,CA,95661,#ERROR!,,,,"4.6 stars, 5 reviews",Approved
+LA Surf & Swim,,Swimming school,Unknown,,1217 Elm St,Venice,CA,90291,#ERROR!,,,,"4.6 stars, 7 reviews",Approved
+Hammond Swim School,,Swimming school,Unknown,,750 E D St,Lemoore,CA,93245,#ERROR!,,,,"4.7 stars, 38 reviews",Approved
+Raleigh Swim School,,Swimming school,Unknown,,1012 Oberlin Rd suite 300,Raleigh,NC,27605,#ERROR!,,,,"5 stars, 29 reviews",Approved
+Oak City Swim School,,Swimming school,Unknown,,3651 Bastion Ln,Raleigh,NC,27604,#ERROR!,,,,"4.9 stars, 18 reviews",Approved
+Full Armour Colorado Springs Swim Team,,Swim club,Unknown,,2380 Montebello Dr W,Colorado Springs,CO,80918,#ERROR!,,,,"4.1 stars, 12 reviews",Approved
+Aqua-Tots Swim School Arvada,,Swimming school,Unknown,,7973 Wadsworth Blvd,Arvada,CO,80003,#ERROR!,,,,"4.7 stars, 160 reviews",Approved
+Goldfish Swim School - Cary,,Swimming school,Unknown,,2980 Kildaire Farm Rd,Cary,NC,27518,#ERROR!,,,,"4.9 stars, 345 reviews",Approved
+Falfins Swimming,,Swim club,Unknown,,3472 Research Pkwy #104,Colorado Springs,CO,80920,#ERROR!,,,,"4.4 stars, 21 reviews",Approved
+British Swim School at Holiday Inn Express Newington - Hartford,,Swimming school,Unknown,,2553 Berlin Tpke,Newington,CT,6111,#ERROR!,,,,"5 stars, 34 reviews",Approved
+Goldfish Swim School - Hamden,,Swimming school,Unknown,,2300 Dixwell Ave,Hamden,CT,6514,#ERROR!,,,,"4.3 stars, 60 reviews",Approved
+British Swim School at Modern Maturity Center - Dover,,Swimming school,Unknown,,1121 Forrest Ave,Dover,DE,19904,#ERROR!,,,,"5 stars, 14 reviews",Approved
+Smyrna Swim Club,,Swimming pool,Unknown,,214 S Carter Rd,Smyrna,DE,19977,#ERROR!,,,,"3.8 stars, 33 reviews",Approved
+Seaford Swim Association,,attractions,Unknown,,26274 Craigs Mill Rd,Seaford,DE,19973,#ERROR!,,,,"4.6 stars, 14 reviews",Approved
+Killens Pond State Park,,attractions,Unknown,,5025 Killens Pond Rd,Felton,DE,19943,#ERROR!,,,,"4.6 stars, 2317 reviews",Approved
+Dover AFB Outdoor Recreation,,Corporate office,Unknown,,475 Chevron Ave,Dover AFB,DE,19902,#ERROR!,,,,"4.7 stars, 15 reviews",Approved
+Western Sussex Boys & Girls Club,,Youth organization,Unknown,,310 Virginia Ave,Seaford,DE,19973,#ERROR!,,,,"4.7 stars, 23 reviews",Approved
+Club Brennan,,Swim club,Unknown,,1 Primrose Dr,Bear,DE,19701,#ERROR!,,,,"4.4 stars, 34 reviews",Approved
+Middletown Family YMCA,,Fitness center,Unknown,,202 E Cochran St,Middletown,DE,19709,#ERROR!,,,,"4.2 stars, 172 reviews",Approved
+Coastal Club Community Clubhouse,,Community center,Unknown,,19153 Marblehead Dr,Lewes,DE,19958,#ERROR!,,,,"4.9 stars, 100 reviews",Approved
+House of Champs,,Gym,Unknown,,7852 S Dupont Hwy,Felton,DE,19943,#ERROR!,,,,"5 stars, 63 reviews",Approved
+SafeSplash Swim School - Portland (Hollywood),,Swimming school,Unknown,,4224 NE Halsey St,Portland,OR,97213,#ERROR!,,,,"3 stars, 3 reviews",Approved
+DolFUN SWIM Academy,,Swimming school,Unknown,,9260 SE Stark St,Portland,OR,97216,#ERROR!,,,,"3.9 stars, 30 reviews",Approved
+SWIMBABES Swim Survival Safety -Home of the World's Youngest Swim Team!,,Swimming school,Unknown,,10552 SE 52nd Ave,Milwaukie,OR,97222,#ERROR!,,,,"4.6 stars, 52 reviews",Approved
+Emler Swim School Beaverton-Washington Square,,Swimming school,Unknown,,9140 SW Hall Blvd,Portland,OR,97223,#ERROR!,,,,"4.7 stars, 226 reviews",Approved
+Farber Swim School Beaverton,,Swimming school,Unknown,,9470 SW Beaverton Hillsdale Hwy,Beaverton,OR,97005,#ERROR!,,,,"4.3 stars, 67 reviews",Approved
+Zen Penguin Swim School,,Swimming school,Unknown,,12029 NE Ainsworth Cir,Portland,OR,97220,#ERROR!,,,,"5 stars, 29 reviews",Approved
+David Douglas Aquatics Center,,Aquatic center,Unknown,,13030 SE Taylor Ct,Portland,OR,97233,#ERROR!,,,,"4.6 stars, 119 reviews",Approved
+SafeSplash Swim School - Fort Myers,,Swimming school,Unknown,,10058 Gulf Center Dr,Fort Myers,FL,33913,#ERROR!,,,,"4.4 stars, 70 reviews",Approved
+Children of the Sea,,Swimming school,Unknown,,10225 SW Park Way,Portland,OR,97225,#ERROR!,,,,"4.4 stars, 65 reviews",Approved
+Blue Crush Aquatic Club,,Sports club,Unknown,,12003 NE Shaver St,Portland,OR,97220,#ERROR!,,,,"4.4 stars, 14 reviews",Approved
+Emler Swim School of Beaverton – Tanasbourne,,Swimming school,Unknown,,1225 NW Waterhouse Ave,Beaverton,OR,97006,#ERROR!,,,,"4.7 stars, 88 reviews",Approved
+Harmony Swim School,,Swimming pool,Unknown,,2301 E McLoughlin Blvd,Vancouver,WA,98661,#ERROR!,,,,"4.8 stars, 20 reviews",Approved
+Beaverton Swim Center,,attractions,Unknown,,12850 SW 3rd St,Beaverton,OR,97005,#ERROR!,,,,"4.3 stars, 208 reviews",Approved
+Safety First PediAquatics,,Swimming school,Unknown,,1326 S Shore Dr,St Cloud,FL,34771,#ERROR!,,,,"4.6 stars, 57 reviews",Approved
+British Swim School Poughkeepsie Pool,,Swimming school,Unknown,,44 Springside Ave Suite 1,Poughkeepsie,NY,12603,#ERROR!,,,,"4.8 stars, 126 reviews",Approved
+Vassar Athletics Center- swimming,,Gym,Unknown,,17 Rd,Poughkeepsie,NY,12604,#ERROR!,,,,"4.8 stars, 20 reviews",Approved
+Swimming Past Boundaries,,Swimming facility,Unknown,,42 Catharine St,Poughkeepsie,NY,12601,#ERROR!,,,,"5 stars, 6 reviews",Approved
+Hudson Valley Swim Hopewell Junction,,Swimming school,Unknown,,190 Old Sylvan Lake Rd #2,Hopewell Junction,NY,12533,#ERROR!,,,,"4.4 stars, 7 reviews",Approved
+Kingston High School Swimming Facility (Home of Tigers Aquatic Club),,Swim club,Unknown,,403 Broadway,Kingston,NY,12401,,,,,"5 stars, 1 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,2480 Briarcliff Rd NE,Atlanta,GA,30329,#ERROR!,,,,"4.9 stars, 270 reviews",Approved
+Total Immersion Swimming Inc,,Swimming instructor,Unknown,,37 Kleinekill Dr,New Paltz,NY,12561,#ERROR!,,,,"4.9 stars, 80 reviews",Approved
+Hyde Park Swim and Tennis Club,,Swim club,Unknown,,W Pine Rd,Staatsburg,NY,12580,#ERROR!,,,,"4.6 stars, 29 reviews",Approved
+Tony Aguirre Community Center,,Community center,Unknown,,2050 W Pennway St,Kansas City,MO,64108,#ERROR!,,,,"4.4 stars, 170 reviews",Approved
+Idaho Dive Pirates LLC,,attractions,Unknown,,340 E Anderson St,Idaho Falls,ID,83402,#ERROR!,,,,"4.9 stars, 138 reviews",Approved
+ISR Scoresby Swim,,Swimming school,Unknown,,Beth St,Pocatello,ID,83201,#ERROR!,,,,"5 stars, 21 reviews",Approved
+C-US SWIM,,Swim club,Unknown,,3 Birch Cir,Rigby,ID,83442,#ERROR!,,,,,Approved
+Great Wolf Lodge | Kansas City,,hotels,Unknown,,10401 Cabela Dr,Kansas City,KS,66111,#ERROR!,,,,"4.1 stars, 7663 reviews",Approved
+Salmon Swimming Pool,,Outdoor swimming pool,Unknown,,,Salmon,ID,83467,#ERROR!,,,,"4 stars, 28 reviews",Approved
+Main Street Swim School: West Dundee,,Swimming school,Unknown,,400 N 8th St,West Dundee,IL,60118,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Urbana Indoor Aquatic Center,,Indoor swimming pool,Unknown,,102 E Michigan Ave,Urbana,IL,61801,#ERROR!,,,,"4.4 stars, 194 reviews",Approved
+Hap Parker Family Aquatic Center,,Swimming facility,Unknown,,320 W Flessner Ave,Rantoul,IL,61866,#ERROR!,,,,"4.3 stars, 110 reviews",Approved
+First Strokes Swim Academy,,Swimming school,Unknown,,2702 Hundman Dr Suite 7,Champaign,IL,61822,#ERROR!,,,,"5 stars, 7 reviews",Approved
+Bolingbrook Aquatic Center,,Aquatic center,Unknown,,200 Lindsey Ln,Bolingbrook,IL,60440,#ERROR!,,,,"4.5 stars, 13 reviews",Approved
+Bloomington Normal Swim Club (BNSC),,Sports club,Unknown,,501 South Parkside Road,Normal,IL,61761,,,,,"5 stars, 7 reviews",Approved
+Swim With Bill at Melissa Lane,,Swimming school,Unknown,,1975 Melissa Ln,Aurora,IL,60506,#ERROR!,,,,"4.3 stars, 12 reviews",Approved
+Indian Acres Swimming Club,,Swim club,Unknown,,1 Arrow Rd,Champaign,IL,61821,#ERROR!,,,,"4.7 stars, 39 reviews",Approved
+Lincoln Aquatic Pool,,Swimming pool,Unknown,,1400 Primm Rd,Lincoln,IL,62656,#ERROR!,,,,"4.7 stars, 17 reviews",Approved
+Max Aquatics,,Swimming school,Unknown,,"4751 S, Vernon Ave",McCook,IL,60525,#ERROR!,,,,"4.5 stars, 94 reviews",Approved
+Midwest Survival Swim,,Swimming instructor,Unknown,,140 Venita Dr,O'Fallon,IL,62269,#ERROR!,,,,"4.9 stars, 8 reviews",Approved
+Emler Swim School of Fort Wayne,,Swimming school,Unknown,,10530 Maysville Rd,Fort Wayne,IN,46835,#ERROR!,,,,"4.7 stars, 119 reviews",Approved
+Plymouth Aquatic Center,,Swimming pool,Unknown,,2740 Miller Dr,Plymouth,IN,46563,#ERROR!,,,,"4.8 stars, 44 reviews",Approved
+Emler Swim School of Westfield,,Swimming school,Unknown,,15955 Spring Mill Depot Dr Suite 105,Westfield,IN,46074,#ERROR!,,,,"4.9 stars, 32 reviews",Approved
+Strauss-Peabody Aquatic and Fitness Facility,,Physical fitness program,Unknown,,902 N Market St,North Manchester,IN,46962,#ERROR!,,,,"4.7 stars, 141 reviews",Approved
+British Swim School,,Swimming school,Unknown,,4055 Roy Wilson Way,New Palestine,IN,46163,#ERROR!,,,,"4.9 stars, 12 reviews",Approved
+Glenaqua Swim Club,,Swim club,Unknown,,5120 Desoto Dr,Fort Wayne,IN,46815,#ERROR!,,,,"4.6 stars, 53 reviews",Approved
+Counsilman Billingsley Aquatic Center (CBAC),,Aquatic center,Unknown,,"Student Recreational Sports Center, 1601 E Law Ln",Bloomington,IN,47408,#ERROR!,,,,"4.7 stars, 43 reviews",Approved
+Lawrence County Aquatics,,Swim club,Unknown,,294 Bnl Dr,Bedford,IN,47421,#ERROR!,,,,"3.7 stars, 19 reviews",Approved
+Beach Ottumwa,,attractions,Unknown,,101 Church St,Ottumwa,IA,52501,#ERROR!,,,,"4.1 stars, 163 reviews",Approved
+Monroe County Aquatic Center,,attractions,Unknown,,700 N 3rd St,Albia,IA,52531,#ERROR!,,,,"4.6 stars, 83 reviews",Approved
+OTTUMWA FAMILY YMCA,,Youth organization,Unknown,,611 N Hancock St,Ottumwa,IA,52501,#ERROR!,,,,"3.5 stars, 35 reviews",Approved
+Edmundson Pool,,Swimming pool,Unknown,,1405 S F St,Oskaloosa,IA,52577,#ERROR!,,,,"4.5 stars, 48 reviews",Approved
+Aquatic Center,,attractions,Unknown,,602 E 8th St,Pella,IA,50219,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Rathbun Lake Area YMCA,,Non-profit organization,Unknown,,708 S Main St,Centerville,IA,52544,#ERROR!,,,,"4.3 stars, 97 reviews",Approved
+Forest Lake Baptist Camp,,Children's camp,Unknown,,11733 Copperhead Rd,Bloomfield,IA,52537,#ERROR!,,,,"4.8 stars, 39 reviews",Approved
+Roosevelt Recreation Center and Cambridge SportsPlex,,Recreation center,Unknown,,1000 W Burlington Ave,Fairfield,IA,52556,#ERROR!,,,,"4.5 stars, 43 reviews",Approved
+Melbourne Recreation Center,,Recreation center,Unknown,,613 Main St,Melbourne,IA,50162,#ERROR!,,,,"4.4 stars, 31 reviews",Approved
+Prairie Trails Family Aquatic Center,,Swimming pool,Unknown,,100 McKinley Ave,Corydon,IA,50060,#ERROR!,,,,"4.5 stars, 2 reviews",Approved
+Mount Pleasant Family Aquatic Center,,attractions,Unknown,,601 W Clay St,Mt Pleasant,IA,52641,#ERROR!,,,,"4.5 stars, 85 reviews",Approved
+Grundy Family Aquatic Center,,attractions,Unknown,,605 12th St,Grundy Center,IA,50638,#ERROR!,,,,"4.7 stars, 61 reviews",Approved
+Pella Community Center,,Community center,Unknown,,712 Union St,Pella,IA,50219,#ERROR!,,,,"4.6 stars, 44 reviews",Approved
+Sigourney Swimming Pool,,attractions,Unknown,,1018 W Spring St,Sigourney,IA,52591,#ERROR!,,,,"4.3 stars, 52 reviews",Approved
+Water Town Swim School,,Swimming school,Unknown,,6705 W Flamingo Way S,St. Petersburg,FL,33707,#ERROR!,,,,"4.8 stars, 149 reviews",Approved
+Salt City Splash Aquatic Center,,attractions,Unknown,,"in Carey Park, 1601 S Plum St",Hutchinson,KS,67501,#ERROR!,,,,"4.5 stars, 345 reviews",Approved
+Hoisington Recreation Center,,Recreation center,Unknown,,1200 Susank Rd,Hoisington,KS,67544,#ERROR!,,,,"4.4 stars, 101 reviews",Approved
+Clearwater Aquatic Center,,Sports complex,Unknown,,145 N 4th St,Clearwater,KS,67026,#ERROR!,,,,"4.5 stars, 13 reviews",Approved
+Genesis Health Clubs - Manhattan,,Gym,Unknown,,2800 Allison Ave,Manhattan,KS,66502,#ERROR!,,,,"3.9 stars, 729 reviews",Approved
+Hays Aquatic Park,,Aquatic center,Unknown,,300 Main St,Hays,KS,67601,#ERROR!,,,,"4.5 stars, 253 reviews",Approved
+NCK Wellness Center,,Wellness center,Unknown,,3033 US-24,Beloit,KS,67420,#ERROR!,,,,"4.6 stars, 50 reviews",Approved
+Dodge City Family YMCA,,Youth organization,Unknown,,240 San Jose Dr,Dodge City,KS,67801,#ERROR!,,,,"3.8 stars, 69 reviews",Approved
+Hubbard Survival Swim School,,Swimming school,Unknown,,901 N Shore Dr NE,St. Petersburg,FL,33701,#ERROR!,,,,"5 stars, 5 reviews",Approved
+Genesis Health Clubs - West Central,,Gym,Unknown,,854 N Socora St,Wichita,KS,67212,#ERROR!,,,,"4.4 stars, 454 reviews",Approved
+Lincoln city park,,attractions,Unknown,,,Lincoln,KS,67455,,,,,"5 stars, 20 reviews",Approved
+Great Bend Recreation Commission,,Recreation center,Unknown,,1214 Stone St,Great Bend,KS,67530,#ERROR!,,,,"4.4 stars, 67 reviews",Approved
+Buhler Wellness Center,,Wellness center,Unknown,,525 Parkside Dr,Buhler,KS,67522,#ERROR!,,,,"4.8 stars, 11 reviews",Approved
+British Swim School at Comfort Suites – Georgetown,,Swimming school,Unknown,,121 Darby Dr Pool Area,Georgetown,KY,40324,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Paradise Cove Aquatic Center,,attractions,Unknown,,274 Lake Reba Dr,Richmond,KY,40475,#ERROR!,,,,"4.1 stars, 464 reviews",Approved
+Florence Aquatic Center,,attractions,Unknown,,8200 Ewing Blvd,Florence,KY,41042,#ERROR!,,,,"4.3 stars, 549 reviews",Approved
+Tates Creek Aquatic Center,,attractions,Unknown,,1400 Gainesway Dr,Lexington,KY,40517,#ERROR!,,,,"4.2 stars, 122 reviews",Approved
+Whitaker Family YMCA,,Gym,Unknown,,2681 Old Rosebud Rd,Lexington,KY,40509,#ERROR!,,,,"4.6 stars, 690 reviews",Approved
+Destiny Camp International,,Swimming instructor,Unknown,,330 Brothers Rd,Scott,LA,70583,#ERROR!,,,,"5 stars, 5 reviews",Approved
+Reach Swim Training,,Swimming school,Unknown,,543 Evergreen Dr,Mandeville,LA,70448,#ERROR!,,,,"5 stars, 3 reviews",Approved
+LSU Natatorium,,Training center,Unknown,,Nicholson Dr & W Chimes St,Baton Rouge,LA,70808,,,,,"4.2 stars, 10 reviews",Approved
+Janes Aquatics,,Swimming instructor,Unknown,,1434 Westchester Dr,Baton Rouge,LA,70810,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Quest Fitness,,Fitness center,Unknown,,2 Livewell Dr,Kennebunk,ME,4043,#ERROR!,,,,"4.8 stars, 168 reviews",Approved
+LeRoy Greason Pool,,Swimming pool,Unknown,,35 Watson Dr,Brunswick,ME,4011,#ERROR!,,,,"4.4 stars, 41 reviews",Approved
+Brunswick Recreation Center,,Recreation center,Unknown,,220 Neptune Dr,Brunswick,ME,4011,#ERROR!,,,,"4.6 stars, 61 reviews",Approved
+Fitness and Recreation Center,,Gym,Unknown,,152 Quebec St,Farmington,ME,4938,#ERROR!,,,,"4.7 stars, 111 reviews",Approved
+New Balance Student Recreation Center,,Recreation center,Unknown,,Hilltop Rd,Orono,ME,4473,#ERROR!,,,,"4.7 stars, 231 reviews",Approved
+Maine Splash Swim School,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Little Waves Swim Academy,,Baby swimming school,Unknown,,50 Maine Mall Rd,South Portland,ME,4106,#ERROR!,,,,,Approved
+Sanford-Springvale YMCA,,Non-profit organization,Unknown,,1 Emile Levasseur Dr,Sanford,ME,4073,#ERROR!,,,,"4.6 stars, 73 reviews",Approved
+Campus Center,,Student union,Unknown,,11 Hills Beach Rd,Biddeford,ME,4005,#ERROR!,,,,"4.6 stars, 32 reviews",Approved
+The Health Club and Spa,,Fitness center,Unknown,,1977 S Lisbon Rd,Lewiston,ME,4240,#ERROR!,,,,"4.2 stars, 98 reviews",Approved
+Collegiate School Aquatic Center,,Aquatic center,Unknown,,5050 Ridgedale Pkwy,Richmond,VA,23234,,,,,"4.9 stars, 62 reviews",Approved
+Wilkies Beach,,Beach,Unknown,,2-8 Mayberry Rd,Gray,ME,4039,,,,,"4.3 stars, 99 reviews",Approved
+Monmouth Beach,,attractions,Unknown,,26 Beach Rd,Monmouth,ME,4259,,,,,"3.9 stars, 21 reviews",Approved
+Bath Area Family YMCA,,Non-profit organization,Unknown,,303 Centre St,Bath,ME,4530,#ERROR!,,,,"4.5 stars, 255 reviews",Approved
+Feet2Fins,,Swimming instructor,Unknown,,909 Texas Ave UNIT 420,Houston,TX,77002,#ERROR!,,,,"5 stars, 53 reviews",Approved
+I Will Swim Academy,,Swim club,Unknown,,4502 Almeda Rd,Houston,TX,77004,#ERROR!,,,,"5 stars, 13 reviews",Approved
+British Swim School at LA Fitness - Houston Yale and Katy Freeway,,Swimming school,Unknown,,195 Yale St,Houston,TX,77007,#ERROR!,,,,"5 stars, 16 reviews",Approved
+Raynboe Swan,,Swimming school,Unknown,,1017 Yorkshire St,Houston,TX,77022,#ERROR!,,,,"5 stars, 81 reviews",Approved
+PowerPacked Swimming Lessons,,Swimming school,Unknown,,5325 Cornish St,Houston,TX,77007,#ERROR!,,,,"4.5 stars, 78 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,13032 Middlebrook Road,Germantown,MD,20874,#ERROR!,,,,"4.8 stars, 256 reviews",Approved
+Olney Indoor Swim Center,,attractions,Unknown,,16605 Georgia Ave,Olney,MD,20832,#ERROR!,,,,"4.2 stars, 287 reviews",Approved
+Thistledown Swim Academy,,Swimming instructor,Unknown,,3524 Brookwood Rd,Mountain Brook,AL,35223,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Oakwood University Natatorium,,Swimming school,Unknown,,"Natatorium, 5123 Oakwood Rd",Huntsville,AL,35806,#ERROR!,,,,"4.7 stars, 3 reviews",Approved
+Little Otters Swimming Lessons,,Swimming school,Unknown,,1850 Co Rd 209,Danville,AL,35619,#ERROR!,,,,,Approved
+Coastal Alabama ISR,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 17 reviews",Approved
+"Ready, Set, Splash! Swim Lessons",,Swimming instructor,Unknown,,2506 Danville Rd SW Building B,Decatur,AL,35603,#ERROR!,,,,"5 stars, 17 reviews",Approved
+24e Health Clubs,,Gym,Unknown,,2244-A Pelham Pkwy,Pelham,AL,35124,#ERROR!,,,,"4.9 stars, 2114 reviews",Approved
+Swim Fit Alaska,,Personal trainer,Unknown,,,,,,,,,,"5 stars, 2 reviews",Approved
+The Alaska Club Fairbanks West Gym,,Gym,Unknown,,575 Riverstone Wy,Fairbanks,AK,99709,#ERROR!,,,,"3.8 stars, 63 reviews",Approved
+The Alaska Club West Gym,,Gym,Unknown,,1400 W Northern Lights Blvd,Anchorage,AK,99503,#ERROR!,,,,"3.8 stars, 208 reviews",Approved
+"The Alaska Club South Gym, Pool, Health & Fitness Center",,Gym,Unknown,,10931 O'Malley Centre Dr,Anchorage,AK,99515,#ERROR!,,,,"3.8 stars, 372 reviews",Approved
+Student Recreation Center,,Recreation center,Unknown,,1910 Tanana Lp E,Fairbanks,AK,99775,#ERROR!,,,,"4.6 stars, 203 reviews",Approved
+The Alaska Club Fairbanks South Gym & Pool,,Gym,Unknown,,747 Old Richardson Hwy Unit 3,Fairbanks,AK,99701,#ERROR!,,,,"3.8 stars, 316 reviews",Approved
+The Alaska Club Eagle River Gym & Pool,,Gym,Unknown,,12001 Business Blvd Suite 3A,Eagle River,AK,99577,#ERROR!,,,,"4.1 stars, 285 reviews",Approved
+Bay Club,,Fitness center,Unknown,,2395 Kachemak Dr,Homer,AK,99603,#ERROR!,,,,"3.8 stars, 94 reviews",Approved
+The Alaska Club Summit Luxury Gym,,Gym,Unknown,,11001 O'Malley Centre Dr Suite 103,Anchorage,AK,99515,#ERROR!,,,,"4.2 stars, 67 reviews",Approved
+Hubbard Family Swim School,,Swimming school,Unknown,,8402 W Thunderbird Rd # B103,Peoria,AZ,85381,#ERROR!,,,,"4.9 stars, 287 reviews",Approved
+"Goldfish Swim School - North Scottsdale, AZ",,Swimming school,Unknown,,7000 E Mayo Blvd Suite 26,Phoenix,AZ,85054,#ERROR!,,,,"4.6 stars, 88 reviews",Approved
+Demont Family Swim School,,Swimming school,Unknown,,2850 W Ina Rd #130,Tucson,AZ,85741,#ERROR!,,,,"4.9 stars, 91 reviews",Approved
+Lancer Aquatic Center - California Baptist University,,Swimming pool,Unknown,,8432 Magnolia Ave,Riverside,CA,92504,#ERROR!,,,,"4.6 stars, 28 reviews",Approved
+Sunsational Swim School - Private Swim Lessons,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 465 reviews",Approved
+ViVi Swim School,,Swimming school,Unknown,,14007 Ramona Blvd,Baldwin Park,CA,91706,#ERROR!,,,,"5 stars, 63 reviews",Approved
+Sunsational Swim School - Private Swim Lessons at Home - Lifeguard Service,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.6 stars, 19 reviews",Approved
+Montclair Swim Club,,Swim club,Unknown,,1901 Woodhaven Way,Oakland,CA,94611,#ERROR!,,,,"4.6 stars, 11 reviews",Approved
+"California Aquatic Therapy and Wellness Center, Inc.",,Swim club,Unknown,,6801 Long Beach Blvd,Long Beach,CA,90805,#ERROR!,,,,"4.6 stars, 154 reviews",Approved
+Baldwin Park Aquatic Center,,Indoor swimming pool,Unknown,,4100 Baldwin Park Blvd,Baldwin Park,CA,91706,#ERROR!,,,,"4.4 stars, 29 reviews",Approved
+Arroyo Swim Center,,Outdoor swimming pool,Unknown,,15701 Lorenzo Ave,San Lorenzo,CA,94580,#ERROR!,,,,"4.7 stars, 18 reviews",Approved
+British Swim School at 24 Hour Fitness - Orange,,Swimming school,Unknown,,3600 W Orangewood Ave,Orange,CA,92868,#ERROR!,,,,"4.9 stars, 9 reviews",Approved
+AC Swim Club,,Swimming school,Unknown,,25 Golden Hinde Blvd,San Rafael,CA,94903,#ERROR!,,,,"4.9 stars, 40 reviews",Approved
+Mira Costa High School Swimming Pool,,Swimming pool,Unknown,,,Manhattan Beach,CA,90266,#ERROR!,,,,"4.6 stars, 18 reviews",Approved
+Goldfish Swim School - Wicker Park,,Swimming school,Unknown,,1930 W Hubbard St,Chicago,IL,60622,#ERROR!,,,,"4.9 stars, 298 reviews",Approved
+SafeSplash Swim School - Parker/LoneTree,,Swimming school,Unknown,,12240 Lioness Way,Parker,CO,80134,#ERROR!,,,,"4.5 stars, 86 reviews",Approved
+Lowry Swim Club,,Swim club,Unknown,,352 Quebec Ct,Denver,CO,80230,#ERROR!,,,,"4.5 stars, 18 reviews",Approved
+Sweet Blue Swim Academy,,Swimming school,Unknown,,75 3rd St,Stamford,CT,6905,#ERROR!,,,,"4.6 stars, 36 reviews",Approved
+Bubbles to Butterfly Swim School,,Swimming school,Unknown,,61 Taftville-Occum Rd,Norwich,CT,6360,#ERROR!,,,,"5 stars, 54 reviews",Approved
+Stewie the Duck Swim School,,Swimming school,Unknown,,55 Westport Ave,Norwalk,CT,6851,#ERROR!,,,,"4.8 stars, 149 reviews",Approved
+backyardswimpro,,Swimming instructor,Unknown,,35 5th St,Derby,CT,6418,#ERROR!,,,,"5 stars, 43 reviews",Approved
+Cornerstone Aquatics Center,,attractions,Unknown,,55 Buena Vista Rd,West Hartford,CT,6107,#ERROR!,,,,"4.2 stars, 107 reviews",Approved
+Chelsea Piers Connecticut,,Sports complex,Unknown,,1 Blachley Rd,Stamford,CT,6902,#ERROR!,,,,"4.2 stars, 355 reviews",Approved
+Greater Toledo Aquatic Club,,Swim club,Unknown,,2323 W Bancroft St,Toledo,OH,43607,,,,,"4.8 stars, 6 reviews",Approved
+SafeSplash Swim School - Perrysburg,,Swimming school,Unknown,,10602 Fremont Pike Suite 4,Perrysburg,OH,43551,#ERROR!,,,,"4.9 stars, 47 reviews",Approved
+Goldfish Swim School - Sylvania,,Swimming school,Unknown,,4959 N Holland Sylvania Rd,Sylvania,OH,43560,#ERROR!,,,,"4.9 stars, 89 reviews",Approved
+Delaware Community Center YMCA - YMCA of Central Ohio,,Community center,Unknown,,1121 S Houk Rd,Delaware,OH,43015,#ERROR!,,,,"4.2 stars, 316 reviews",Approved
+Seaford Community Swim Center,,Swim club,Unknown,,1035 W Locust St,Seaford,DE,19973,#ERROR!,,,,"4.6 stars, 36 reviews",Approved
+Bayside Health & Aquatic Club,,Fitness center,Unknown,,31264 Americana Parkway West,Selbyville,DE,19975,#ERROR!,,,,"4.8 stars, 25 reviews",Approved
+The Edge 18,,Wedding venue,Unknown,,1 E Whittington Way,Middletown,DE,19709,#ERROR!,,,,"4.8 stars, 61 reviews",Approved
+Florida Swim Company,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.8 stars, 144 reviews",Approved
+Little Aquatics Swim Lessons,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.8 stars, 721 reviews",Approved
+Florida Swimming Pool Association,,Association / Organization,Unknown,,2555 Porter Lake Dr STE 106,Sarasota,FL,34240,#ERROR!,,,,"4.4 stars, 7 reviews",Approved
+Sharks & Minnows Swim School,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.8 stars, 442 reviews",Approved
+Riverdale Swimming part of Swim Florida at Riverdale High School Pool,,Swimming school,Unknown,,2600 Buckingham Rd,Fort Myers,FL,33905,#ERROR!,,,,,Approved
+SafeSplash Swim School - Cape Coral,,Swimming school,Unknown,,"Inside LA Fitness, 2301 Del Prado Blvd S #200",Cape Coral,FL,33990,#ERROR!,,,,"4.2 stars, 66 reviews",Approved
+Deep Blue Swim School,,Swimming instructor,Unknown,,11459 Adelia St,Spring Hill,FL,34608,#ERROR!,,,,"5 stars, 23 reviews",Approved
+Florida Swimming,,Association / Organization,Unknown,,214 E Washington St # B,Minneola,FL,34715,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Calypso Swim School,,Swimming instructor,Unknown,,401 E Bearss Ave,Tampa,FL,33613,#ERROR!,,,,"4.5 stars, 8 reviews",Approved
+Star Swim Club,,Swimming school,Unknown,,401 E Bearss Ave,Tampa,FL,33613,#ERROR!,,,,"5 stars, 23 reviews",Approved
+Morgan County Aquatic Center,,Indoor swimming pool,Unknown,,1151 East Ave,Madison,GA,30650,#ERROR!,,,,"4.5 stars, 22 reviews",Approved
+Northside Pool / Fusion Swim Team,,Swim club,Unknown,,5097 Northside Dr,Macon,GA,31210,#ERROR!,,,,"4.3 stars, 61 reviews",Approved
+SafeSplash Swim School - Decatur,,Swimming school,Unknown,,1496 Church St,Decatur,GA,30030,#ERROR!,,,,"4.4 stars, 51 reviews",Approved
+Saint Marys Aquatic Club,,Swimming competition,Unknown,,301 Herb Bauer Dr,St Marys,GA,31558,#ERROR!,,,,"4.5 stars, 729 reviews",Approved
+Georgia Dolphins Llc,,Swimming instructor,Unknown,,999 Dolphins Dr,Stockbridge,GA,30281,#ERROR!,,,,"5 stars, 5 reviews",Approved
+Serenbe Swim Club,,Swim club,Unknown,,295 Prom Fld Rd,Chattahoochee Hills,GA,30268,,,,,"4.9 stars, 7 reviews",Approved
+Cherokee Swim Club,,Sports club,Unknown,,1200 Wellstar Way,Canton,GA,30115,,,,,,Approved
+"Salty Swim School, LLC.",,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 108 reviews",Approved
+Lēʻahi Swim School,,Swimming instructor,Unknown,,715 Hoomoana St,Pearl City,HI,96782,#ERROR!,,,,"4.3 stars, 48 reviews",Approved
+Koa Swim School,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 71 reviews",Approved
+Swim Lessons Hawaii,,Swimming school,Unknown,,15-1947 24th Ave,Keaau,HI,96749,#ERROR!,,,,"4.9 stars, 15 reviews",Approved
+Kaimuki-Waialae YMCA,,Community center,Unknown,,4835 Kilauea Ave,Honolulu,HI,96816,#ERROR!,,,,"4.9 stars, 49 reviews",Approved
+Little Fish Ocean Swimming School,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 6 reviews",Approved
+Swim Lessons Maui,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 11 reviews",Approved
+Swim Hawaii,,Swimming school,Unknown,,1337 Lower Campus Rd,Honolulu,HI,96822,,,,,"5 stars, 3 reviews",Approved
+"Kona Swim Lessons, LLC",,Swimming instructor,Unknown,,73-1161 Kaiminani Dr,Kailua-Kona,HI,96740,#ERROR!,,,,"5 stars, 28 reviews",Approved
+JJ's Swim & Fitness,,Swimming instructor,Unknown,,725 Kapiolani Blvd,Honolulu,HI,96813,#ERROR!,,,,"5 stars, 8 reviews",Approved
+The Salvation Army Kroc Center Hawaii,,Community center,Unknown,,91-3257 Kualakai Pkwy,Ewa Beach,HI,96706,#ERROR!,,,,"4.5 stars, 485 reviews",Approved
+"Maui Float On Swim Lessons, LLC",,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 8 reviews",Approved
+YMCA of Honolulu - Windward Branch,,Non-profit organization,Unknown,,1200 Kailua Rd,Kailua,HI,96734,#ERROR!,,,,"4.8 stars, 72 reviews",Approved
+K-Bay Base Pool,,Swimming pool,Unknown,,1196 5th St,Kailua,HI,96734,#ERROR!,,,,"4.1 stars, 73 reviews",Approved
+Water Fun Hawaii,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 8 reviews",Approved
+ISR Oahu-Child Swimming Lessons,,Swimming school,Unknown,,Waialae Ave,Honolulu,HI,96816,#ERROR!,,,,"5 stars, 13 reviews",Approved
+YMCA of Honolulu - Mililani Branch,,Youth organization,Unknown,,95-1190 Hikikaulia St,Mililani,HI,96789,#ERROR!,,,,"4.4 stars, 56 reviews",Approved
+Salmon Swimming Pool,,Outdoor swimming pool,Unknown,,,Salmon,ID,83467,#ERROR!,,,,"4 stars, 28 reviews",Approved
+Hamm Swim School,,Swimming instructor,Unknown,,423 Military Dr,Coeur d'Alene,ID,83814,#ERROR!,,,,"5 stars, 10 reviews",Approved
+Mauston Indoor Pool,,Indoor swimming pool,Unknown,,508 Grayside Ave,Mauston,WI,53948,#ERROR!,,,,"4.5 stars, 11 reviews",Approved
+British Swim School at Esporta Fitness - Plainfield,,Swimming school,Unknown,,1745 Illinois Rte 59,Plainfield,IL,60586,#ERROR!,,,,"4.6 stars, 11 reviews",Approved
+Fort Natatorium,,Swimming pool,Unknown,,300 E Emerson St,Bloomington,IL,61701,,,,,"4.5 stars, 6 reviews",Approved
+Delta Aquatics,,Club,Unknown,,1525 Harvey Rd,Oswego,IL,60543,,,,,"4.3 stars, 36 reviews",Approved
+Flanagan Memorial Pool,,Indoor swimming pool,Unknown,,204 E Falcon Hwy,Flanagan,IL,61740,#ERROR!,,,,"3.8 stars, 10 reviews",Approved
+Marmion Academy Swimming Pool,,Swimming pool,Unknown,,1000 Butterfield Rd,Aurora,IL,60502,#ERROR!,,,,"4.9 stars, 15 reviews",Approved
+Swim Reedsburg,,Swimming school,Unknown,,E6881 N Dewey Ave,Reedsburg,WI,53959,#ERROR!,,,,"5 stars, 32 reviews",Approved
+Saluki Swim Club,,Sports club,Unknown,,300 E Grand Ave,Carbondale,IL,62901,#ERROR!,,,,,Approved
+Markin Family Student Recreation Center,,Recreation center,Unknown,,812 Clarissa Court,Peoria,IL,61606,#ERROR!,,,,"4.6 stars, 76 reviews",Approved
+Glenbrook Aquatics,,Club,Unknown,,2300 Shermer Rd,Northbrook,IL,60062,#ERROR!,,,,"4.7 stars, 27 reviews",Approved
+Ben Davis Aquatics,,Swimming pool,Unknown,,1200 N Girls School Rd,Indianapolis,IN,46214,,,,,"4.8 stars, 4 reviews",Approved
+Mary Beth Dunnichay Aquatic Center,,Aquatic center,Unknown,,713 N 20th St,Elwood,IN,46036,#ERROR!,,,,"4.1 stars, 15 reviews",Approved
+Indy Island Aquatic Center,,Indoor swimming pool,Unknown,,8575 E Raymond St,Indianapolis,IN,46239,#ERROR!,,,,"4.1 stars, 414 reviews",Approved
+British Swim School at LivRite Fitness – North Indianapolis,,Swimming school,Unknown,,6220 N Butler Ave,Indianapolis,IN,46220,#ERROR!,,,,"4.9 stars, 12 reviews",Approved
+Aurora Aquatic Center,,attractions,Unknown,,244 City Pk Cir,Aurora,IN,47001,#ERROR!,,,,"4.7 stars, 49 reviews",Approved
+Greene Aquatic Center,,Swimming pool,Unknown,,205 W Rowley St,Greene,IA,50636,#ERROR!,,,,"4.8 stars, 20 reviews",Approved
+Reinbeck Aquatic Center,,attractions,Unknown,,414 Main St,Reinbeck,IA,50669,#ERROR!,,,,"4.5 stars, 33 reviews",Approved
+Clarion Aquatic Center,,attractions,Unknown,,618 5th Ave NE,Clarion,IA,50525,,,,,"4.4 stars, 19 reviews",Approved
+Gowrie Swimming Pool,,Swimming pool,Unknown,,1202 Beek St,Gowrie,IA,50543,,,,,"4.9 stars, 18 reviews",Approved
+Rockwell Aquatic Center,,attractions,Unknown,,610 1st St S,Rockwell,IA,50469,#ERROR!,,,,"4.3 stars, 13 reviews",Approved
+Wichita Swim Club,,Swim club,Unknown,,8323 E Douglas Ave,Wichita,KS,67207,#ERROR!,,,,"4.5 stars, 148 reviews",Approved
+USD 501 Natatorium,,Indoor swimming pool,Unknown,,"Hummer Sports Park, 530 SW Tuffy Kellogg Dr #03/02",Topeka,KS,66606,,,,,"4.6 stars, 84 reviews",Approved
+Markley Grove Park Swimming Pool,,attractions,Unknown,,"Markley Park, Swimming Pool, K 106 Hwy",Minneapolis,KS,67467,#ERROR!,,,,"4.9 stars, 13 reviews",Approved
+Clifton Swimming Pool,,attractions,Unknown,,501 W Parallel St,Clifton,KS,66937,#ERROR!,,,,"4.6 stars, 10 reviews",Approved
+Taylor Mill Swim Club,,Swim club,Unknown,,5791 Taylor Mill Rd,Covington,KY,41015,#ERROR!,,,,"4.6 stars, 67 reviews",Approved
+Highlands Swim Club,,Swim club,Unknown,,41900 Palm Ave,Fremont,CA,94539,#ERROR!,,,,"4.8 stars, 35 reviews",Approved
+Swim with Bekah,,Swimming instructor,Unknown,,39246 Blue Heron Ct,Prairieville,LA,70769,#ERROR!,,,,"5 stars, 4 reviews",Approved
+ENAI SWIM LLC,,Swimming instructor,Unknown,,622 Parkside Dr,Thibodaux,LA,70301,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Maine Splash Swim School,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Little Waves Swim Academy,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 8 reviews",Approved
+IPS Surf and Water Sports,,Sports school,Unknown,,7 Main St,Harrison,ME,4040,#ERROR!,,,,"4.9 stars, 55 reviews",Approved
+Boys & Girls Clubs and YMCA of Greater Waterville at the Alfond Youth & Community Center,,Family service center,Unknown,,126 North St,Waterville,ME,4901,#ERROR!,,,,"3.4 stars, 55 reviews",Approved
+Fairfield Community Center,,Community center,Unknown,,61 Water St,Fairfield,ME,4937,#ERROR!,,,,"4.3 stars, 86 reviews",Approved
+Winthrop Town Beach,,Beach,Unknown,,117 Bowdoin St,Winthrop,ME,4364,,,,,"4.2 stars, 98 reviews",Approved
+Midco® Aquatic Center,,attractions,Unknown,,1601 S Western Ave,Sioux Falls,SD,57105,#ERROR!,,,,"4.1 stars, 1018 reviews",Approved
+Mitchell Aquatic Center,,Sports complex,Unknown,,1201 E Hanson Ave,Mitchell,SD,57301,#ERROR!,,,,"4.4 stars, 96 reviews",Approved
+SafeSplash Swim School - Sioux Falls (East),,Swimming school,Unknown,,603 S Highline Pl,Sioux Falls,SD,57110,#ERROR!,,,,"4.9 stars, 40 reviews",Approved
+Hartford Swimming Pool,,Swimming pool,Unknown,,406 N Vandemark Ave,Hartford,SD,57033,#ERROR!,,,,"3.8 stars, 28 reviews",Approved
+SafeSplash Swim School - Sioux Falls (Woodlake),,Swimming school,Unknown,,4600 S Tennis Ln,Sioux Falls,SD,57106,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Colman Swimming Pool,,Swimming facility,Unknown,,,Colman,SD,57017,#ERROR!,,,,"2.7 stars, 3 reviews",Approved
+SafeSplash Swim School - Sioux Falls (South),,Swimming school,Unknown,,427 W 85th St,Sioux Falls,SD,57108,#ERROR!,,,,"4.9 stars, 109 reviews",Approved
+Aquatics Center,,Swimming facility,Unknown,,"20747, 13820 Old Gunpowder Rd",Laurel,MD,20707,#ERROR!,,,,"4.5 stars, 29 reviews",Approved
+Swim America Sioux Falls,,Swimming instructor,Unknown,,3408 W Ralph Rogers Rd,Sioux Falls,SD,57108,#ERROR!,,,,"3.8 stars, 4 reviews",Approved
+Robert I. Bickford Natatorium,,Sports complex,Unknown,,"Robert I. Bickford Natatorium, 10129, 10207 Campus Way S",Largo,MD,20774,#ERROR!,,,,"4.5 stars, 59 reviews",Approved
+Atholton Swim Club,,Swim club,Unknown,,6731 Seneca Dr,Columbia,MD,21046,#ERROR!,,,,"4.7 stars, 30 reviews",Approved
+Family Aquatic Center,,Aquatic center,Unknown,,825 3rd St SW,Watertown,SD,57201,#ERROR!,,,,"4.5 stars, 149 reviews",Approved
+Mitchell Aquatic Club,,Sports complex,Unknown,,1401 N Main St,Mitchell,SD,57301,#ERROR!,,,,"4.4 stars, 17 reviews",Approved
+Baldwin Hills Swim Club,,Swim club,Unknown,,1153 Cecil Ave S,Millersville,MD,21108,#ERROR!,,,,"4.2 stars, 15 reviews",Approved
+Cheverly Swim and Racquet Club,,Swim club,Unknown,,5600 Euclid St,Cheverly,MD,20785,#ERROR!,,,,"4.4 stars, 90 reviews",Approved
+Nob Hill Swim Club,,Swim club,Unknown,,9538 Westwood Dr,Ellicott City,MD,21042,#ERROR!,,,,"4.8 stars, 24 reviews",Approved
+Shamrock Swim Club,,Swim club,Unknown,,411 Unquity Rd,Milton,MA,2186,#ERROR!,,,,"3.8 stars, 15 reviews",Approved
+British Swim School at Beverly Athletic Club,,Swimming instructor,Unknown,,7 Reservoir Rd,Beverly,MA,1915,#ERROR!,,,,"5 stars, 7 reviews",Approved
+Little Flippers Swim School - Natick,,Swimming school,Unknown,,7 Strathmore Rd,Natick,MA,1760,#ERROR!,,,,"4.7 stars, 126 reviews",Approved
+Goldfish Swim School - Westford,,Swimming school,Unknown,,3 Lyberty Way,Westford,MA,1886,#ERROR!,,,,"4.6 stars, 181 reviews",Approved
+Goldfish Swim School - Norwood,,Swimming school,Unknown,,128 Carnegie Row,Norwood,MA,2062,#ERROR!,,,,"4.8 stars, 128 reviews",Approved
+British Swim School at Wayside Athletic Club - Marlborough,,Swimming school,Unknown,,80 Broadmeadow St,Marlborough,MA,1752,#ERROR!,,,,"5 stars, 2 reviews",Approved
+British Swim School of South Lyon,,Swimming school,Unknown,,22185 Pontiac Trail,South Lyon,MI,48178,#ERROR!,,,,"4.9 stars, 136 reviews",Approved
+Aqua-Tots Swim School Canton,,Swimming school,Unknown,,43335 Joy Rd,Canton Township,MI,48187,#ERROR!,,,,"4.8 stars, 327 reviews",Approved
+Goldfish Swim School - Ann Arbor,,Swimming school,Unknown,,2107 W Stadium Blvd,Ann Arbor,MI,48103,#ERROR!,,,,"4.7 stars, 237 reviews",Approved
+Aqua-Tots Swim School Woodhaven,,Swimming school,Unknown,,21621 Allen Rd,Woodhaven,MI,48183,#ERROR!,,,,"4.9 stars, 201 reviews",Approved
+Goldfish Swim School - Canton,,Swimming school,Unknown,,225 Sheldon Rd,Canton Township,MI,48187,#ERROR!,,,,"4.8 stars, 385 reviews",Approved
+Aqua Tots Swim School Holland,,Swimming school,Unknown,,12610 Felch St,Holland,MI,49424,#ERROR!,,,,"4.9 stars, 118 reviews",Approved
+Aqua-Tots Swim School Portage,,Swimming school,Unknown,,7113 S Westnedge Ave,Portage,MI,49002,#ERROR!,,,,"4.9 stars, 313 reviews",Approved
+British Swim School at Holiday Inn Express - Wixom,,Swimming school,Unknown,,48953 Alpha Dr,Wixom,MI,48393,#ERROR!,,,,"5 stars, 29 reviews",Approved
+Aquatics Center,,Indoor swimming pool,Unknown,,Ryan Hall,Mt Pleasant,MI,48858,,,,,"4.5 stars, 2 reviews",Approved
+West Michigan Aquatics,,Swimming school,Unknown,,9230 W Shelby Rd,Shelby,MI,49455,#ERROR!,,,,,Approved
+"The Leelanau Swim School, LLC",,Swimming school,Unknown,,7717 E Alpers Rd,Lake Leelanau,MI,49653,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,914 W Eisenhower Pkwy,Ann Arbor,MI,48103,#ERROR!,,,,"4.9 stars, 250 reviews",Approved
+Richfield Swim Club,,Swim club,Unknown,,7461 Oliver Ave S,Richfield,MN,55423,#ERROR!,,,,"4.6 stars, 17 reviews",Approved
+Edina Swim Club,,Swim club,Unknown,,4445 W 77th St # 240,Edina,MN,55435,#ERROR!,,,,"4.6 stars, 9 reviews",Approved
+WAVE Swim Club,,Swim club,Unknown,,1300 MN-25,Buffalo,MN,55313,,,,,"4.4 stars, 16 reviews",Approved
+City of Laurel Natatorium,,Indoor swimming pool,Unknown,,4978 US-84,Laurel,MS,39443,#ERROR!,,,,"4.3 stars, 60 reviews",Approved
+Columbus AFB Pool,,Swimming pool,Unknown,,Independence Dr,Columbus,MS,39705,#ERROR!,,,,"4.6 stars, 23 reviews",Approved
+Sonny Montgomery Sports Complex Aquatic Center,,Swimming pool,Unknown,,369a Allen Rd,Meridian,MS,39309,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Poplar Springs Swim and Racquet Club,,Swim club,Unknown,,1020 Windmill Dr,Meridian,MS,39305,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Mary Mabry Swimming Lessons,,Swimming instructor,Unknown,,342 Cole Rd,Hattiesburg,MS,39402,#ERROR!,,,,,Approved
+SwimBranson,,Swimming school,Unknown,,320 S Commercial St Unit 7214,Branson,MO,65615,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Lee's Summit R-7 Aquatic Center,,attractions,Unknown,,3498 SW Windemere Dr,Lee's Summit,MO,64082,#ERROR!,,,,"4.3 stars, 191 reviews",Approved
+The Swim School At Quantum,,Swimming instructor,Unknown,,505 N Pine St,Lockwood,MO,65682,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Mizzou Aquatic Center,,University,Unknown,,,Columbia,MO,65212,,,,,"4 stars, 4 reviews",Approved
+Montana Swim Academy at Holiday Inn Express & Suites - Bozeman West,,Swimming school,Unknown,,2305 Catron St,Bozeman,MT,59718,#ERROR!,,,,"5 stars, 11 reviews",Approved
+Barracuda Swim Club LLC,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 11 reviews",Approved
+Currents Aquatics Center,,attractions,Unknown,,600 Cregg Ln,Missoula,MT,59801,#ERROR!,,,,"4.4 stars, 612 reviews",Approved
+Missoula Family YMCA,,Gym,Unknown,,3000 S Russell St,Missoula,MT,59801,#ERROR!,,,,"3.9 stars, 117 reviews",Approved
+Broadwater Hot Springs & Fitness,,attractions,Unknown,,4920 US-12,Helena,MT,59601,#ERROR!,,,,"4.3 stars, 1776 reviews",Approved
+Butte Family YMCA Inc.,,Non-profit organization,Unknown,,2975 Washoe St,Butte,MT,59701,#ERROR!,,,,"4.3 stars, 267 reviews",Approved
+Stanford Pool,,attractions,Unknown,,209 1st Ave N,Stanford,MT,59479,#ERROR!,,,,"4.7 stars, 15 reviews",Approved
+Montana Athletic Club,,Gym,Unknown,,850 Holt Dr,Bigfork,MT,59911,#ERROR!,,,,"4.9 stars, 218 reviews",Approved
+Canyons Athletic Club,,Athletic club,Unknown,,472 Tammany Ln,Hamilton,MT,59840,#ERROR!,,,,"4.5 stars, 174 reviews",Approved
+University of Montana Campus Recreation,,Recreation center,Unknown,,"University of Montana Campus Recreation Fitness & Recreation Center, 32 Campus Dr",Missoula,MT,59812,#ERROR!,,,,"4.5 stars, 80 reviews",Approved
+Pinewood Aquatic Center,,attractions,Unknown,,925 4th Ave W,Columbia Falls,MT,59912,#ERROR!,,,,"4.2 stars, 42 reviews",Approved
+Brookland Swim Academy,,Aquatic center,Unknown,,125 Michigan Ave NE,Washington,DC,20017,#ERROR!,,,,"3.1 stars, 8 reviews",Approved
+SafeSplash Swim School - Columbia Heights,,Swimming school,Unknown,,3100 14th St NW,Washington,DC,20010,#ERROR!,,,,"4.2 stars, 20 reviews",Approved
+DC SWIMMING INSTRUCTOR/ PRIVATE MOBILE INSTRUCTOR Washington DC,,Swimming instructor,Unknown,,1620 Fuller St NW,Washington,DC,20009,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Deanwood Aquatic Center,,Indoor swimming pool,Unknown,,1350 49th St NE,Washington,DC,20019,#ERROR!,,,,"4.2 stars, 248 reviews",Approved
+Norman Swimming LLC,,Swimming school,Unknown,,1301 N Quincy St,Arlington,VA,22201,#ERROR!,,,,"5 stars, 42 reviews",Approved
+SwimBox,,Swimming instructor,Unknown,,5183B Langston Blvd.,Arlington,VA,22207,#ERROR!,,,,"4.8 stars, 109 reviews",Approved
+Boys & Girls Club - Lehmann Swim Center,,attractions,Unknown,,2712 Park St,Nacogdoches,TX,75961,#ERROR!,,,,"4.4 stars, 5 reviews",Approved
+Northern Nevada Aquatics,,Swimming instructor,Unknown,,240 W Moana Ln,Reno,NV,89509,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Carson Valley Swim Center,,attractions,Unknown,,1600 NV-88 #88,Minden,NV,89423,#ERROR!,,,,"4.5 stars, 434 reviews",Approved
+Tyler ISD Aquatic Center,,Swimming pool,Unknown,,3013 Earl Campbell Pkwy,Tyler,TX,75703,#ERROR!,,,,"4.7 stars, 44 reviews",Approved
+Emler Swim School of Henderson,,Swimming school,Unknown,,10907 S Eastern Ave,Henderson,NV,89052,#ERROR!,,,,"4.9 stars, 288 reviews",Approved
+Warm Water Fitness,,Indoor swimming pool,Unknown,,400 Hoover Ln,Nevada City,CA,95959,#ERROR!,,,,"3 stars, 2 reviews",Approved
+Boys & Girls Club - Lufkin Swim Center,,attractions,Unknown,,909 South Angelina Blvd,Lufkin,TX,75901,#ERROR!,,,,"4.1 stars, 34 reviews",Approved
+Firm Foundation Infant Aquatics,,Swimming instructor,Unknown,,655 Panther Branch Rd,Valley Mills,TX,76689,#ERROR!,,,,"5 stars, 24 reviews",Approved
+Texas Swim Lessons,,Swimming school,Unknown,,310 Robinwood Dr,Whitehouse,TX,75791,#ERROR!,,,,"5 stars, 7 reviews",Approved
+Mesquite Recreation Center,,Recreation center,Unknown,,100 W Old Mill Rd,Mesquite,NV,89027,#ERROR!,,,,"4.4 stars, 324 reviews",Approved
+Whitney Ranch Recreation Center,,Recreation center,Unknown,,1575 Galleria Dr,Henderson,NV,89014,#ERROR!,,,,"4.6 stars, 459 reviews",Approved
+"City of Las Vegas Centennial Hills Community Center, Operated by the YMCA",,Community center,Unknown,,6601 N Buffalo Dr,Las Vegas,NV,89131,#ERROR!,,,,"4.5 stars, 899 reviews",Approved
+Henderson Multigenerational Center,,Recreation center,Unknown,,250 S Green Valley Pkwy,Henderson,NV,89012,#ERROR!,,,,"4.6 stars, 716 reviews",Approved
+Jackpot Recreation Center,,Recreation center,Unknown,,2395 Progressive Dr,Jackpot,NV,89825,#ERROR!,,,,"4.5 stars, 33 reviews",Approved
+Stadium Swim,,Swimming pool,Unknown,,8 Fremont St,Las Vegas,NV,89101,#ERROR!,,,,"4.2 stars, 871 reviews",Approved
+Davis-Scott Family YMCA,,Youth organization,Unknown,,1213 Iowa St,San Antonio,TX,78203,#ERROR!,,,,"4.4 stars, 447 reviews",Approved
+Black Mountain Recreation Center,,attractions,Unknown,,599 Greenway Rd,Henderson,NV,89015,#ERROR!,,,,"4.5 stars, 381 reviews",Approved
+Silver Mesa Recreation Center,,Recreation center,Unknown,,4025 Allen Ln,North Las Vegas,NV,89032,#ERROR!,,,,"4.3 stars, 382 reviews",Approved
+Life Time,,Gym,Unknown,,10721 W Charleston Blvd,Las Vegas,NV,89135,#ERROR!,,,,"3.8 stars, 512 reviews",Approved
+Las Vegas Athletic Clubs - Green Valley,,Gym,Unknown,,9065 S Eastern Ave,Las Vegas,NV,89123,#ERROR!,,,,"4.2 stars, 1292 reviews",Approved
+NH Swim School,,Swimming instructor,Unknown,,41 Hall St,Concord,NH,3301,#ERROR!,,,,"5 stars, 12 reviews",Approved
+InstaSwim,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.9 stars, 177 reviews",Approved
+ISR New Hampshire,,Swimming school,Unknown,,4 Gulf St,Concord,NH,3301,#ERROR!,,,,,Approved
+British Swim School of Hudson Waterfront,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"4.8 stars, 310 reviews",Approved
+Into The Swim -Swim School,,Swimming school,Unknown,,4250 US 1 Suite #6,Monmouth Junction,NJ,8852,#ERROR!,,,,"4.2 stars, 69 reviews",Approved
+Aqua-Tots Swim School North Bergen,,attractions,Unknown,,3131 John F. Kennedy Blvd,North Bergen,NJ,7047,#ERROR!,,,,"4.9 stars, 81 reviews",Approved
+British Swim School at LA Fitness - East Brunswick,,Swimming school,Unknown,,341 NJ-18,East Brunswick,NJ,8816,#ERROR!,,,,"4.9 stars, 85 reviews",Approved
+Goldfish Swim School - Mount Laurel,,Swimming school,Unknown,,2036 Briggs Rd,Mt Laurel Township,NJ,8054,#ERROR!,,,,"4.7 stars, 447 reviews",Approved
+Shore Swim School (fka Shoobies Swim School),,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 17 reviews",Approved
+Making Waves Swim School,,Swimming instructor,Unknown,,390 Forsgate Dr,Monroe Township,NJ,8831,#ERROR!,,,,"4.4 stars, 17 reviews",Approved
+Goldfish Swim School - Edison,,Swimming school,Unknown,,1004 US-1,Edison,NJ,8817,#ERROR!,,,,"4.7 stars, 126 reviews",Approved
+LifeCycle Swim School,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 32 reviews",Approved
+Aqua-Tots Swim School Mount Laurel,,attractions,Unknown,,1102 Nixon Dr,Mt Laurel Township,NJ,8054,#ERROR!,,,,"5 stars, 125 reviews",Approved
+KIDS FIRST Swim School - Cherry Hill,,Swimming school,Unknown,,1900 Greentree Rd,Cherry Hill Township,NJ,8003,#ERROR!,,,,"4.3 stars, 147 reviews",Approved
+Fischer Swim School,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 10 reviews",Approved
+British Swim School of LA Fitness Paramus,,Swimming school,Unknown,,240 NJ-17,Paramus,NJ,7652,#ERROR!,,,,"4.7 stars, 127 reviews",Approved
+ETA Coach Open Water Swim,,Athletic club,Unknown,,,Medford,NJ,8055,,,,,"4.9 stars, 19 reviews",Approved
+SwimWorks Swim School,,Swimming school,Unknown,,8120 Ventura St NE Suite B,Albuquerque,NM,87122,#ERROR!,,,,"4.6 stars, 142 reviews",Approved
+Green Feet Swimming,,Swimming school,Unknown,,700 Quincy St NE,Albuquerque,NM,87110,#ERROR!,,,,"4.9 stars, 41 reviews",Approved
+West Mesa Aquatic Center,,attractions,Unknown,,6705 Fortuna Rd NW,Albuquerque,NM,87121,#ERROR!,,,,"4.2 stars, 880 reviews",Approved
+Kay's All Swim School,,Swimming instructor,Unknown,,9737 4th St NW,Albuquerque,NM,87114,#ERROR!,,,,"4.1 stars, 23 reviews",Approved
+Los Altos pool,,Swimming pool,Unknown,,10100 Lomas Blvd NE,Albuquerque,NM,87112,#ERROR!,,,,"4.3 stars, 241 reviews",Approved
+Fish Factory Swim School NE Heights,,Swimming school,Unknown,,3707 Eubank Blvd NE,Albuquerque,NM,87111,#ERROR!,,,,"4.3 stars, 92 reviews",Approved
+Valley Pool,,Swimming pool,Unknown,,1505 Candelaria Rd NW,Albuquerque,NM,87107,#ERROR!,,,,"4.3 stars, 192 reviews",Approved
+Betsy Patterson Swimming Pool,,attractions,Unknown,,7801 Candelaria Rd NE,Albuquerque,NM,87110,#ERROR!,,,,"4.2 stars, 291 reviews",Approved
+Rio Rancho Aquatic Center,,Swimming pool,Unknown,,745 Loma Colorado Dr NE,Rio Rancho,NM,87124,#ERROR!,,,,"4.4 stars, 689 reviews",Approved
+Farmington Aquatic Center,,attractions,Unknown,,1151 Sullivan Ave,Farmington,NM,87401,#ERROR!,,,,"4.3 stars, 324 reviews",Approved
+Highland Pool,,attractions,Unknown,,400 Jackson St SE,Albuquerque,NM,87108,#ERROR!,,,,"4.3 stars, 230 reviews",Approved
+NMSU Aquatic Center,,Aquatic center,Unknown,,1520 Stewart St,Las Cruces,NM,88003,#ERROR!,,,,"4.6 stars, 81 reviews",Approved
+Las Cruces Regional Aquatic Center,,attractions,Unknown,,1401 E Hadley Ave,Las Cruces,NM,88001,#ERROR!,,,,"4.4 stars, 562 reviews",Approved
+"SwimWorks Swim School - Albuquerque,NM",,Swimming instructor,Unknown,,"Salvador Perez Pool, 601 Alta Vista St",Santa Fe,NM,87505,#ERROR!,,,,,Approved
+Sierra Vista Swimming Pool,,attractions,Unknown,,5001 Montaño Rd NW,Albuquerque,NM,87120,#ERROR!,,,,"4.4 stars, 228 reviews",Approved
+Fish Factory Swim School Rio Rancho,,Swimming school,Unknown,,1801 Wellspring Ave SE,Rio Rancho,NM,87124,#ERROR!,,,,"4.9 stars, 70 reviews",Approved
+Charger Aquatics,,Swimming school,Unknown,,6400 Wyoming Blvd NE,Albuquerque,NM,87109,#ERROR!,,,,"4.3 stars, 19 reviews",Approved
+NMT Swimming Pool,,Swimming pool,Unknown,,Campus,Socorro,NM,87801,#ERROR!,,,,"4.8 stars, 24 reviews",Approved
+Clovis Aquatic Center,,attractions,Unknown,,1700 E 7th St,Clovis,NM,88101,#ERROR!,,,,"3.9 stars, 111 reviews",Approved
+Rio Grande Indoor Pool,,attractions,Unknown,,2312 Arenal Rd SW,Albuquerque,NM,87105,#ERROR!,,,,"4.4 stars, 416 reviews",Approved
+Smallwood Beach,,Beach club,Unknown,,Lake View Dr,Smallwood,NY,12778,,,,,"4.6 stars, 29 reviews",Approved
+Town Of Bethel Pool And Park,,attractions,Unknown,,636 Old White Lake Turnpike,Swan Lake,NY,12783,#ERROR!,,,,"4.7 stars, 51 reviews",Approved
+Swim Easy New York,,Swimming school,Unknown,,109 E 50th St,New York,NY,10022,#ERROR!,,,,"4.9 stars, 232 reviews",Approved
+Aqua-Tots Swim School Raleigh,,Swimming school,Unknown,,8823 Six Forks Rd,Raleigh,NC,27615,#ERROR!,,,,"4.6 stars, 167 reviews",Approved
+Charlotte Swim Academy,,Swimming,Unknown,,"9315-A, Monroe Rd",Charlotte,NC,28270,#ERROR!,,,,"4.9 stars, 135 reviews",Approved
+PhD Swim School,,Swimming school,Unknown,,"Triangle Village Shopping Center, 2105 NC-54 H&I",Durham,NC,27713,#ERROR!,,,,"4.2 stars, 40 reviews",Approved
+Safesplash Swim School - Holly Springs,,Swimming instructor,Unknown,,301 Earnie Ln,Holly Springs,NC,27540,#ERROR!,,,,"4.7 stars, 157 reviews",Approved
+Charlotte Aquatics,,Swimming school,Unknown,,7835 Little Ave,Charlotte,NC,28226,#ERROR!,,,,"4.8 stars, 168 reviews",Approved
+SwimMAC Carolina,,Swim club,Unknown,,9850 Providence Rd,Charlotte,NC,28277,#ERROR!,,,,"4.5 stars, 93 reviews",Approved
+Safesplash + Swimlabs - Morrisville(Triangle),,Swimming instructor,Unknown,,115 Parkside Valley Dr Suite 10,Morrisville,NC,27560,#ERROR!,,,,"4.5 stars, 421 reviews",Approved
+British Swim School at LA Fitness Northeast Charlotte/Concord,,Swimming school,Unknown,,3024 Prosperity Church Rd,Charlotte,NC,28269,#ERROR!,,,,"4.8 stars, 40 reviews",Approved
+OWA Swim School,,Swimming school,Unknown,,12210 N Tryon St,Charlotte,NC,28262,#ERROR!,,,,"4.2 stars, 22 reviews",Approved
+10DaySwim,,Swimming instructor,Unknown,,123 Fox Hollow Rd,Mooresville,NC,28117,#ERROR!,,,,"5 stars, 181 reviews",Approved
+NC Aquatics LLC - Swim Lessons,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Raynez Swim School,,Swimming school,Unknown,,3205 Raynez Dr,Greenville,NC,27858,#ERROR!,,,,"4.9 stars, 14 reviews",Approved
+H & L Swim Academy,,Swimming instructor,Unknown,,205 Athletic Club Blvd,Clayton,NC,27527,#ERROR!,,,,"4.8 stars, 30 reviews",Approved
+The Swim Studio,,Swimming instructor,Unknown,,1630 E Woodlawn Rd #285,Charlotte,NC,28209,#ERROR!,,,,"4.9 stars, 140 reviews",Approved
+Evolution Aquatic & Activity Center,,Swimming instructor,Unknown,,11202 Harris Rd,Huntersville,NC,28078,#ERROR!,,,,"3.7 stars, 164 reviews",Approved
+Campbell University Aquatics,,University,Unknown,,191 Bolton Rd,Lillington,NC,27546,,,,,"4.9 stars, 10 reviews",Approved
+Aqua-Tots Swim School Myers Park,,Swimming school,Unknown,,2935 Providence Rd,Charlotte,NC,28211,#ERROR!,,,,"4.8 stars, 97 reviews",Approved
+Ina Mae Rude Aquatic Center,,attractions,Unknown,,603 8th Ave SE,Stanley,ND,58784,#ERROR!,,,,"4.7 stars, 24 reviews",Approved
+Killdeer Aquatics and Wellness Center,,Fitness center,Unknown,,551 Central Ave NW,Killdeer,ND,58640,#ERROR!,,,,"4.5 stars, 43 reviews",Approved
+Center Community Pool,,attractions,Unknown,,207 Lincoln Ave,Center,ND,58530,#ERROR!,,,,"3.7 stars, 10 reviews",Approved
+Mandan Aquatic Center,,attractions,Unknown,,901 Division St NW,Mandan,ND,58554,#ERROR!,,,,"4.4 stars, 77 reviews",Approved
+Medora Swimming Pool,,Swimming pool,Unknown,,"City Pool, 3385 Pool Dr",Medora,ND,58645,#ERROR!,,,,"4.8 stars, 15 reviews",Approved
+Washburn Public Pool,,Swimming facility,Unknown,,210 9th St,Washburn,ND,58577,#ERROR!,,,,"5 stars, 3 reviews",Approved
+New Rockford Swimming Pool,,Swimming pool,Unknown,,,New Rockford,ND,58356,#ERROR!,,,,"4.8 stars, 11 reviews",Approved
+New England Swimming Pool,,Swimming pool,Unknown,,610 3rd Ave E,New England,ND,58647,#ERROR!,,,,"4.7 stars, 3 reviews",Approved
+Rugby Public Swimming Pool,,Indoor swimming pool,Unknown,,,Rugby,ND,58368,#ERROR!,,,,"3.3 stars, 3 reviews",Approved
+BSC Aquatic & Wellness Center,,attractions,Unknown,,1601 Canary Ave,Bismarck,ND,58501,#ERROR!,,,,"4.5 stars, 156 reviews",Approved
+New Salem Swimming Pool,,attractions,Unknown,,801 Elm Ave,New Salem,ND,58563,#ERROR!,,,,,Approved
+Hillsboro City Swimming Pool,,attractions,Unknown,,415 Woodland Pk Dr,Hillsboro,ND,58045,#ERROR!,,,,"4.5 stars, 16 reviews",Approved
+Hulbert Aquatic Center,,Swimming facility,Unknown,,620 7th Ave E,West Fargo,ND,58078,#ERROR!,,,,"4.7 stars, 227 reviews",Approved
+Rolla Community Swimming Pool,,attractions,Unknown,,101 5th Ave NE,Rolla,ND,58367,#ERROR!,,,,"4 stars, 2 reviews",Approved
+Nestegard Memorial Swiming Pool,,attractions,Unknown,,201 3rd Ave SE,Leeds,ND,58346,#ERROR!,,,,"3.5 stars, 2 reviews",Approved
+Hazen Swimming Pool,,attractions,Unknown,,520 1st Ave NE,Hazen,ND,58545,#ERROR!,,,,"4.1 stars, 8 reviews",Approved
+Linton Municipal Pool,,Swimming pool,Unknown,,102 Sunrise Ln,Linton,ND,58552,#ERROR!,,,,"4.7 stars, 3 reviews",Approved
+Kindred Swimming Pool,,attractions,Unknown,,131 Linden St,Kindred,ND,58051,#ERROR!,,,,"4.4 stars, 29 reviews",Approved
+Harvey Swimming Pool,,attractions,Unknown,,2501 ND-3,Harvey,ND,58341,#ERROR!,,,,"3.5 stars, 4 reviews",Approved
+Crosby Pool,,attractions,Unknown,,,Crosby,ND,58730,#ERROR!,,,,"4.8 stars, 29 reviews",Approved
+Swim Happy,,Swimming school,Unknown,,1170 S Main St Suite 400,Chelsea,MI,48118,#ERROR!,,,,"4.5 stars, 24 reviews",Approved
+Huron Valley Swim Club,,Swim club,Unknown,,4601 Park Rd,Ann Arbor,MI,48103,#ERROR!,,,,"4.8 stars, 53 reviews",Approved
+Dexter Community Pool,,attractions,Unknown,,3060 Kensington St,Dexter,MI,48130,#ERROR!,,,,"4.5 stars, 59 reviews",Approved
+Aqua-Tots Swim School Westerville,,Swimming school,Unknown,,714 N State St,Westerville,OH,43082,#ERROR!,,,,"4.7 stars, 197 reviews",Approved
+Goldfish Swim School - Westerville,,Swimming school,Unknown,,765 Brooksedge Blvd,Westerville,OH,43081,#ERROR!,,,,"4.8 stars, 271 reviews",Approved
+British Swim School at Hamburg Fitness Center and Camp,,Swimming school,Unknown,,8540 Hamburg Rd,Brighton,MI,48116,#ERROR!,,,,"4.9 stars, 21 reviews",Approved
+Westerville Aquatic Club,,Swim club,Unknown,,230 S Otterbein Ave,Westerville,OH,43081,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Hartland Caroselli Aquatic Center,,Swimming pool,Unknown,,10635 Dunham Rd,Hartland,MI,48353,#ERROR!,,,,"4.5 stars, 210 reviews",Approved
+Columbus Aquatics Center,,attractions,Unknown,,1160 Hunter Ave,Columbus,OH,43201,#ERROR!,,,,"4.4 stars, 272 reviews",Approved
+Goldfish Swim School - Dublin,,Swimming school,Unknown,,6175 Shamrock Ct Suite G,Dublin,OH,43016,#ERROR!,,,,"4.8 stars, 259 reviews",Approved
+"Northwest Swim Club, lnc",,Swim club,Unknown,,1064 Bethel Rd,Columbus,OH,43220,#ERROR!,,,,"4.8 stars, 56 reviews",Approved
+Aqua-Tots Swim School Beavercreek,,Swimming school,Unknown,,2451 Lakeview Dr,Beavercreek,OH,45431,#ERROR!,,,,"4.7 stars, 216 reviews",Approved
+Aqua-Tots Swim School New Albany,,Swimming school,Unknown,,5984 N Hamilton Rd,Westerville,OH,43081,#ERROR!,,,,"4.5 stars, 155 reviews",Approved
+"Walnut Hills Swim Club, llc",,Swimming pool,Unknown,,2770 Gladys Dr,Lexington,OH,44904,#ERROR!,,,,"4.7 stars, 24 reviews",Approved
+Central Ohio SwimAmerica,,Swimming instructor,Unknown,,230 S Otterbein Ave,Westerville,OH,43081,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Trumbull Aquatics Center,,Aquatic center,Unknown,,200 Livingston Dr,Granville,OH,43023,#ERROR!,,,,"4.7 stars, 10 reviews",Approved
+Mack Pool,,attractions,Unknown,,715 Brooks St,Ann Arbor,MI,48103,#ERROR!,,,,"4.3 stars, 85 reviews",Approved
+British Swim School at The Harcum Fitness & Aquatic Center,,Swimming school,Unknown,,2227 Taylor Park Dr,Reynoldsburg,OH,43068,#ERROR!,,,,"5 stars, 18 reviews",Approved
+Clear Fork Swimming Club,,Club,Unknown,,8 Sherwood Dr,Lexington,OH,44904,#ERROR!,,,,"3.8 stars, 25 reviews",Approved
+Oklahoma Swim Academy (OKC),,Swimming school,Unknown,,15001 Gambels Trail Dr,Oklahoma City,OK,73134,#ERROR!,,,,"4.9 stars, 236 reviews",Approved
+Aqua-Tots Swim School Oklahoma City,,Swimming school,Unknown,,8405 N Rockwell Ave,Oklahoma City,OK,73132,#ERROR!,,,,"4.5 stars, 274 reviews",Approved
+Oklahoma Swim Academy - Bryant Square,,Swimming school,Unknown,,420 S Bryant Ave,Edmond,OK,73034,#ERROR!,,,,"4.9 stars, 51 reviews",Approved
+Goldfish Swim School - Edmond,,Swimming school,Unknown,,10 NW 146th St,Edmond,OK,73013,#ERROR!,,,,"4.7 stars, 213 reviews",Approved
+Goldfish Swim School - Moore,,Swimming school,Unknown,,2724 S Telephone Rd,Moore,OK,73160,#ERROR!,,,,"5 stars, 25 reviews",Approved
+Like a Fish,,Swimming school,Unknown,,3333 W Hefner Rd,Oklahoma City,OK,73120,#ERROR!,,,,"5 stars, 34 reviews",Approved
+oklahoma survival swim,,Swimming instructor,Unknown,,14375 S Coltrane Rd,Edmond,OK,73034,#ERROR!,,,,"5 stars, 4 reviews",Approved
+Earlywine Park YMCA,,Gym,Unknown,,11801 S May Ave,Oklahoma City,OK,73170,#ERROR!,,,,"4.4 stars, 798 reviews",Approved
+King Marlin Swim Club,,Sports club,Unknown,,2901 Marilyn Williams Dr,Edmond,OK,73003,#ERROR!,,,,"4.2 stars, 22 reviews",Approved
+Murray Case Sells Swim Complex,,Swimming pool,Unknown,,1701 Asp Ave,Norman,OK,73072,#ERROR!,,,,"4.4 stars, 110 reviews",Approved
+American Energy Swim Club,,Swim club,Unknown,,2901 Marilyn Williams Dr,Edmond,OK,73003,,,,,"5 stars, 19 reviews",Approved
+Miller Swim School - Tulsa,,Swimming school,Unknown,,6415 S Mingo Rd,Tulsa,OK,74133,#ERROR!,,,,"4.6 stars, 515 reviews",Approved
+Colvin Recreation Center,,Recreation center,Unknown,,101 Colvin Ctr,Stillwater,OK,74078,#ERROR!,,,,"4.7 stars, 457 reviews",Approved
+Life Time,,Gym,Unknown,,2563 W Memorial Rd,Oklahoma City,OK,73134,#ERROR!,,,,"4.1 stars, 463 reviews",Approved
+Swim 2 Live Live 2 Swim,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 83 reviews",Approved
+Rose State College Aquatics Center,,College,Unknown,,6420 SE 15th St,Midwest City,OK,73110,#ERROR!,,,,"4.2 stars, 9 reviews",Approved
+Swim School Private Lessons Coach Cris,,Swimming school,Unknown,,6316 S Indianapolis Ave,Tulsa,OK,74136,#ERROR!,,,,"5 stars, 15 reviews",Approved
+Mustang Aquatic Park,,Swimming facility,Unknown,,1201 N Mustang Rd,Mustang,OK,73064,#ERROR!,,,,"4.5 stars, 130 reviews",Approved
+Oregon City Swimming Pool,,attractions,Unknown,,1211 Jackson St,Oregon City,OR,97045,#ERROR!,,,,"4.4 stars, 252 reviews",Approved
+British Swim School at 24 Hour Fitness - Tanasbourne Super Sport,,Swimming school,Unknown,,1265 NW Waterhouse Ave,Beaverton,OR,97006,#ERROR!,,,,"4.8 stars, 29 reviews",Approved
+Shute Park Aquatic & Recreation Center,,Recreation center,Unknown,,953 SE Maple St,Hillsboro,OR,97123,#ERROR!,,,,"4.5 stars, 1053 reviews",Approved
+Downtown Athletic Club,,Athletic club,Unknown,,999 Willamette St,Eugene,OR,97401,#ERROR!,,,,"4.4 stars, 278 reviews",Approved
+Cove Aquatic Center,,attractions,Unknown,,17605 Center Dr,Bend,OR,97707,#ERROR!,,,,"4.7 stars, 61 reviews",Approved
+Ocaquatics Swim School Kendall,,Swimming school,Unknown,,13408 SW 131st St,Miami,FL,33186,#ERROR!,,,,"4.9 stars, 891 reviews",Approved
+Sunriver Homeowners Aquatic & Recreation Center,,attractions,Unknown,,57250 Overlook Rd,Sunriver,OR,97707,#ERROR!,,,,"4.3 stars, 1095 reviews",Approved
+Amazon Pool,,attractions,Unknown,,2600 Hilyard St,Eugene,OR,97405,#ERROR!,,,,"4.5 stars, 382 reviews",Approved
+Dixon Recreation Center,,Recreation center,Unknown,,"DxRC, 425 SW 26th St",Corvallis,OR,97331,#ERROR!,,,,"4.5 stars, 261 reviews",Approved
+"Salem Swim School - Swim Lessons Salem, OR",,Swimming school,Unknown,,685 36th Ave NE,Salem,OR,97301,#ERROR!,,,,"4.9 stars, 91 reviews",Approved
+Madras Aquatic Center,,Swimming pool,Unknown,,1195 SE Kemper Way,Madras,OR,97741,#ERROR!,,,,"4.5 stars, 261 reviews",Approved
+Family YMCA of Marion and Polk Counties,,Non-profit organization,Unknown,,685 Court St NE,Salem,OR,97301,#ERROR!,,,,"3.6 stars, 153 reviews",Approved
+Chehalem Aquatic and Fitness Center,,Aquatic center,Unknown,,1802 Haworth Ave,Newberg,OR,97132,#ERROR!,,,,"4.4 stars, 417 reviews",Approved
+Timberhill Athletic Club,,Gym,Unknown,,2855 NW 29th St,Corvallis,OR,97330,#ERROR!,,,,"4.5 stars, 233 reviews",Approved
+Eagle Crest Sports Center,,Sports complex,Unknown,,1580 Swallow Ln,Redmond,OR,97756,#ERROR!,,,,"4.4 stars, 186 reviews",Approved
+Main Street Swim School: King of Prussia,,Swimming school,Unknown,,200 Village Drive,King of Prussia,PA,19406,#ERROR!,,,,"4.8 stars, 18 reviews",Approved
+Central PA ISR,,Swimming instructor,Unknown,,903 Milford St,Port Royal,PA,17082,#ERROR!,,,,"5 stars, 7 reviews",Approved
+British Swim School at Schreiber Center for Pediatric Development,,Swimming school,Unknown,,625 Community Way,Lancaster,PA,17603,#ERROR!,,,,"4.9 stars, 19 reviews",Approved
+British Swim School at Fairfield Inn & Suites by Marriott Mechanicsburg,,Swimming school,Unknown,,503 Winding Creek Blvd,Mechanicsburg,PA,17050,#ERROR!,,,,"4.7 stars, 12 reviews",Approved
+Goldfish Swim School - Langhorne,,Swimming school,Unknown,,735 Middletown Blvd,Langhorne,PA,19047,#ERROR!,,,,"4.9 stars, 64 reviews",Approved
+British Swim School of Greater Philadelphia,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 27 reviews",Approved
+Eagle Rock Aquatic Center,,Swimming facility,Unknown,,229 Turnberry Ln,Hazle Township,PA,18202,#ERROR!,,,,"4.4 stars, 80 reviews",Approved
+Goldfish Swim School - Malvern,,Swimming school,Unknown,,309 Lancaster Ave,Malvern,PA,19355,#ERROR!,,,,"4.9 stars, 259 reviews",Approved
+Aquatics Academy PA,,Swimming school,Unknown,,114 S 8th St,Stroudsburg,PA,18360,#ERROR!,,,,"5 stars, 11 reviews",Approved
+PENN Aquatics,,Swimming school,Unknown,,705 Hood Blvd,Fairless Hills,PA,19030,#ERROR!,,,,"4.2 stars, 16 reviews",Approved
+Northwest Swim Club of Bethlehem,,Swim club,Unknown,,1470 Pennsylvania Ave,Allentown,PA,18109,,,,,"4.6 stars, 33 reviews",Approved
+KIDS FIRST Swim School - Aston,,Swimming school,Unknown,,4441 Pennell Rd,Aston Township,PA,19014,#ERROR!,,,,"4.6 stars, 76 reviews",Approved
+Kunkel Aquatic Center (McGinness Pool),,Gym,Unknown,,931 Harrisburg Ave,Lancaster,PA,17603,,,,,"4.9 stars, 12 reviews",Approved
+Goldfish Swim School - Warwick,,Swimming school,Unknown,,615 Greenwich Ave Unit 12,Warwick,RI,2886,#ERROR!,,,,"5 stars, 171 reviews",Approved
+Pods Swimming,,Swimming school,Unknown,,111 Commercial Way,East Providence,RI,2914,#ERROR!,,,,"4.6 stars, 210 reviews",Approved
+SafeSplash Swim School - West Warwick,,Swimming school,Unknown,,255 Legris Ave,West Warwick,RI,2893,#ERROR!,,,,"4.4 stars, 111 reviews",Approved
+SafeSplash Swim School - Bristol,,Swimming school,Unknown,,15 Gooding Ave,Bristol,RI,2809,#ERROR!,,,,"4.5 stars, 77 reviews",Approved
+Orca Aquatics,,Swim club,Unknown,,1810 Mineral Spring Ave,North Providence,RI,2904,#ERROR!,,,,"4.7 stars, 15 reviews",Approved
+Katherine Moran Coleman Aquatics Center,,Indoor swimming pool,Unknown,,235 Hope St,Providence,RI,2906,#ERROR!,,,,"4.8 stars, 69 reviews",Approved
+Tootell Aquatic Center,,Aquatic center,Unknown,,105 Keaney Rd,Kingston,RI,2881,#ERROR!,,,,"4.3 stars, 72 reviews",Approved
+North Providence Pool & Fitness Center,,Indoor swimming pool,Unknown,,1810 Mineral Spring Ave,North Providence,RI,2904,#ERROR!,,,,"4.5 stars, 49 reviews",Approved
+McDermott Pool,,attractions,Unknown,,975 Sandy Ln,Warwick,RI,2889,#ERROR!,,,,"4.4 stars, 238 reviews",Approved
+Anglerfish Aquatics at the Bruce Calvert Aquatic Center,,Swimming school,Unknown,,2600 Mendon Rd,Cumberland,RI,2864,#ERROR!,,,,"5 stars, 4 reviews",Approved
+Sher-Le-Mon Swim Club,,Swim club,Unknown,,2701 Mendon Rd,Cumberland,RI,2864,#ERROR!,,,,"4.4 stars, 38 reviews",Approved
+Rhode Island Aquatic Club,,Swim club,Unknown,,Mill St,Newport,RI,2840,#ERROR!,,,,,Approved
+Goldfish Swim School - North Attleboro,,Swimming school,Unknown,,1360 S Washington St Unit 1-A,North Attleborough,MA,2760,#ERROR!,,,,"4.9 stars, 285 reviews",Approved
+Kent County YMCA,,Gym,Unknown,,900 Centerville Rd,Warwick,RI,2886,#ERROR!,,,,"4.5 stars, 194 reviews",Approved
+YMCA of Greater Providence,,Non-profit organization,Unknown,,1 Virginia Ave,Providence,RI,2905,#ERROR!,,,,"4.9 stars, 12 reviews",Approved
+Kingfish Rhode Island,,Swim club,Unknown,,1 Old Ferry Rd,Bristol,RI,2809,,,,,,Approved
+MacColl YMCA,,Youth organization,Unknown,,32 Breakneck Hill Rd,Lincoln,RI,2865,#ERROR!,,,,"4 stars, 178 reviews",Approved
+Cranston YMCA,,Gym,Unknown,,1225 Park Ave,Cranston,RI,2910,#ERROR!,,,,"4 stars, 73 reviews",Approved
+The Greenwich Club,,Social club,Unknown,,5426 Post Rd,East Greenwich,RI,2818,#ERROR!,,,,"4.6 stars, 40 reviews",Approved
+Smithfield YMCA,,Non-profit organization,Unknown,,15 Deerfield Dr,Greenville,RI,2828,#ERROR!,,,,"4.4 stars, 130 reviews",Approved
+Sink or Swim School,,Swimming instructor,Unknown,,411 Golf Rd,Summerville,SC,29483,#ERROR!,,,,"4.9 stars, 289 reviews",Approved
+Goldfish Swim School - Greenville,,Swimming school,Unknown,,607 Haywood Rd,Greenville,SC,29607,#ERROR!,,,,"4.8 stars, 200 reviews",Approved
+Goldfish Swim School - Lexington,,Swimming school,Unknown,,932 N Lake Dr,Lexington,SC,29072,#ERROR!,,,,"4.8 stars, 61 reviews",Approved
+British Swim School at Onelife Fitness - Forest Acres,,Swimming school,Unknown,,4114 Forest Dr,Columbia,SC,29206,#ERROR!,,,,"5 stars, 26 reviews",Approved
+LowCountry Swim School,,Baby swimming school,Unknown,,,,,,#ERROR!,,,,"4.8 stars, 54 reviews",Approved
+Safe 2 Swim,,Swimming school,Unknown,,101 Corporate Pkwy,Aiken,SC,29803,#ERROR!,,,,"5 stars, 25 reviews",Approved
+South Carolina Swim Club,,Swim club,Unknown,,1251 Park W Blvd,Mt Pleasant,SC,29466,#ERROR!,,,,,Approved
+Flutter Kicks Swim Lessons - Columbia,,Swimming instructor,Unknown,,4658 Pamlico Cir,Columbia,SC,29206,#ERROR!,,,,"5 stars, 15 reviews",Approved
+KIDS FIRST Swim School - Mount Pleasant,,Swimming school,Unknown,,1000 Johnnie Dodds Blvd #104,Mt Pleasant,SC,29464,#ERROR!,,,,"4.7 stars, 98 reviews",Approved
+Swim Lessons with Mary,,Swimming instructor,Unknown,,424 Westfield St,Greenville,SC,29601,#ERROR!,,,,"5 stars, 266 reviews",Approved
+Palmetto Aquatics,,Swimming instructor,Unknown,,106 Hillpine Rd,Columbia,SC,29212,#ERROR!,,,,"4.7 stars, 10 reviews",Approved
+The Swim Lessons Company,,Swimming instructor,Unknown,,200 Wellmore Dr,Lexington,SC,29072,#ERROR!,,,,"4.8 stars, 49 reviews",Approved
+Charleston Swim School,,Swimming school,Unknown,,1455 Monitor St,North Charleston,SC,29405,#ERROR!,,,,"5 stars, 51 reviews",Approved
+Greenville Splash Masters,,attractions,Unknown,,424 Westfield St,Greenville,SC,29601,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Miss Dru's Swimming School,,Swimming school,Unknown,,20 Riverview Rd,Ware Shoals,SC,29692,#ERROR!,,,,"4.8 stars, 6 reviews",Approved
+Mitchell Recreation Center,,Recreation center,Unknown,,1300 N Main St,Mitchell,SD,57301,#ERROR!,,,,"4.4 stars, 140 reviews",Approved
+Hillcrest Aquatic Center,,attractions,Unknown,,1505 5th St,Brookings,SD,57006,#ERROR!,,,,"4.1 stars, 53 reviews",Approved
+Webster Aquatic Center,,attractions,Unknown,,201 12th Ave E,Webster,SD,57274,#ERROR!,,,,"4.7 stars, 23 reviews",Approved
+Madison Aquatic Center & Park,,attractions,Unknown,,1000 1st St NW,Madison,SD,57042,#ERROR!,,,,"4.4 stars, 77 reviews",Approved
+Madison Community Center,,Community center,Unknown,,500 11th St NE,Madison,SD,57042,#ERROR!,,,,"4.5 stars, 116 reviews",Approved
+Elmen Center,,Sports complex,Unknown,,2505 S Grange Ave,Sioux Falls,SD,57105,#ERROR!,,,,"4.5 stars, 75 reviews",Approved
+Splash Central Waterpark,,attractions,Unknown,,345 9th St SW,Huron,SD,57350,#ERROR!,,,,"4.5 stars, 192 reviews",Approved
+Mobridge Aquatic Center,,attractions,Unknown,,1002 2nd St E,Mobridge,SD,57601,#ERROR!,,,,"5 stars, 11 reviews",Approved
+Lennox Pool,,Swimming pool,Unknown,,100 Park Dr,Lennox,SD,57039,,,,,"4.6 stars, 37 reviews",Approved
+Dell Rapids Swimming Pool,,attractions,Unknown,,Beach Ave,Dell Rapids,SD,57022,#ERROR!,,,,"3.8 stars, 31 reviews",Approved
+EmBe,,Child care agency,Unknown,,300 W 11th St,Sioux Falls,SD,57104,#ERROR!,,,,"3.7 stars, 16 reviews",Approved
+University of Tennessee Student Aquatics Center,,Aquatic center,Unknown,,2106 Andy Holt Ave,Knoxville,TN,37996,#ERROR!,,,,"4.8 stars, 111 reviews",Approved
+Nashville Swim Academy,,Swimming school,Unknown,,1105 63rd Ave N,Nashville,TN,37209,#ERROR!,,,,"5 stars, 243 reviews",Approved
+Swim With Ms Nancy,,Physical fitness program,Unknown,,501 Black Horse Pkwy,Franklin,TN,37069,#ERROR!,,,,"4.7 stars, 3 reviews",Approved
+Ensworth Aquatics,,Swimming facility,Unknown,,7401 TN-100,Nashville,TN,37221,#ERROR!,,,,"4.8 stars, 64 reviews",Approved
+Ryan's Swim Academy,,Swimming school,Unknown,,7408 Tennessee Excavating Dr Suite 101,Nolensville,TN,37135,#ERROR!,,,,"5 stars, 9 reviews",Approved
+Beyond Aquatics,,Swimming facility,Unknown,,236 Robert Rose Dr,Murfreesboro,TN,37129,#ERROR!,,,,"4.5 stars, 199 reviews",Approved
+British Swim School of South Wind Apartments,,Swimming school,Unknown,,549 Southwinds Dr,Franklin,TN,37064,#ERROR!,,,,"4.9 stars, 91 reviews",Approved
+A+J Swim Lessons,,Swimming school,Unknown,,7102 Pleasant Grove Ct,Fairview,TN,37062,#ERROR!,,,,"5 stars, 1 reviews",Approved
+SwimAmerica,,Swimming school,Unknown,,222 25th Ave N,Nashville,TN,37023,,,,,"5 stars, 3 reviews",Approved
+Nashville Aquatic Club,,Sports club,Unknown,,222 25th Ave N,Nashville,TN,37203,,,,,"4.2 stars, 11 reviews",Approved
+Brendan Sweetman Swimmers,,Swimming instructor,Unknown,,2001 Woodmont Blvd,Nashville,TN,37215,,,,,"4.1 stars, 14 reviews",Approved
+Ensworth Swim School,,Swimming school,Unknown,,7401 TN-100,Nashville,TN,37221,#ERROR!,,,,,Approved
+British Swim School at National Fitness Center - Morristown,,Swimming school,Unknown,,1950 W Andrew Johnson Hwy,Morristown,TN,37814,#ERROR!,,,,"5 stars, 3 reviews",Approved
+ISR of Middle TN,,Swimming instructor,Unknown,,1100 Sparta Rd,Nashville,TN,37205,#ERROR!,,,,,Approved
+Goldfish Swim School - Franklin,,Swimming school,Unknown,,1113 Murfreesboro Rd #201,Franklin,TN,37064,#ERROR!,,,,"4.6 stars, 193 reviews",Approved
+SafeSplash + SwimLabs Swim School - Knoxville (Cedar Bluff),,Swimming school,Unknown,,120 N Peters Rd,Knoxville,TN,37923,#ERROR!,,,,"4.8 stars, 135 reviews",Approved
+Sea Star Swim School,,Swimming school,Unknown,,127 Sanders Ferry Rd,Hendersonville,TN,37075,#ERROR!,,,,"4.5 stars, 37 reviews",Approved
+Kidd Springs Aquatic Center,,attractions,Unknown,,807 W Canty St,Dallas,TX,75208,#ERROR!,,,,"4.3 stars, 232 reviews",Approved
+T. Boone Pickens YMCA,,Non-profit organization,Unknown,,601 N Akard St,Dallas,TX,75201,#ERROR!,,,,"4.2 stars, 149 reviews",Approved
+The Dallas World Aquarium,,attractions,Unknown,,1801 N Griffin St,Dallas,TX,75202,#ERROR!,,,,"4.4 stars, 28284 reviews",Approved
+Dallas Swim Kids,,Swimming instructor,Unknown,,6465 E Mockingbird Ln #410,Dallas,TX,75214,#ERROR!,,,,"3.9 stars, 42 reviews",Approved
+Kidd Springs Recreation Center,,Recreation center,Unknown,,711 W Canty St,Dallas,TX,75208,#ERROR!,,,,"4.6 stars, 343 reviews",Approved
+Park South Family YMCA,,Physical fitness program,Unknown,,2500 Romine Ave,Dallas,TX,75215,#ERROR!,,,,"4.6 stars, 90 reviews",Approved
+Highland Park Swimming Pool,,attractions,Unknown,,3801 Lexington Ave,Dallas,TX,75205,#ERROR!,,,,"4.6 stars, 23 reviews",Approved
+Blue Pools Dallas.,,General contractor,Unknown,,2233 McKinney Ave,Dallas,TX,75201,#ERROR!,,,,"4 stars, 1 reviews",Approved
+Emler Swim School of Dallas-Walnut Hill,,Swimming school,Unknown,,9820 N Central Expy #500,Dallas,TX,75231,#ERROR!,,,,"4.9 stars, 471 reviews",Approved
+Robson & Lindley Aquatics Center and Barr-McMillion Natatorium,,Aquatic center,Unknown,,5550 SMU Boulevard,Dallas,TX,75206,#ERROR!,,,,"4.7 stars, 62 reviews",Approved
+City Of Dallas Park and Recreation,,Local government office,Unknown,,1500 Marilla St,Dallas,TX,75201,#ERROR!,,,,"4.2 stars, 39 reviews",Approved
+Swim U Swim School,,Swimming school,Unknown,,4560 W Mockingbird Ln Suite 104,Dallas,TX,75209,#ERROR!,,,,,Approved
+Cowboys Fit,,Fitness center,Unknown,,411 N Washington Ave Ste 1900,Dallas,TX,75246,#ERROR!,,,,"4.5 stars, 709 reviews",Approved
+"Dallas Infant Aquatics, LLC",,Swimming school,Unknown,,St Michaels Dr,Dallas,TX,75230,#ERROR!,,,,"5 stars, 4 reviews",Approved
+Jim Montgomery Swim School,,Swimming school,Unknown,,14902 Preston Rd Suite 1000E,Dallas,TX,75254,#ERROR!,,,,"4.8 stars, 407 reviews",Approved
+Moody Family YMCA in the Park Cities,,Non-profit organization,Unknown,,6000 Preston Rd,Dallas,TX,75205,#ERROR!,,,,"4.6 stars, 332 reviews",Approved
+Holmes Aquatic Center,,Swimming pool,Unknown,,3501 Lovers Ln,Dallas,TX,75205,#ERROR!,,,,"4.1 stars, 75 reviews",Approved
+Utah Swim Academy,,Swimming school,Unknown,,1145 N Geneva Rd,Provo,UT,84601,#ERROR!,,,,"4.8 stars, 358 reviews",Approved
+Hunsaker Swimming,,Swimming instructor,Unknown,,41 S 100 E,Kaysville,UT,84037,#ERROR!,,,,"5 stars, 33 reviews",Approved
+SwimKids,,Swimming school,Unknown,,550 W 220 S St,Pleasant Grove,UT,84062,#ERROR!,,,,"4.7 stars, 227 reviews",Approved
+Kira's Swim School,,Swimming school,Unknown,,3742 Bryce Canyon Dr,Riverton,UT,84065,,,,,"5 stars, 40 reviews",Approved
+Wayside Swim School,,Swimming school,Unknown,,8248 Wayside Cir,Sandy,UT,84094,#ERROR!,,,,"5 stars, 12 reviews",Approved
+ISR Super Stars,,Swimming instructor,Unknown,,12356 900 E,Draper,UT,84020,#ERROR!,,,,"4.8 stars, 26 reviews",Approved
+Orison Swim Academy,,Swimming instructor,Unknown,,610 Allison Way,Kaysville,UT,84037,#ERROR!,,,,"4.5 stars, 23 reviews",Approved
+Goldfish Swim School - South Jordan,,Swimming school,Unknown,,1350 S Jordan Pkwy W,South Jordan,UT,84095,#ERROR!,,,,"4.7 stars, 533 reviews",Approved
+Miss Jenn's Swim School,,Swimming school,Unknown,,559 N 1200 E,Mapleton,UT,84664,#ERROR!,,,,"5 stars, 9 reviews",Approved
+Venture Swimming,,Swimming school,Unknown,,8690 Alta Canyon Dr,Sandy,UT,84093,#ERROR!,,,,"5 stars, 3 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,1340 E Park Centre Dr,Cottonwood Heights,UT,84121,#ERROR!,,,,"4.9 stars, 438 reviews",Approved
+British Swim School - Bountiful,,Swimming school,Unknown,,2399 S Main St,Bountiful,UT,84010,#ERROR!,,,,"5 stars, 6 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,23 W Center St,Orem,UT,84057,#ERROR!,,,,"4.9 stars, 325 reviews",Approved
+"The Swim Academy in Davis County, Utah",,Swimming school,Unknown,,600 N Angel St,Fruit Heights,UT,84037,#ERROR!,,,,"5 stars, 3 reviews",Approved
+SwimLabs Swim School - Sandy,,Swimming school,Unknown,,834 E 9400 S #67,Sandy,UT,84094,#ERROR!,,,,"4.4 stars, 143 reviews",Approved
+Silver Bear Swim School,,Swimming school,Unknown,,1792 N Boston St,Lehi,UT,84043,#ERROR!,,,,"5 stars, 312 reviews",Approved
+Upper Valley Aquatic Center,,attractions,Unknown,,100 Arboretum Ln,White River Junction,VT,5001,#ERROR!,,,,"4.3 stars, 166 reviews",Approved
+The Swimming Hole,,attractions,Unknown,,75 Weeks Hill Rd,Stowe,VT,5672,#ERROR!,,,,"4.3 stars, 77 reviews",Approved
+Alison's Aquatic School,,Summer camp organizer,Unknown,,3103 Huntington Rd,Richmond,VT,5477,#ERROR!,,,,"5 stars, 6 reviews",Approved
+Ripple Swim School,,Swimming school,Unknown,,373 Blair Park Rd,Williston,VT,5495,#ERROR!,,,,"5 stars, 8 reviews",Approved
+Greater Burlington YMCA,,Fitness center,Unknown,,298 College St,Burlington,VT,5401,#ERROR!,,,,"3.9 stars, 105 reviews",Approved
+Bennington Recreation Center,,Recreation center,Unknown,,655 Gage St,Bennington,VT,5201,#ERROR!,,,,"4.4 stars, 137 reviews",Approved
+"The Aquatic Connection, LLC",,Swimming school,Unknown,,555 Beebe Rd,Newport,VT,5855,#ERROR!,,,,"5 stars, 40 reviews",Approved
+"The EDGE Sports & Fitness, Essex, VT",,Gym,Unknown,,4 Gauthier Dr Suite A,Essex Junction,VT,5452,#ERROR!,,,,"4.2 stars, 225 reviews",Approved
+Vermont Achievement Center,,Non-profit organization,Unknown,,88 Park St,Rutland,VT,5701,#ERROR!,,,,"3.7 stars, 50 reviews",Approved
+Vermont Sun Fitness,,Gym,Unknown,,11 Main St,Vergennes,VT,5491,#ERROR!,,,,"3.8 stars, 27 reviews",Approved
+Green Mountain Community Fitness,,Fitness center,Unknown,,652 Granger Rd,Barre,VT,5641,#ERROR!,,,,"4.7 stars, 158 reviews",Approved
+Sherman Manning Aquatic Facility,,Swimming pool,Unknown,,291 Highland Ave,White River Junction,VT,5001,#ERROR!,,,,"4.9 stars, 9 reviews",Approved
+Kaitlin's Beach Buddies Swim School,,Swimming school,Unknown,,3570 Lake Dunmore Rd,Salisbury,VT,5769,,,,,,Approved
+Vernon REC Pool,,Outdoor swimming pool,Unknown,,607 Pond Rd,Vernon,VT,5354,#ERROR!,,,,"4.5 stars, 37 reviews",Approved
+Waterbury Swimming Pool,,attractions,Unknown,,27 Butler St,Waterbury,VT,5676,#ERROR!,,,,"4 stars, 25 reviews",Approved
+Edgar May Health and Recreation Center,,Recreation center,Unknown,,140 Clinton St,Springfield,VT,5156,#ERROR!,,,,"4.5 stars, 135 reviews",Approved
+Sand Hill Park Swimming Pool,,attractions,Unknown,,208 Sand Hill Rd,Essex Junction,VT,5452,#ERROR!,,,,"4.5 stars, 37 reviews",Approved
+Pico Fitness Center,,attractions,Unknown,,51 Alpine Dr,Rutland,VT,5701,#ERROR!,,,,"4.5 stars, 61 reviews",Approved
+CCBA Witherell Recreation Center,,Recreation center,Unknown,,1 Taylor St,Lebanon,NH,3766,#ERROR!,,,,"4.4 stars, 113 reviews",Approved
+Aqua-Tots Swim School Centreville,,Swimming school,Unknown,,6319 Multiplex Dr,Centreville,VA,20121,#ERROR!,,,,"4.9 stars, 129 reviews",Approved
+SwimKids Swim School - Woodbridge,,Swimming instructor,Unknown,,14531 Potomac Mills Rd,Woodbridge,VA,22192,#ERROR!,,,,"4.6 stars, 241 reviews",Approved
+Goldfish Swim School - Chesapeake,,Swimming school,Unknown,,1249 Cedar Rd #105,Chesapeake,VA,23322,#ERROR!,,,,"5 stars, 105 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,6112-A Arlington Blvd,Seven Corners,VA,22044,#ERROR!,,,,"4.7 stars, 339 reviews",Approved
+Goldfish Swim School - Alexandria,,Swimming school,Unknown,,3155-B Duke St,Alexandria,VA,22314,#ERROR!,,,,"4.6 stars, 205 reviews",Approved
+Morgan Swim School,,Swimming school,Unknown,,7508 W Broad St,Henrico,VA,23294,#ERROR!,,,,"4.8 stars, 6 reviews",Approved
+KIDS FIRST Swim School - Springfield,,Swimming school,Unknown,,5238 Port Royal Rd,Springfield,VA,22151,#ERROR!,,,,"4.6 stars, 102 reviews",Approved
+Goldfish Swim School - Richmond West End,,Swimming school,Unknown,,9782 Gayton Rd,Richmond,VA,23238,#ERROR!,,,,"4.9 stars, 399 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,9658 Main St,Fairfax,VA,22031,#ERROR!,,,,"4.7 stars, 348 reviews",Approved
+Big Blue Swim School,,Swimming school,Unknown,,7202 Old Keene Mill Rd,Springfield,VA,22150,#ERROR!,,,,"4.8 stars, 430 reviews",Approved
+757 Swim Aquatic Center,,Athletic club,Unknown,,5720 Warhill Trail,Williamsburg,VA,23188,,,,,"4.8 stars, 38 reviews",Approved
+Aqua-Tots Swim School Virginia Beach,,attractions,Unknown,,2133 Upton Dr,Virginia Beach,VA,23454,#ERROR!,,,,"5 stars, 21 reviews",Approved
+Propel Swim Academy,,Swimming school,Unknown,,43160 Amberwood Plaza,South Riding,VA,20152,#ERROR!,,,,"4.9 stars, 263 reviews",Approved
+Aquatic Adventures Swim School,,Swimming school,Unknown,,2007 Electric Rd,Roanoke,VA,24018,#ERROR!,,,,"4.8 stars, 14 reviews",Approved
+Little Fish Swimming,,attractions,Unknown,,6301 Campus Dr,Fredericksburg,VA,22407,#ERROR!,,,,"4.5 stars, 57 reviews",Approved
+WeAquatics,,Swimming school,Unknown,,"Chinquapin Park Recreation Center, 3210 King St",Alexandria,VA,22302,#ERROR!,,,,"4.7 stars, 40 reviews",Approved
+William H Rumsey Aquatic Center,,attractions,Unknown,,635 North Carolina Ave SE,Washington,DC,20003,#ERROR!,,,,"4.1 stars, 209 reviews",Approved
+SafeSplash Swim School - Friendship Heights,,Swimming school,Unknown,,4300 Military Rd NW,Washington,DC,20015,#ERROR!,,,,"4.4 stars, 40 reviews",Approved
+Waterside Fitness & Swim Club,,Fitness center,Unknown,,901 6th St SW,Washington,DC,20024,#ERROR!,,,,"4.4 stars, 52 reviews",Approved
+Takoma Aquatic Center,,Indoor swimming pool,Unknown,,300 Van Buren St NW,Washington,DC,20012,#ERROR!,,,,"4.5 stars, 306 reviews",Approved
+Brookland Swim Academy,,Aquatic center,Unknown,,5719 Kansas Ave NW,Washington,DC,20011,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Wilson Aquatic Center,,Swimming facility,Unknown,,4551 Fort Dr NW,Washington,DC,20016,#ERROR!,,,,"4.3 stars, 329 reviews",Approved
+Long Bridge Aquatics & Fitness Center,,attractions,Unknown,,333 Long Bridge Dr,Arlington,VA,22202,#ERROR!,,,,"4.5 stars, 353 reviews",Approved
+Capital Splash Swim Academy,,Swimming school,Unknown,,1921 8th St NW,Washington,DC,20001,#ERROR!,,,,,Approved
+Yorktown Aquatics Center,,attractions,Unknown,,"Parking lot, 5200 Yorktown Blvd",Arlington,VA,22207,#ERROR!,,,,"4.4 stars, 111 reviews",Approved
+Turkey Thicket Recreation Center,,Recreation center,Unknown,,1100 Michigan Ave NE,Washington,DC,20017,#ERROR!,,,,"4.4 stars, 650 reviews",Approved
+Little Falls Swimming Club,,Swim club,Unknown,,5205 Little Falls Dr,Bethesda,MD,20816,#ERROR!,,,,"4.6 stars, 29 reviews",Approved
+Peak Health Aquatic Center at Mylan Park,,Swimming facility,Unknown,,1847 Fitness Wy,Morgantown,WV,26501,#ERROR!,,,,"4.7 stars, 455 reviews",Approved
+YMCA of Kanawha Valley,,Gym,Unknown,,100 YMCA Dr,Charleston,WV,25311,#ERROR!,,,,"4.4 stars, 348 reviews",Approved
+Greenbrier Valley Aquatic Center,,Aquatic center,Unknown,,896 Maplewood Ave,Lewisburg,WV,24901,#ERROR!,,,,"4.7 stars, 38 reviews",Approved
+YMCA of Southern WV,,Non-profit organization,Unknown,,121 E Main St,Beckley,WV,25801,#ERROR!,,,,"4.2 stars, 98 reviews",Approved
+The Bridge Sports Complex,,Sports complex,Unknown,,400 Forrester Boulevard,Bridgeport,WV,26330,#ERROR!,,,,"4.6 stars, 342 reviews",Approved
+Marshall Recreation Center,,Recreation center,Unknown,,402 Thundering Herd Dr,Huntington,WV,25703,#ERROR!,,,,"4.7 stars, 263 reviews",Approved
+West Virginia ISR,,Swimming instructor,Unknown,,,,,,#ERROR!,,,,"5 stars, 14 reviews",Approved
+WVU Student Recreation Center,,Recreation center,Unknown,,2001 Rec Center Dr,Morgantown,WV,26506,#ERROR!,,,,"4.7 stars, 421 reviews",Approved
+YMCA of Huntington West Virginia,,Non-profit organization,Unknown,,935 10th Ave,Huntington,WV,25701,#ERROR!,,,,"4 stars, 84 reviews",Approved
+YMCA of Parkersburg,,Non-profit organization,Unknown,,1800 30th St,Parkersburg,WV,26101,#ERROR!,,,,"4.5 stars, 83 reviews",Approved
+Tri-County YMCA Inc.,,Youth organization,Unknown,,200 Carls Ln,Scott Depot,WV,25560,#ERROR!,,,,"3.8 stars, 33 reviews",Approved
+South Charleston Community Center,,Community center,Unknown,,601 Jefferson Rd,Charleston,WV,25309,#ERROR!,,,,"4.2 stars, 543 reviews",Approved
+South Hills Swimming Club,,Club,Unknown,,1 Roderick Rd,Charleston,WV,25314,#ERROR!,,,,"4 stars, 31 reviews",Approved
+Lakewood Swimming Club,,Outdoor swimming pool,Unknown,,2088 Lakewood Dr,St Albans,WV,25177,,,,,"4.4 stars, 21 reviews",Approved
+Greenbrier Pool,,Swimming pool,Unknown,,5103 Chesterfield Ave,Charleston,WV,25304,#ERROR!,,,,"4.5 stars, 23 reviews",Approved
+Bluefield Fitness and Recreation Center,,Wellness center,Unknown,,703 College Ave,Bluefield,WV,24701,#ERROR!,,,,"4.4 stars, 89 reviews",Approved
+Windermere Pool,,Swim club,Unknown,,2308 Windham Rd,South Charleston,WV,25303,#ERROR!,,,,"4.8 stars, 18 reviews",Approved
+Bridgeport City Pool,,attractions,Unknown,,,Bridgeport,WV,26330,#ERROR!,,,,"4.5 stars, 74 reviews",Approved
+Princeton Recreation Center,,Recreation center,Unknown,,201 Morrison Dr,Princeton,WV,24740,#ERROR!,,,,"4.1 stars, 125 reviews",Approved
+YMCA,,Youth organization,Unknown,,5800 Ohio River Rd,Huntington,WV,25702,#ERROR!,,,,"4.3 stars, 124 reviews",Approved
+Hartford Family Aquatic Center,,attractions,Unknown,,125 N Rural St,Hartford,WI,53027,#ERROR!,,,,"4.6 stars, 23 reviews",Approved
+Emler Swim School of Brookfield,,Swimming school,Unknown,,350 Discovery Dr,Brookfield,WI,53045,#ERROR!,,,,"5 stars, 16 reviews",Approved
+Bob Joers Aquatic Center,,Indoor swimming pool,Unknown,,2230 Bristol St,Middleton,WI,53562,#ERROR!,,,,"4.5 stars, 11 reviews",Approved
+"SwimAmerica, Ozaukee",,Swimming school,Unknown,,2444 Dove Ct,Cedarburg,WI,53012,#ERROR!,,,,"5 stars, 43 reviews",Approved
+Emler Swim School West Madison,,Swimming school,Unknown,,1001 Deming Way,Madison,WI,53717,#ERROR!,,,,"4.8 stars, 289 reviews",Approved
+Waterloo Community Pool,,Indoor swimming pool,Unknown,,813 N Monroe St,Waterloo,WI,53594,#ERROR!,,,,"4.4 stars, 21 reviews",Approved
+Goldfish Swim School - Fitchburg,,Swimming school,Unknown,,2922 Hardrock Rd,Fitchburg,WI,53719,#ERROR!,,,,"4.9 stars, 193 reviews",Approved
+Swimtastic Swim School - Waukesha,,Swimming school,Unknown,,900 Tesch Ct,Waukesha,WI,53186,#ERROR!,,,,"4.8 stars, 145 reviews",Approved
+"ISR of Madison, LLC",,Swimming instructor,Unknown,,7790 Elmwood Ave,Middleton,WI,53562,#ERROR!,,,,"5 stars, 4 reviews",Approved
+FDL Community Aquatic Center,,attractions,Unknown,,100 W 9th St,Fond du Lac,WI,54935,#ERROR!,,,,"4.5 stars, 81 reviews",Approved
+Baraboo Indoor Pool,,Indoor swimming pool,Unknown,,1531 Draper St,Baraboo,WI,53913,#ERROR!,,,,"4.6 stars, 24 reviews",Approved
+Goldfish Swim School - Brookfield,,Swimming school,Unknown,,12565 W Feerick St,Brookfield,WI,53005,#ERROR!,,,,"4.9 stars, 314 reviews",Approved
+"Swim&Gym Summer Camp, LLC",,Summer camp organizer,Unknown,,1001 Deming Way,Madison,WI,53717,#ERROR!,,,,"5 stars, 26 reviews",Approved
+Kittelson Swim School of Delafield,,Swimming school,Unknown,,2801 Hillside Dr,Delafield,WI,53018,#ERROR!,,,,"5 stars, 1 reviews",Approved
+Madison Aquatic Club Lessons,,Swimming instructor,Unknown,,"UW Health at The American Center, 4602 Eastpark Blvd",Madison,WI,53718,,,,,"3 stars, 2 reviews",Approved
+British Swim School of St. John's Northwestern Academies,,Swimming school,Unknown,,1101 N Genesee St,Delafield,WI,53018,#ERROR!,,,,"4.9 stars, 139 reviews",Approved
+Swimtastic Swim School - Franklin,,Swimming school,Unknown,,9702 W Airways Ave,Franklin,WI,53132,#ERROR!,,,,"4.3 stars, 115 reviews",Approved
+Splash! Swim School,,Swimming school,Unknown,,10636 N Commerce St,Mequon,WI,53092,#ERROR!,,,,"4.7 stars, 47 reviews",Approved
+Goldfish Swim School - Bayshore,,Swimming school,Unknown,,540 W Silver Spring Dr,Glendale,WI,53217,#ERROR!,,,,"4.9 stars, 114 reviews",Approved
+Brookhaven Aquatic Center,,Indoor swimming pool,Unknown,,300 Mastic Beach Rd,Mastic Beach,NY,11951,#ERROR!,,,,"4.1 stars, 141 reviews",Approved
+Wyoming Swim Club,,Swim club,Unknown,,1239 Firewood Dr,Wyoming,OH,45215,#ERROR!,,,,"4.9 stars, 17 reviews",Approved
+Wyoming Recreation and Family Aquatic Center,,Recreation center,Unknown,,9940 Springfield Pike,Cincinnati,OH,45215,#ERROR!,,,,"4.6 stars, 215 reviews",Approved
+"McKay park: Wyoming pool, Splashpad & Recreation",,attractions,Unknown,,"1T0, 497-519 Ontario St",Wyoming,ON,N0N 1T0,#ERROR!,,,,"4.5 stars, 88 reviews",Approved
+Wyoming County YMCA,,Non-profit organization,Unknown,,115 Linwood Ave,Warsaw,NY,14569,#ERROR!,,,,"5 stars, 41 reviews",Approved
+Wilkes-Barre Family YMCA,,Non-profit organization,Unknown,,40 W Northampton St,Wilkes-Barre,PA,18701,#ERROR!,,,,"4.7 stars, 19 reviews",Approved
+Greater Pittston YMCA,,Non-profit organization,Unknown,,10 N Main St,Pittston,PA,18640,#ERROR!,,,,"3.6 stars, 65 reviews",Approved
+Goldfish Swim School - Centereach,,Swimming school,Unknown,,141 Centereach Mall Unit 8,Centereach,NY,11720,#ERROR!,,,,"4.8 stars, 330 reviews",Approved
+urSwim at LA Fitness Farmingville,,Swimming school,Unknown,,2280 N Ocean Ave STE A,Farmingville,NY,11738,#ERROR!,,,,"4.2 stars, 5 reviews",Approved
+Dover YMCA,,Gym,Unknown,,1137 S State St,Dover,DE,19901,#ERROR!,,,,"4.1 stars, 131 reviews",Approved
+Douglas Recreation Center,,Recreation center,Unknown,,1703 Hamilton St,Douglas,WY,82633,#ERROR!,,,,"4.2 stars, 73 reviews",Approved
+Forty Fort Pool,,Outdoor swimming pool,Unknown,,1089 Wyoming Ave,Forty Fort,PA,18704,#ERROR!,,,,"4.2 stars, 65 reviews",Approved
+Hauppauge Swim Club,,Swim club,Unknown,,500 Lincoln Blvd,Hauppauge,NY,11788,,,,,"4.3 stars, 9 reviews",Approved
+Islanders Aquatics Swim School,,Swimming school,Unknown,,1 Chapman Pkwy,Stony Brook,NY,11790,,,,,"5 stars, 11 reviews",Approved
+Hudson Valley Swim Monticello,,Swimming instructor,Unknown,,29 Golden Ridge Rd,Monticello,NY,12701,#ERROR!,,,,"5 stars, 2 reviews",Approved
+Paul Stock Aquatic and Recreation Center,,Recreation center,Unknown,,1402 Heart Mountain St,Cody,WY,82414,#ERROR!,,,,"4.7 stars, 31 reviews",Approved
+Glenrock Recreation Center,,Recreation center,Unknown,,412 S 4th St,Glenrock,WY,82637,#ERROR!,,,,"4.6 stars, 54 reviews",Approved
+5 Star Swim Schools Wyoming,,Swimming school,Unknown,,1/11 Brooks Ave,Wyoming,NE,2250,#ERROR!,,,,"4.8 stars, 73 reviews",Approved
+Powell Aquatic Center,,Swimming facility,Unknown,,1065 E Coulter Ave,Powell,WY,82435,#ERROR!,,,,"4.5 stars, 178 reviews",Approved

@@ -1,10 +1,10 @@
 {
-  "input_rows": 8,
-  "kept_rows": 7,
-  "output_rows": 7,
+  "input_rows": 1302,
+  "kept_rows": 1301,
+  "output_rows": 1245,
   "dropped_not_approved": 1,
-  "merged_duplicates": 0,
-  "missing_website": 0,
-  "missing_state": 4,
-  "generated_at_utc": "2026-02-17T05:03:07.007Z"
+  "merged_duplicates": 56,
+  "missing_website": 1238,
+  "missing_state": 6,
+  "generated_at_utc": "2026-02-17T10:59:54.202Z"
 }
