@@ -8,13 +8,14 @@ Repo: `tobuku/floatswim-site` | Domain: `floatswim.org`
 - Static HTML + CSS (no frameworks)
 - GitHub Pages hosting
 - Data pipeline: Google Sheets → CSV → JSON → live site
+- CSV export URL: `/export?format=csv` (not `gviz/tq` — that endpoint mangles headers)
 
 ## Data Pipeline
 - **Google Sheet ID:** `1NTCYcugbSS_g7el2cHDqrNYOqJB9r0dF3IbaZtfzWhg`
 - **Tab:** `swim_lessons`
 - **GitHub Action** (`data_pipeline.yml`): runs daily at 3:17 AM UTC
   1. `scripts/fetch_sheet_to_csv.mjs` — fetches sheet as CSV
-  2. `scripts/normalize_csv_to_json.mjs` — filters to `status=Approved`, deduplicates, outputs JSON
+  2. `scripts/normalize_csv_to_json.mjs` — filters to `status=Approved`, deduplicates, applies data fallbacks (missing website/state), outputs JSON
 - **Output files:** `data/swim_lessons.json`, `data/index_by_state.json`, `data/providers_by_id.json`, `data/build_report.json`
 - Bot account: `floatswim-bot`
 
@@ -35,7 +36,7 @@ Repo: `tobuku/floatswim-site` | Domain: `floatswim.org`
 14. notes
 15. status (only "Approved" rows are published)
 
-## Outscraper Automation (IN PROGRESS)
+## Outscraper Automation (LIVE)
 - **File:** `scripts/google_apps_script.js` — reference script for Google Apps Script
 - **Purpose:** Queries Outscraper Google Maps API for swim lesson providers across all 50 US states, writes results directly into the `swim_lessons` sheet with `status = Approved`
 - **Flow:** Outscraper API → Google Apps Script → Google Sheet → GitHub Action → live site
@@ -45,7 +46,15 @@ Repo: `tobuku/floatswim-site` | Domain: `floatswim.org`
   3. Replace `YOUR_API_KEY_HERE` with Outscraper API key
   4. Run `main()` manually to test
   5. Set weekly trigger via Edit > Triggers
-- **Current status:** Script is deployed and API key is set. User added credits to Outscraper account. Next step is to run `main()` again to confirm it pulls data successfully.
+- **Current status:** Fully operational. All 50 states queried, ~1,245 providers live on floatswim.org. Weekly triggers set in Apps Script (resetProgress + main). Daily GitHub Action pushes data live.
+- **Progress tracking:**
+  - Script uses `PropertiesService` to track which states have been processed
+  - If `main()` times out (Apps Script 6-min limit), re-running resumes from the next unprocessed state
+  - `resetProgress()` — resets tracking so `main()` starts from the beginning (use before weekly refresh)
+  - Typical full run requires 2–3 executions to cover all 50 states
+- **Data fallbacks:**
+  - Missing website → falls back to Google Maps URL from the listing
+  - Missing state → extracted from the query string (e.g., "swim lessons, Alabama" → AL)
 - **Key details:**
   - 50 queries (one per US state), 20 results each
   - Deduplicates on website, phone, or address match
