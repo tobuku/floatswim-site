@@ -6,6 +6,8 @@ Repo: `tobuku/floatswim-site` | Domain: `floatswim.org`
 
 ## Tech Stack
 - Static HTML + CSS (no frameworks)
+- Google Fonts: Inter (400, 500, 600, 700)
+- GSAP 3.12.7 + ScrollTrigger (via jsDelivr CDN, `defer`)
 - GitHub Pages hosting
 - Data pipeline: Google Sheets → CSV → JSON → live site
 - CSV export URL: `/export?format=csv` (not `gviz/tq` — that endpoint mangles headers)
@@ -76,10 +78,35 @@ floatswim-site/
 │   ├── providers_by_id.json
 │   └── build_report.json
 ├── data_raw/
+├── img/
+│   ├── banner_1024x512.png           ← Horizontal logo (social/headers)
+│   ├── banner_1200x630.png           ← OG/Twitter share image
+│   ├── banner_1500x500.png           ← Header & footer logo (used in nav)
+│   ├── favicon_16.png
+│   ├── favicon_32.png
+│   ├── favicon_180.png               ← Apple touch icon
+│   ├── favicon_192.png               ← Android icon
+│   ├── favicon_512.png               ← PWA icon
+│   └── logo_square.png               ← Square social avatar (512x512)
 ├── index.html, about.html, dashboard.html, directory.html, resources.html, roadmap.html, share-story.html
 ├── style.css
+├── sitemap.xml
+├── robots.txt
 └── READ.md
 ```
+
+## Site Design (Feb 2026 Redesign)
+- **Theme:** Light blue/white (was dark navy #020617, now ice blue #f0f9ff)
+- **CSS variables:** `--bg`, `--bg-alt`, `--accent` (#0284c7), `--text-main` (#0f172a), `--card-bg` (#fff), etc.
+- **Font:** Inter (Google Fonts) + system-ui fallback
+- **Header:** Sticky, glass blur, uses `banner_1500x500.png` as clickable logo (links to index.html)
+- **Footer:** Same banner logo + copyright + nav links
+- **Homepage:** Search-first landing — pill search bar (action=directory.html), state chip quick links, wave SVG divider, stats bar (1,245+ providers / 50 states / 100% free), floating bubble animations
+- **Directory:** `data-fs-directory` generates all markup via JS. Reads `?q=` and `?state=` URL params from homepage search handoff. Cards have colored cost (green) and type (blue) tags. Modal for provider details.
+- **Animations (GSAP):** Section fade-in on scroll, card stagger, hero slide-in, floating bubbles (homepage), wave morph. All wrapped in `typeof gsap` + `prefers-reduced-motion` checks.
+- **SEO:** Canonical URLs, OG/Twitter meta + image tags, JSON-LD structured data (WebSite+SearchAction on homepage, ItemList on directory, Organization on about, BreadcrumbList on all), sitemap.xml, robots.txt
+- **Favicons:** 5 sizes (16, 32, 180, 192, 512) in `/img/`, linked in all page heads
+- **No public email:** `hello@floatswim.org` was removed from all pages (Feb 2026)
 
 ## Conventions
 - Scripts use Node.js ESM (`.mjs`)
