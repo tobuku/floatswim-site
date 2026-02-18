@@ -4,11 +4,44 @@
   <meta charset="UTF-8" />
   <title>FloatSwim Roadmap – Phases & Future Plans</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="See the phased roadmap for how FloatSwim will grow from a foundational awareness site into a richer platform for drowning prevention and water safety."
-  />
+  <meta name="description" content="See what's next for FloatSwim — upcoming features, data improvements, and community tools for drowning prevention." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://floatswim.org/roadmap.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FloatSwim Roadmap – Phases & Future Plans" />
+  <meta property="og:description" content="See what's next for FloatSwim — upcoming features, data improvements, and community tools for drowning prevention." />
+  <meta property="og:url" content="https://floatswim.org/roadmap.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FloatSwim" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FloatSwim Roadmap – Phases & Future Plans" />
+  <meta name="twitter:description" content="See what's next for FloatSwim — upcoming features, data improvements, and community tools for drowning prevention." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://floatswim.org/" },
+      { "@type": "ListItem", "position": 2, "name": "Roadmap", "item": "https://floatswim.org/roadmap.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -29,7 +62,6 @@
           <a href="directory.html">Directory</a>
           <a class="active" href="roadmap.html">Roadmap</a>
           <a href="share-story.html">Share a Story</a>
-          <a href="index.html#get-involved">Get Involved</a>
         </nav>
       </div>
     </div>
@@ -103,7 +135,7 @@
             <div class="pill">Phase 4</div>
             <h3>Global & multilingual</h3>
             <p>
-              Extend FloatSwim’s reach beyond the U.S., partnering with local experts to adapt content, tools, and directories to different languages,
+              Extend FloatSwim's reach beyond the U.S., partnering with local experts to adapt content, tools, and directories to different languages,
               cultures, and risk environments.
             </p>
           </div>
@@ -118,7 +150,7 @@
             <div class="pill">Long term</div>
             <h3>Sustainable structure</h3>
             <p>
-              Explore nonprofit or hybrid models, advisory boards, and partnerships that can support FloatSwim’s mission over many years—not just a
+              Explore nonprofit or hybrid models, advisory boards, and partnerships that can support FloatSwim's mission over many years—not just a
               single season.
             </p>
           </div>
@@ -167,7 +199,7 @@
           </div>
           <div class="card">
             <div class="pill">Professionals</div>
-            <h3>What’s realistic?</h3>
+            <h3>What's realistic?</h3>
             <p>
               Pediatricians, swim instructors, and first responders can help keep the roadmap grounded in what actually works in real-world conditions.
             </p>
@@ -191,7 +223,6 @@
       <div>
         <a href="index.html#why">Why this matters</a> ·
         <a href="index.html#parents">For parents</a> ·
-        <a href="index.html#lessons">Lessons</a> ·
         <a href="index.html#stories">Stories</a> ·
         <a href="index.html#get-involved">Get involved</a>
       </div>
@@ -200,6 +231,34 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- GSAP Animations -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof gsap === "undefined") return;
+    var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray("section").forEach(function (sec) {
+      gsap.from(sec, {
+        opacity: 0, y: 30, duration: 0.7, ease: "power2.out",
+        scrollTrigger: { trigger: sec, start: "top 85%", once: true }
+      });
+    });
+
+    gsap.utils.toArray(".grid-3").forEach(function (grid) {
+      gsap.from(grid.children, {
+        opacity: 0, y: 20, duration: 0.5, stagger: 0.1, ease: "power2.out",
+        scrollTrigger: { trigger: grid, start: "top 85%", once: true }
+      });
+    });
+
+    var heroLeft = document.querySelector(".hero > div:first-child");
+    if (heroLeft) gsap.from(heroLeft, { opacity: 0, x: -30, duration: 0.8, ease: "power2.out" });
+  });
   </script>
 </body>
 </html>

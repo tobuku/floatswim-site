@@ -2,13 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>FloatSwim – Drowning Prevention & Early Childhood Water Safety</title>
+  <title>FloatSwim – Find Swim Lessons Near You</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="FloatSwim raises awareness about drowning and near-drowning incidents, shares stories of hope, and equips families and communities with actionable water safety tools."
-  />
+  <meta name="description" content="Find free and low-cost swim lessons near you. Search 1,245+ providers across all 50 states. FloatSwim is a drowning prevention directory for parents and caregivers." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://floatswim.org/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FloatSwim – Find Swim Lessons Near You" />
+  <meta property="og:description" content="Find free and low-cost swim lessons near you. Search 1,245+ providers across all 50 states." />
+  <meta property="og:url" content="https://floatswim.org/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FloatSwim" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FloatSwim – Find Swim Lessons Near You" />
+  <meta name="twitter:description" content="Find free and low-cost swim lessons near you. Search 1,245+ providers across all 50 states." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Structured Data: WebSite with SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FloatSwim",
+    "url": "https://floatswim.org",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://floatswim.org/directory.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://floatswim.org/"
+    }]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -21,79 +69,81 @@
             <div class="brand-tagline">Awareness. Safety. Hope.</div>
           </div>
         </div>
- <nav>
-  <a href="index.html">Home</a>
-  <a href="dashboard.html">Dashboard</a>
-  <a href="about.html">About</a>
-  <a href="resources.html">Resources</a>
-  <a href="directory.html">Directory</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a href="share-story.html">Share a Story</a>
-  <a class="active" href="index.html#get-involved">Get Involved</a>
-</nav>
+        <nav>
+          <a class="active" href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="about.html">About</a>
+          <a href="resources.html">Resources</a>
+          <a href="directory.html">Directory</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="share-story.html">Share a Story</a>
+        </nav>
       </div>
     </div>
   </header>
 
+  <!-- SEARCH HERO -->
+  <div class="search-hero">
+    <div class="bubble" style="width:80px;height:80px;top:10%;left:8%;"></div>
+    <div class="bubble" style="width:120px;height:120px;top:20%;right:5%;"></div>
+    <div class="bubble" style="width:50px;height:50px;top:60%;left:15%;"></div>
+    <div class="bubble" style="width:90px;height:90px;bottom:15%;right:12%;"></div>
+    <div class="bubble" style="width:60px;height:60px;top:5%;left:50%;"></div>
+    <div class="bubble" style="width:70px;height:70px;bottom:25%;left:35%;"></div>
+
+    <div class="shell">
+      <h1>Find swim lessons near you</h1>
+      <p class="search-subtitle">Search 1,245+ free and low-cost swim lesson providers across all 50 states.</p>
+
+      <form class="search-bar" action="directory.html" method="get">
+        <input type="text" name="q" placeholder="Search by city, state, or provider name..." aria-label="Search swim lesson providers" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="state-chips">
+        <a href="directory.html?state=CA">California</a>
+        <a href="directory.html?state=TX">Texas</a>
+        <a href="directory.html?state=FL">Florida</a>
+        <a href="directory.html?state=NY">New York</a>
+        <a href="directory.html?state=IL">Illinois</a>
+        <a href="directory.html?state=PA">Pennsylvania</a>
+        <a href="directory.html?state=OH">Ohio</a>
+        <a href="directory.html?state=GA">Georgia</a>
+        <a href="directory.html?state=all" class="see-all">All 50 states &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave Divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path id="wave-path" d="M0,40 C360,40 720,40 1080,40 S1440,40 1440,40 L1440,80 L0,80 Z" fill="#f0f9ff"/>
+    </svg>
+  </div>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar shell">
+    <div class="stat-item">
+      <div class="stat-number">1,245+</div>
+      <div class="stat-label">Swim lesson providers</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">50</div>
+      <div class="stat-label">States covered</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Free to search</div>
+    </div>
+  </div>
+
   <main>
     <div class="shell">
-      <!-- HERO -->
-      <section class="hero">
-        <div>
-          <div class="hero-kicker">Drowning is fast. Prevention is possible.</div>
-          <h1>
-            A national hub for <span>drowning prevention</span> and early childhood water safety.
-          </h1>
-          <p>
-            FloatSwim exists to track drowning and near-drowning events, amplify survivor stories, and equip families and communities with practical,
-            life-saving water safety tools—starting in infancy.
-          </p>
-          <div class="hero-badges">
-            <span class="badge">Infant & child water safety</span>
-            <span class="badge">Real-world incidents & trends</span>
-            <span class="badge">Free swimming lessons advocacy</span>
-          </div>
-          <div class="cta-row">
-            <a href="#parents" class="btn btn-primary">Water safety for your child</a>
-            <a href="#get-involved" class="btn btn-outline">Partner, teach, or support</a>
-          </div>
-          <div class="cta-note">
-            Built to grow from U.S. coverage to a global, multilingual platform over time.
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="Platform vision snapshot">
-          <h2>Where FloatSwim is heading</h2>
-          <p>
-            This early version is a calm starting point. Over time, FloatSwim will add a live incident dashboard, a lesson directory, and advocacy tools
-            to push for universal swimming access.
-          </p>
-          <div class="hero-metrics">
-            <div class="metric">
-              <div class="metric-label">Core focus</div>
-              <div class="metric-value">Infants & children</div>
-            </div>
-            <div class="metric">
-              <div class="metric-label">Approach</div>
-              <div class="metric-value">Data + stories + action</div>
-            </div>
-            <div class="metric">
-              <div class="metric-label">Tone</div>
-              <div class="metric-value">Calm, compassionate, firm</div>
-            </div>
-            <div class="metric">
-              <div class="metric-label">Future</div>
-              <div class="metric-value">Global expansion</div>
-            </div>
-          </div>
-        </aside>
-      </section>
-
       <!-- WHY THIS MATTERS -->
       <section id="why">
         <h2>Why This Matters</h2>
         <p class="lead">
-          Drowning is a leading cause of accidental death in young children—and yet it’s silent, fast, and drastically under-discussed. FloatSwim exists
+          Drowning is a leading cause of accidental death in young children—and yet it's silent, fast, and drastically under-discussed. FloatSwim exists
           to change that by making the invisible visible.
         </p>
 
@@ -116,7 +166,7 @@
       <section id="parents">
         <h2>For Parents & Caregivers</h2>
         <p class="lead">
-          Whether you live near the ocean, have a backyard pool, or just bathe your child at home, water safety starts long before “swim lessons.”
+          Whether you live near the ocean, have a backyard pool, or just bathe your child at home, water safety starts long before "swim lessons."
         </p>
 
         <div class="grid-3">
@@ -124,19 +174,19 @@
             <div class="pill">Ages 0–12 months</div>
             <h3>Water awareness, not pressure</h3>
             <p>
-              Gentle exposure, safe holding positions, and always-within-arm’s-reach supervision in any water setting.
+              Gentle exposure, safe holding positions, and always-within-arm's-reach supervision in any water setting.
             </p>
             <ul class="tight">
               <li>Never leave an infant near water—tubs, buckets, or pools—unattended.</li>
-              <li>Create a “no distractions near water” family rule (no phones, no scrolling).</li>
-              <li>Learn about infant swim programs in your area and what’s age-appropriate.</li>
+              <li>Create a "no distractions near water" family rule (no phones, no scrolling).</li>
+              <li>Learn about infant swim programs in your area and what's age-appropriate.</li>
             </ul>
           </div>
           <div class="card">
             <div class="pill">Ages 1–5 years</div>
             <h3>Layers of protection</h3>
             <p>
-              Fences, alarms, designated “water watchers,” and instruction converge to protect kids in this high-risk age group.
+              Fences, alarms, designated "water watchers," and instruction converge to protect kids in this high-risk age group.
             </p>
             <ul class="tight">
               <li>Four-sided pool fencing with self-latching gates.</li>
@@ -159,32 +209,6 @@
         </div>
       </section>
 
-      <!-- FREE LESSONS / DIRECTORY PLACEHOLDER -->
-      <section id="lessons">
-        <h2>Free & Low-Cost Swimming Lessons</h2>
-        <p class="lead">
-          Long-term, FloatSwim will host a searchable directory of free and subsidized swim programs across the United States and, eventually, worldwide.
-        </p>
-<p style="margin-top: 0.8rem;">
-  If you want to see how the future directory is taking shape, visit the
-  <a href="directory.html">Swim Lesson Directory</a> prototype page.
-</p>
-        <div class="shop-placeholder">
-  <p>
-    In this early phase, this section serves as a placeholder and a call for collaboration. The vision is to connect families with:
-  </p>
-  <ul class="tight">
-    <li>Community center and YMCA programs with sliding-scale or free options.</li>
-    <li>Nonprofit-funded lesson scholarships for infants and children.</li>
-    <li>Certified instructors committed to accessible water safety education.</li>
-  </ul>
-  <p style="margin-top: 0.8rem;">
-    If you want to see how the future directory is taking shape, visit the
-    <a href="directory.html">Swim Lesson Directory</a> prototype page.
-  </p>
-</div>
-      </section>
-
       <!-- STORIES -->
       <section id="stories">
         <h2>Stories of Hope & Recovery</h2>
@@ -198,11 +222,11 @@
             <ul class="tight">
               <li>Survivor and family perspectives on what happened and what changed afterward.</li>
               <li>Positive examples of communities rallying around prevention.</li>
-              <li>“What we wish we had known” reflections to help other families.</li>
+              <li>"What we wish we had known" reflections to help other families.</li>
             </ul>
           </div>
           <div class="note-box">
-            If you are interested in sharing your story in the future, you’ll be able to submit it with control over what details are public. The goal is
+            If you are interested in sharing your story in the future, you'll be able to submit it with control over what details are public. The goal is
             to offer hope, community, and practical insight—not to re-open trauma.
           </div>
         </div>
@@ -254,8 +278,7 @@
 
         <div style="margin-top: 1.4rem;">
           <p>
-            Contact: <a href="mailto:hello@floatswim.org">hello@floatswim.org</a>  
-            (You can update this email when you’re ready with your real inbox.)
+            Contact: <a href="mailto:hello@floatswim.org">hello@floatswim.org</a>
           </p>
         </div>
       </section>
@@ -268,7 +291,6 @@
       <div>
         <a href="#why">Why this matters</a> ·
         <a href="#parents">For parents</a> ·
-        <a href="#lessons">Lessons</a> ·
         <a href="#stories">Stories</a> ·
         <a href="#get-involved">Get involved</a>
       </div>
@@ -277,6 +299,63 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- GSAP Animations -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof gsap === "undefined") return;
+    var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Section fade-in on scroll
+    gsap.utils.toArray("section").forEach(function (sec) {
+      gsap.from(sec, {
+        opacity: 0, y: 30, duration: 0.7, ease: "power2.out",
+        scrollTrigger: { trigger: sec, start: "top 85%", once: true }
+      });
+    });
+
+    // Card stagger
+    gsap.utils.toArray(".grid-3").forEach(function (grid) {
+      gsap.from(grid.children, {
+        opacity: 0, y: 20, duration: 0.5, stagger: 0.1, ease: "power2.out",
+        scrollTrigger: { trigger: grid, start: "top 85%", once: true }
+      });
+    });
+
+    // Hero search bar slide-in
+    gsap.from(".search-hero h1", { opacity: 0, y: 30, duration: 0.8, ease: "power2.out" });
+    gsap.from(".search-subtitle", { opacity: 0, y: 20, duration: 0.8, delay: 0.15, ease: "power2.out" });
+    gsap.from(".search-bar", { opacity: 0, y: 20, duration: 0.8, delay: 0.3, ease: "power2.out" });
+    gsap.from(".state-chips", { opacity: 0, y: 15, duration: 0.8, delay: 0.45, ease: "power2.out" });
+
+    // Floating bubbles continuous animation
+    gsap.utils.toArray(".bubble").forEach(function (b, i) {
+      gsap.to(b, {
+        y: -15 - (i * 5), duration: 2.5 + (i * 0.4), ease: "sine.inOut",
+        yoyo: true, repeat: -1
+      });
+    });
+
+    // Wave divider morph on scroll
+    var wavePath = document.getElementById("wave-path");
+    if (wavePath) {
+      gsap.to(wavePath, {
+        attr: { d: "M0,20 C240,60 480,0 720,40 S1200,10 1440,30 L1440,80 L0,80 Z" },
+        ease: "none",
+        scrollTrigger: { trigger: ".wave-divider", start: "top 90%", end: "bottom 50%", scrub: 1 }
+      });
+    }
+
+    // Stats bar fade-in
+    gsap.from(".stat-item", {
+      opacity: 0, y: 20, duration: 0.6, stagger: 0.15, ease: "power2.out",
+      scrollTrigger: { trigger: ".stats-bar", start: "top 85%", once: true }
+    });
+  });
   </script>
 </body>
 </html>

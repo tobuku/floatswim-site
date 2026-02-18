@@ -4,11 +4,54 @@
   <meta charset="UTF-8" />
   <title>About FloatSwim – Mission, Values, and Roadmap</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Learn about FloatSwim’s mission to reduce drowning and near-drowning incidents through awareness, early childhood water safety education, and access to free and low-cost swim lessons."
-  />
+  <meta name="description" content="FloatSwim is a nonprofit drowning prevention initiative connecting families with swim lesson providers across all 50 US states. Learn about our mission." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://floatswim.org/about.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About FloatSwim – Mission, Values, and Roadmap" />
+  <meta property="og:description" content="FloatSwim is a nonprofit drowning prevention initiative connecting families with swim lesson providers across all 50 US states." />
+  <meta property="og:url" content="https://floatswim.org/about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FloatSwim" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About FloatSwim – Mission, Values, and Roadmap" />
+  <meta name="twitter:description" content="FloatSwim is a nonprofit drowning prevention initiative connecting families with swim lesson providers across all 50 US states." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FloatSwim",
+    "url": "https://floatswim.org",
+    "description": "A drowning prevention initiative connecting families with swim lesson providers across the United States.",
+    "email": "hello@floatswim.org"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://floatswim.org/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://floatswim.org/about.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -22,15 +65,14 @@
           </div>
         </div>
         <nav>
-  <a href="index.html">Home</a>
-  <a href="dashboard.html">Dashboard</a>
-  <a class="active" href="about.html">About</a>
-  <a href="resources.html">Resources</a>
-  <a href="directory.html">Directory</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a href="share-story.html">Share a Story</a>
-  <a href="index.html#get-involved">Get Involved</a>
-</nav>
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a class="active" href="about.html">About</a>
+          <a href="resources.html">Resources</a>
+          <a href="directory.html">Directory</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="share-story.html">Share a Story</a>
+        </nav>
       </div>
     </div>
   </header>
@@ -93,7 +135,7 @@
       <section>
         <h2>What FloatSwim Is</h2>
         <p class="lead">
-          FloatSwim is a developing online hub, not a crisis line or emergency service. It’s a place to understand drowning risk, learn preventive steps,
+          FloatSwim is a developing online hub, not a crisis line or emergency service. It's a place to understand drowning risk, learn preventive steps,
           and see how communities can respond with compassion and action.
         </p>
 
@@ -189,7 +231,7 @@
             <div class="pill">For families</div>
             <h3>Make safety less confusing</h3>
             <p>
-              Provide straightforward guides, checklists, and entry points into water safety for infants and children—especially for parents who don’t
+              Provide straightforward guides, checklists, and entry points into water safety for infants and children—especially for parents who don't
               have a strong swimming background themselves.
             </p>
           </div>
@@ -236,7 +278,7 @@
         </div>
       </section>
 
-      <!-- WHO IS BEHIND FLOATSWIM (PLACEHOLDER) -->
+      <!-- WHO IS BEHIND FLOATSWIM -->
       <section>
         <h2>Who Is Behind FloatSwim</h2>
         <p class="lead">
@@ -259,11 +301,11 @@
         </div>
       </section>
 
-      <!-- CONTACT / NEXT STEPS -->
+      <!-- CONTACT & NEXT STEPS -->
       <section>
         <h2>Contact & Next Steps</h2>
         <p class="lead">
-          If you see potential in this mission—as a parent, instructor, medical professional, nonprofit, or sponsor—you’re welcome to reach out and help
+          If you see potential in this mission—as a parent, instructor, medical professional, nonprofit, or sponsor—you're welcome to reach out and help
           shape what FloatSwim becomes.
         </p>
 
@@ -271,7 +313,7 @@
           <div>
             <ul class="tight">
               <li>Offer feedback on what families or communities most need.</li>
-              <li>Share existing resources that align with FloatSwim’s principles.</li>
+              <li>Share existing resources that align with FloatSwim's principles.</li>
               <li>Explore future partnerships for lessons, content, or outreach.</li>
             </ul>
           </div>
@@ -290,7 +332,6 @@
       <div>
         <a href="index.html#why">Why this matters</a> ·
         <a href="index.html#parents">For parents</a> ·
-        <a href="index.html#lessons">Lessons</a> ·
         <a href="index.html#stories">Stories</a> ·
         <a href="index.html#get-involved">Get involved</a>
       </div>
@@ -299,6 +340,36 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- GSAP Animations -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof gsap === "undefined") return;
+    var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray("section").forEach(function (sec) {
+      gsap.from(sec, {
+        opacity: 0, y: 30, duration: 0.7, ease: "power2.out",
+        scrollTrigger: { trigger: sec, start: "top 85%", once: true }
+      });
+    });
+
+    gsap.utils.toArray(".grid-3").forEach(function (grid) {
+      gsap.from(grid.children, {
+        opacity: 0, y: 20, duration: 0.5, stagger: 0.1, ease: "power2.out",
+        scrollTrigger: { trigger: grid, start: "top 85%", once: true }
+      });
+    });
+
+    var heroLeft = document.querySelector(".hero > div:first-child");
+    var heroRight = document.querySelector(".hero-card");
+    if (heroLeft) gsap.from(heroLeft, { opacity: 0, x: -30, duration: 0.8, ease: "power2.out" });
+    if (heroRight) gsap.from(heroRight, { opacity: 0, x: 30, duration: 0.8, delay: 0.15, ease: "power2.out" });
+  });
   </script>
 </body>
 </html>

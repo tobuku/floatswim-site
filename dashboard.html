@@ -2,13 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>FloatSwim Dashboard – Early Incident Overview</title>
+  <title>FloatSwim Dashboard – Drowning Incident Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="An early prototype dashboard showing simulated drowning and near-drowning incident data for future awareness and trend tracking."
-  />
+  <meta name="description" content="Drowning incident data and water safety statistics across the United States. Track trends and understand why swim lessons save lives." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://floatswim.org/dashboard.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FloatSwim Dashboard – Drowning Incident Data" />
+  <meta property="og:description" content="Drowning incident data and water safety statistics across the United States. Track trends and understand why swim lessons save lives." />
+  <meta property="og:url" content="https://floatswim.org/dashboard.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FloatSwim" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FloatSwim Dashboard – Drowning Incident Data" />
+  <meta name="twitter:description" content="Drowning incident data and water safety statistics across the United States." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://floatswim.org/" },
+      { "@type": "ListItem", "position": 2, "name": "Dashboard", "item": "https://floatswim.org/dashboard.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -29,7 +62,6 @@
           <a href="directory.html">Directory</a>
           <a href="roadmap.html">Roadmap</a>
           <a href="share-story.html">Share a Story</a>
-          <a href="index.html#get-involved">Get Involved</a>
         </nav>
       </div>
     </div>
@@ -72,21 +104,21 @@
         <div class="grid-3">
           <div class="card">
             <div class="pill">Total incidents (demo)</div>
-            <h3 id="metric-total">–</h3>
+            <h3 id="metric-total">&ndash;</h3>
             <p class="metric-text">
               Count of incidents currently in the demo dataset, including both drowning and near-drowning events.
             </p>
           </div>
           <div class="card">
             <div class="pill">Near-drowning (demo)</div>
-            <h3 id="metric-near">–</h3>
+            <h3 id="metric-near">&ndash;</h3>
             <p class="metric-text">
               Incidents where a person was rescued or revived. These often come with long-term medical or emotional impacts.
             </p>
           </div>
           <div class="card">
             <div class="pill">Drowning (demo)</div>
-            <h3 id="metric-drown">–</h3>
+            <h3 id="metric-drown">&ndash;</h3>
             <p class="metric-text">
               Incidents currently marked as drowning in the demo data. Real-world views will be handled with extreme care and respect.
             </p>
@@ -96,14 +128,14 @@
         <div class="grid-3" style="margin-top: 1.4rem;">
           <div class="card">
             <div class="pill">States represented (demo)</div>
-            <h3 id="metric-states">–</h3>
+            <h3 id="metric-states">&ndash;</h3>
             <p class="metric-text">
               Number of distinct U.S. states in the current demo dataset. In the future, this may expand to regions and countries.
             </p>
           </div>
           <div class="card">
             <div class="pill">Last updated (demo)</div>
-            <h3 id="metric-updated">–</h3>
+            <h3 id="metric-updated">&ndash;</h3>
             <p class="metric-text">
               Timestamp from the demo JSON file, indicating when this sample dataset was last changed.
             </p>
@@ -149,12 +181,13 @@
             </ul>
           </div>
           <div class="note-box">
-            The dashboard’s purpose is to inform and equip—not to shock. Every design decision will be guided by respect for families and a focus on
+            The dashboard's purpose is to inform and equip—not to shock. Every design decision will be guided by respect for families and a focus on
             prevention.
           </div>
         </div>
       </section>
-            <!-- SAMPLE INCIDENTS TABLE (ILLUSTRATIVE ONLY) -->
+
+      <!-- SAMPLE INCIDENTS TABLE -->
       <section>
         <h2>Sample Incident Format (Illustrative Only)</h2>
         <p class="lead">
@@ -211,7 +244,6 @@
           anonymized patterns—age, setting, and outcome—rather than personally identifying details.
         </div>
       </section>
-
     </div>
   </main>
 
@@ -221,7 +253,6 @@
       <div>
         <a href="index.html#why">Why this matters</a> ·
         <a href="index.html#parents">For parents</a> ·
-        <a href="index.html#lessons">Lessons</a> ·
         <a href="index.html#stories">Stories</a> ·
         <a href="index.html#get-involved">Get involved</a>
       </div>
@@ -235,39 +266,36 @@
     // Load incidents from data/incidents.json and populate the dashboard
     async function loadIncidents() {
       try {
-        const res = await fetch("data/incidents.json");
+        var res = await fetch("data/incidents.json");
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
 
-        const data = await res.json();
-        const incidents = Array.isArray(data.incidents) ? data.incidents : [];
+        var data = await res.json();
+        var incidents = Array.isArray(data.incidents) ? data.incidents : [];
 
-        // Update "last updated" metric (if present)
         if (data.last_updated) {
           document.getElementById("metric-updated").textContent = data.last_updated;
         } else {
           document.getElementById("metric-updated").textContent = "N/A";
         }
 
-        // Basic metrics
-        const total = incidents.length;
-        const near = incidents.filter((i) =>
-          (i.status || "").toLowerCase().includes("near")
-        ).length;
-        const drown = incidents.filter((i) => {
-          const status = (i.status || "").toLowerCase();
+        var total = incidents.length;
+        var near = incidents.filter(function (i) {
+          return (i.status || "").toLowerCase().includes("near");
+        }).length;
+        var drown = incidents.filter(function (i) {
+          var status = (i.status || "").toLowerCase();
           return status.includes("drown") && !status.includes("near");
         }).length;
-        const statesCount = new Set(incidents.map((i) => i.state || "Unknown")).size;
+        var statesCount = new Set(incidents.map(function (i) { return i.state || "Unknown"; })).size;
 
         document.getElementById("metric-total").textContent = total || "0";
         document.getElementById("metric-near").textContent = near || "0";
         document.getElementById("metric-drown").textContent = drown || "0";
         document.getElementById("metric-states").textContent = statesCount || "0";
 
-        // Populate incident cards
-        const container = document.getElementById("incident-cards");
+        var container = document.getElementById("incident-cards");
 
         if (!incidents.length) {
           container.innerHTML =
@@ -276,41 +304,66 @@
         }
 
         container.innerHTML = incidents
-          .map((incident) => {
-            const date = incident.date || "Unknown date";
-            const state = incident.state || "Unknown location";
-            const locationType = incident.location_type || "Water setting not specified";
-            const ageGroup = incident.age_group || "Age not specified";
-            const status = incident.status || "Status not specified";
-            const notes = incident.notes || "No additional notes provided.";
+          .map(function (incident) {
+            var date = incident.date || "Unknown date";
+            var incState = incident.state || "Unknown location";
+            var locationType = incident.location_type || "Water setting not specified";
+            var ageGroup = incident.age_group || "Age not specified";
+            var status = incident.status || "Status not specified";
+            var notes = incident.notes || "No additional notes provided.";
 
-            return `
-              <div class="card">
-                <div class="pill">${date} · ${state}</div>
-                <h3>${locationType}</h3>
-                <ul class="tight">
-                  <li><strong>Age group:</strong> ${ageGroup}</li>
-                  <li><strong>Status:</strong> ${status}</li>
-                  <li><strong>Notes:</strong> ${notes}</li>
-                </ul>
-              </div>
-            `;
+            return '<div class="card">' +
+              '<div class="pill">' + date + ' &middot; ' + incState + '</div>' +
+              '<h3>' + locationType + '</h3>' +
+              '<ul class="tight">' +
+              '<li><strong>Age group:</strong> ' + ageGroup + '</li>' +
+              '<li><strong>Status:</strong> ' + status + '</li>' +
+              '<li><strong>Notes:</strong> ' + notes + '</li>' +
+              '</ul></div>';
           })
           .join("");
       } catch (error) {
         console.error("Error loading incidents:", error);
-        const container = document.getElementById("incident-cards");
+        var container = document.getElementById("incident-cards");
         container.innerHTML =
           '<p class="lead">There was a problem loading the demo incident data. This is an early prototype view, and data sources may change.</p>';
-        document.getElementById("metric-total").textContent = "–";
-        document.getElementById("metric-near").textContent = "–";
-        document.getElementById("metric-drown").textContent = "–";
-        document.getElementById("metric-states").textContent = "–";
+        document.getElementById("metric-total").textContent = "\u2013";
+        document.getElementById("metric-near").textContent = "\u2013";
+        document.getElementById("metric-drown").textContent = "\u2013";
+        document.getElementById("metric-states").textContent = "\u2013";
         document.getElementById("metric-updated").textContent = "N/A";
       }
     }
 
     loadIncidents();
+  </script>
+
+  <!-- GSAP Animations -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof gsap === "undefined") return;
+    var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray("section").forEach(function (sec) {
+      gsap.from(sec, {
+        opacity: 0, y: 30, duration: 0.7, ease: "power2.out",
+        scrollTrigger: { trigger: sec, start: "top 85%", once: true }
+      });
+    });
+
+    gsap.utils.toArray(".grid-3").forEach(function (grid) {
+      gsap.from(grid.children, {
+        opacity: 0, y: 20, duration: 0.5, stagger: 0.1, ease: "power2.out",
+        scrollTrigger: { trigger: grid, start: "top 85%", once: true }
+      });
+    });
+
+    var heroLeft = document.querySelector(".hero > div:first-child");
+    if (heroLeft) gsap.from(heroLeft, { opacity: 0, x: -30, duration: 0.8, ease: "power2.out" });
+  });
   </script>
 </body>
 </html>

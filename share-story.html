@@ -4,11 +4,44 @@
   <meta charset="UTF-8" />
   <title>Share a Story – FloatSwim</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Learn how FloatSwim plans to feature survivor and family stories in a respectful, consent-driven way, and how to reach out in this early stage."
-  />
+  <meta name="description" content="Share your water safety story with FloatSwim. Help other families understand the importance of swim lessons and drowning prevention." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://floatswim.org/share-story.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Share a Story – FloatSwim" />
+  <meta property="og:description" content="Share your water safety story with FloatSwim. Help other families understand the importance of swim lessons and drowning prevention." />
+  <meta property="og:url" content="https://floatswim.org/share-story.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FloatSwim" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Share a Story – FloatSwim" />
+  <meta name="twitter:description" content="Share your water safety story with FloatSwim. Help other families understand the importance of swim lessons and drowning prevention." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://floatswim.org/" },
+      { "@type": "ListItem", "position": 2, "name": "Share a Story", "item": "https://floatswim.org/share-story.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -22,14 +55,14 @@
           </div>
         </div>
         <nav>
-  <a href="index.html">Home</a>
-  <a href="dashboard.html">Dashboard</a>
-  <a href="about.html">About</a>
-  <a href="resources.html">Resources</a>
-  <a href="directory.html">Directory</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a class="active" href="share-story.html">Share a Story</a>
-</nav>
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="about.html">About</a>
+          <a href="resources.html">Resources</a>
+          <a href="directory.html">Directory</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a class="active" href="share-story.html">Share a Story</a>
+        </nav>
       </div>
     </div>
   </header>
@@ -93,7 +126,7 @@
       <section id="how">
         <h2>How Sharing Will Work (Future State)</h2>
         <p class="lead">
-          As FloatSwim’s infrastructure grows, this page may offer a secure submission form with clear consent options and review steps. For now, this
+          As FloatSwim's infrastructure grows, this page may offer a secure submission form with clear consent options and review steps. For now, this
           section outlines the planned process.
         </p>
 
@@ -180,7 +213,6 @@
       <div>
         <a href="index.html#why">Why this matters</a> ·
         <a href="index.html#parents">For parents</a> ·
-        <a href="index.html#lessons">Lessons</a> ·
         <a href="index.html#stories">Stories</a> ·
         <a href="index.html#get-involved">Get involved</a>
       </div>
@@ -189,6 +221,34 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- GSAP Animations -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof gsap === "undefined") return;
+    var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray("section").forEach(function (sec) {
+      gsap.from(sec, {
+        opacity: 0, y: 30, duration: 0.7, ease: "power2.out",
+        scrollTrigger: { trigger: sec, start: "top 85%", once: true }
+      });
+    });
+
+    gsap.utils.toArray(".grid-3").forEach(function (grid) {
+      gsap.from(grid.children, {
+        opacity: 0, y: 20, duration: 0.5, stagger: 0.1, ease: "power2.out",
+        scrollTrigger: { trigger: grid, start: "top 85%", once: true }
+      });
+    });
+
+    var heroLeft = document.querySelector(".hero > div:first-child");
+    if (heroLeft) gsap.from(heroLeft, { opacity: 0, x: -30, duration: 0.8, ease: "power2.out" });
+  });
   </script>
 </body>
 </html>

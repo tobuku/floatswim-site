@@ -4,11 +4,54 @@
   <meta charset="UTF-8" />
   <title>Swim Lesson Directory – FloatSwim</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Future directory of free and low-cost swimming programs for infants and children. A FloatSwim initiative to help families access life-saving water safety education."
-  />
+  <meta name="description" content="Browse swim lesson providers by state, cost, and type. Compare free, low-cost, and professional swimming programs for infants and children near you." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://floatswim.org/directory.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Swim Lesson Directory – FloatSwim" />
+  <meta property="og:description" content="Browse swim lesson providers by state, cost, and type. Compare free, low-cost, and professional swimming programs near you." />
+  <meta property="og:url" content="https://floatswim.org/directory.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FloatSwim" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Swim Lesson Directory – FloatSwim" />
+  <meta name="twitter:description" content="Browse swim lesson providers by state, cost, and type. Compare free, low-cost, and professional swimming programs near you." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Swim Lesson Providers",
+    "description": "A directory of free and low-cost swim lesson providers across the United States.",
+    "url": "https://floatswim.org/directory.html",
+    "numberOfItems": 1245
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://floatswim.org/" },
+      { "@type": "ListItem", "position": 2, "name": "Directory", "item": "https://floatswim.org/directory.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -21,150 +64,21 @@
             <div class="brand-tagline">Awareness. Safety. Hope.</div>
           </div>
         </div>
-    <nav>
-  <a href="index.html">Home</a>
-  <a href="dashboard.html">Dashboard</a>
-  <a href="about.html">About</a>
-  <a href="resources.html">Resources</a>
-  <a class="active" href="directory.html">Directory</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a href="share-story.html">Share a Story</a>
-  <a href="index.html#get-involved">Get Involved</a>
-</nav>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="about.html">About</a>
+          <a href="resources.html">Resources</a>
+          <a class="active" href="directory.html">Directory</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="share-story.html">Share a Story</a>
+        </nav>
       </div>
     </div>
   </header>
 
   <main>
     <div class="shell">
-      <!-- HERO -->
-      <section class="hero">
-        <div>
-          <div class="hero-kicker">Swim Lesson Access</div>
-          <h1>
-            A growing directory of <span>free and low-cost swimming lessons</span> for infants and children.
-          </h1>
-          <p>
-            Learning to swim shouldn’t depend on income. This directory is being built to help families find accessible, trusted swim programs—starting
-            in the United States and expanding globally over time.
-          </p>
-          <div class="hero-badges">
-            <span class="badge">Early childhood safety</span>
-            <span class="badge">Community access</span>
-            <span class="badge">Nonprofit partnerships</span>
-          </div>
-          <div class="cta-row">
-            <a href="#future" class="btn btn-primary">How the directory will work</a>
-            <a href="#submit" class="btn btn-outline">Submit a program</a>
-          </div>
-          <div class="cta-note">
-            This page is an early placeholder. The directory will become searchable once data sources and partnerships are established.
-          </div>
-        </div>
-      </section>
-
-      <!-- HOW DIRECTORY WILL WORK -->
-      <section id="future">
-        <h2>How the Directory Will Work</h2>
-        <p class="lead">
-          The long-term goal is a searchable list of free, subsidized, or sliding-scale swim programs with filters for location, age range, and program
-          type.
-        </p>
-
-        <div class="grid-3">
-          <div class="card">
-            <div class="pill">By location</div>
-            <h3>Zip code or state search</h3>
-            <p>
-              Families will be able to search for nearby programs offered by YMCAs, community pools, schools, nonprofits, and local instructors.
-            </p>
-          </div>
-          <div class="card">
-            <div class="pill">By age</div>
-            <h3>Infants through teens</h3>
-            <p>
-              Program listings will include detailed age groups such as infant (6–12 months), toddler, preschool, and youth lessons.
-            </p>
-          </div>
-          <div class="card">
-            <div class="pill">By cost</div>
-            <h3>Free or subsidized</h3>
-            <p>
-              Listings will highlight programs that offer zero-cost access, scholarships, bulk-discount rates, or community-funded lessons.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROGRAM TYPES -->
-      <section>
-        <h2>Types of Programs That Will Be Listed</h2>
-        <p class="lead">
-          The directory will include a wide range of trusted, accessible options—prioritizing programs that emphasize water safety, evidence-based
-          instruction, and positive early experiences.
-        </p>
-
-        <div class="two-col">
-          <div>
-            <ul class="tight">
-              <li>YMCA and community center swim lessons</li>
-              <li>City and county recreation department programs</li>
-              <li>Hospital or pediatric-sponsored safety classes</li>
-              <li>Nonprofit-funded or volunteer-driven swim schools</li>
-              <li>Independent instructors offering subsidized rates</li>
-            </ul>
-          </div>
-          <div class="note-box">
-            All programs listed in the future directory will be vetted for alignment with FloatSwim’s safety and respect principles. Programs aimed at
-            infants and toddlers will be reviewed with extra care.
-          </div>
-        </div>
-      </section>
-
-      <!-- SUBMIT PROGRAM -->
-      <section id="submit">
-        <h2>Submit a Swim Program</h2>
-        <p class="lead">
-          If you are an instructor, nonprofit, or facility offering free or subsidized lessons, you’re welcome to submit your program for future
-          inclusion. This helps build an equitable, accessible network for families.
-        </p>
-
-        <div class="two-col">
-          <div>
-            <ul class="tight">
-              <li>Share your program name and general location.</li>
-              <li>Describe cost structure (free, sliding scale, scholarship-based).</li>
-              <li>Describe age groups served and instructor certifications.</li>
-              <li>Include website or contact information for verification.</li>
-            </ul>
-          </div>
-          <div class="note-box">
-            Early submissions: <a href="mailto:hello@floatswim.org">hello@floatswim.org</a><br />
-            FloatSwim will contact programs individually when the full directory structure is ready for listing.
-          </div>
-        </div>
-      </section>
-
-      <!-- PLACEHOLDER FOR MAP / SEARCH -->
-      <section>
-        <h2>Future Search & Map</h2>
-        <p class="lead">
-          Once infrastructure is in place, this section will feature a searchable map and filter interface so families can explore nearby lessons visually
-          and intuitively.
-        </p>
-
-        <div class="two-col">
-          <div class="shop-placeholder">
-            <strong>Map placeholder:</strong><br />
-            This area will display pins representing nearby lesson programs with details available on click.
-          </div>
-          <div class="shop-placeholder">
-            <strong>Search placeholder:</strong><br />
-            Search bar + filters: by cost, age range, accessibility, distance, and type of program.
-          </div>
-        </div>
-      </section>
-
       <!-- SWIM LESSON DIRECTORY -->
       <div data-fs-directory></div>
     </div>
@@ -176,7 +90,6 @@
       <div>
         <a href="index.html#why">Why this matters</a> ·
         <a href="index.html#parents">For parents</a> ·
-        <a href="index.html#lessons">Lessons</a> ·
         <a href="index.html#stories">Stories</a> ·
         <a href="index.html#get-involved">Get involved</a>
       </div>
@@ -189,7 +102,7 @@
 
 <script>
 (function () {
-  const stateName = {
+  var stateName = {
     AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
     CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia",
     HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa",
@@ -202,28 +115,28 @@
     VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming"
   };
 
-  const els = {};
-  const state = { all: [], byState: {}, q: "", st: "", cost: "", type: "", page: 1, pageSize: 25 };
+  var els = {};
+  var state = { all: [], byState: {}, q: "", st: "", cost: "", type: "", page: 1, pageSize: 25 };
 
   function $(id) { return document.getElementById(id); }
 
   function esc(s) {
-    return String(s || "").replace(/[&<>"']/g, (c) => ({
-      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-    }[c]));
+    return String(s || "").replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
   }
 
   function norm(s) { return String(s || "").toLowerCase().trim(); }
 
   function matchText(rec, q) {
     if (!q) return true;
-    const t = [rec.provider_name, rec.program_name, rec.city, rec.state, rec.notes, rec.provider_type, rec.cost_type].join(" ");
+    var t = [rec.provider_name, rec.program_name, rec.city, rec.state, rec.notes, rec.provider_type, rec.cost_type].join(" ");
     return norm(t).includes(norm(q));
   }
 
   function applyFilters(list) {
-    return list.filter((rec) => {
-      if (state.st && rec.state !== state.st) return false;
+    return list.filter(function (rec) {
+      if (state.st && state.st !== "all" && rec.state !== state.st) return false;
       if (state.cost && rec.cost_type !== state.cost) return false;
       if (state.type && rec.provider_type !== state.type) return false;
       if (!matchText(rec, state.q)) return false;
@@ -232,37 +145,38 @@
   }
 
   function uniqValues(list, key) {
-    const set = new Set();
-    for (const rec of list) {
-      const v = String(rec[key] || "").trim();
+    var set = new Set();
+    for (var i = 0; i < list.length; i++) {
+      var v = String(list[i][key] || "").trim();
       if (v) set.add(v);
     }
-    return Array.from(set).sort((a, b) => a.localeCompare(b));
+    return Array.from(set).sort(function (a, b) { return a.localeCompare(b); });
   }
 
   function setOptions(selectEl, values, placeholder) {
     selectEl.innerHTML = "";
-    const opt0 = document.createElement("option");
+    var opt0 = document.createElement("option");
     opt0.value = "";
     opt0.textContent = placeholder;
     selectEl.appendChild(opt0);
-    for (const v of values) {
-      const opt = document.createElement("option");
-      opt.value = v;
-      opt.textContent = v;
+    for (var i = 0; i < values.length; i++) {
+      var opt = document.createElement("option");
+      opt.value = values[i];
+      opt.textContent = values[i];
       selectEl.appendChild(opt);
     }
   }
 
   function setStateOptions() {
-    const states = Object.keys(state.byState).filter((k) => k && k !== "NA").sort((a, b) => a.localeCompare(b));
+    var states = Object.keys(state.byState).filter(function (k) { return k && k !== "NA"; }).sort();
     els.filterState.innerHTML = "";
-    const o0 = document.createElement("option");
+    var o0 = document.createElement("option");
     o0.value = "";
     o0.textContent = "All states";
     els.filterState.appendChild(o0);
-    for (const st of states) {
-      const o = document.createElement("option");
+    for (var i = 0; i < states.length; i++) {
+      var st = states[i];
+      var o = document.createElement("option");
       o.value = st;
       o.textContent = (stateName[st] ? stateName[st] + " " : "") + "(" + state.byState[st].length + ")";
       els.filterState.appendChild(o);
@@ -292,22 +206,25 @@
   }
 
   function row(label, value) {
-    const v = value || "";
+    var v = value || "";
     if (!v) return "";
     return '<div class="fs-row"><div class="fs-label">' + esc(label) + '</div><div class="fs-value">' + v + "</div></div>";
   }
 
   function renderStateLinks() {
-    const keys = Object.keys(state.byState).filter((k) => k && k !== "NA").sort((a, b) => a.localeCompare(b));
+    var keys = Object.keys(state.byState).filter(function (k) { return k && k !== "NA"; }).sort();
     els.stateLinks.innerHTML = "";
-    for (const st of keys) {
-      const btn = document.createElement("button");
+    for (var i = 0; i < keys.length; i++) {
+      var st = keys[i];
+      var btn = document.createElement("button");
       btn.type = "button";
       btn.className = "fs-chip";
       btn.textContent = st + " (" + state.byState[st].length + ")";
-      btn.addEventListener("click", () => {
-        state.st = st;
-        els.filterState.value = st;
+      btn.setAttribute("data-state", st);
+      btn.addEventListener("click", function () {
+        var s = this.getAttribute("data-state");
+        state.st = s;
+        els.filterState.value = s;
         state.page = 1;
         render();
       });
@@ -316,36 +233,36 @@
   }
 
   function paginate(list) {
-    const total = list.length;
-    const pages = Math.max(1, Math.ceil(total / state.pageSize));
+    var total = list.length;
+    var pages = Math.max(1, Math.ceil(total / state.pageSize));
     if (state.page > pages) state.page = pages;
-    const start = (state.page - 1) * state.pageSize;
-    const end = start + state.pageSize;
-    return { pageList: list.slice(start, end), total, pages };
+    var start = (state.page - 1) * state.pageSize;
+    var end = start + state.pageSize;
+    return { pageList: list.slice(start, end), total: total, pages: pages };
   }
 
   function renderPagination(pages, total) {
     els.pager.innerHTML = "";
-    const info = document.createElement("div");
+    var info = document.createElement("div");
     info.className = "fs-pager-info";
     info.textContent = "Results " + total + ". Page " + state.page + " of " + pages + ".";
     els.pager.appendChild(info);
 
-    const controls = document.createElement("div");
+    var controls = document.createElement("div");
     controls.className = "fs-pager-controls";
-    const prev = document.createElement("button");
+    var prev = document.createElement("button");
     prev.type = "button";
     prev.className = "fs-btn";
     prev.textContent = "Prev";
     prev.disabled = state.page <= 1;
-    prev.addEventListener("click", () => { state.page -= 1; render(); });
+    prev.addEventListener("click", function () { state.page -= 1; render(); });
 
-    const next = document.createElement("button");
+    var next = document.createElement("button");
     next.type = "button";
     next.className = "fs-btn";
     next.textContent = "Next";
     next.disabled = state.page >= pages;
-    next.addEventListener("click", () => { state.page += 1; render(); });
+    next.addEventListener("click", function () { state.page += 1; render(); });
 
     controls.appendChild(prev);
     controls.appendChild(next);
@@ -355,33 +272,45 @@
   function renderResults(list) {
     els.results.innerHTML = "";
     if (!list.length) {
-      els.results.innerHTML = '<div class="fs-empty">No results.</div>';
+      els.results.innerHTML = '<div class="fs-empty">No results found. Try adjusting your search or filters.</div>';
       return;
     }
-    for (const rec of list) {
-      const card = document.createElement("div");
+    for (var i = 0; i < list.length; i++) {
+      var rec = list[i];
+      var card = document.createElement("div");
       card.className = "fs-card";
 
-      const h = document.createElement("div");
+      var h = document.createElement("div");
       h.className = "fs-card-title";
       h.textContent = rec.provider_name || "Provider";
 
-      const meta = document.createElement("div");
+      var meta = document.createElement("div");
       meta.className = "fs-card-meta";
       meta.textContent = [rec.city, rec.state].filter(Boolean).join(", ");
 
-      const tags = document.createElement("div");
+      var tags = document.createElement("div");
       tags.className = "fs-card-tags";
-      tags.innerHTML = [
-        rec.cost_type ? '<span class="fs-tag">' + esc(rec.cost_type) + "</span>" : "",
-        rec.provider_type ? '<span class="fs-tag">' + esc(rec.provider_type) + "</span>" : ""
-      ].join("");
+      if (rec.cost_type) {
+        var costTag = document.createElement("span");
+        costTag.className = "fs-tag fs-tag-cost";
+        costTag.textContent = rec.cost_type;
+        tags.appendChild(costTag);
+      }
+      if (rec.provider_type) {
+        var typeTag = document.createElement("span");
+        typeTag.className = "fs-tag fs-tag-type";
+        typeTag.textContent = rec.provider_type;
+        tags.appendChild(typeTag);
+      }
 
-      const btn = document.createElement("button");
+      var btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "fs-btn";
+      btn.className = "fs-btn-details";
       btn.textContent = "View details";
-      btn.addEventListener("click", () => openModal(rec));
+      btn.setAttribute("data-index", String(i));
+      btn.addEventListener("click", (function (r) {
+        return function () { openModal(r); };
+      })(rec));
 
       card.appendChild(h);
       card.appendChild(meta);
@@ -392,18 +321,29 @@
   }
 
   function render() {
-    const filtered = applyFilters(state.all);
-    const { pageList, total, pages } = paginate(filtered);
-    els.count.textContent = String(total);
-    renderResults(pageList);
-    renderPagination(pages, total);
+    var filtered = applyFilters(state.all);
+    var result = paginate(filtered);
+    els.count.textContent = String(result.total);
+    renderResults(result.pageList);
+    renderPagination(result.pages, result.total);
+  }
+
+  function readUrlParams() {
+    var params = new URLSearchParams(window.location.search);
+    var q = params.get("q");
+    var st = params.get("state");
+    if (q) { state.q = q; }
+    if (st) { state.st = st; }
+  }
+
+  function applyUrlToUI() {
+    if (state.q && els.q) { els.q.value = state.q; }
+    if (state.st && els.filterState) { els.filterState.value = state.st; }
   }
 
   async function loadData() {
-    const [allRes, idxRes] = await Promise.all([
-      fetch("./data/swim_lessons.json", { cache: "no-store" }),
-      fetch("./data/index_by_state.json", { cache: "no-store" })
-    ]);
+    var allRes = await fetch("./data/swim_lessons.json", { cache: "no-store" });
+    var idxRes = await fetch("./data/index_by_state.json", { cache: "no-store" });
     if (!allRes.ok) throw new Error("Data load failed. lessons.json");
     if (!idxRes.ok) throw new Error("Data load failed. index_by_state.json");
 
@@ -414,6 +354,7 @@
     setOptions(els.filterCost, uniqValues(state.all, "cost_type"), "All costs");
     setOptions(els.filterType, uniqValues(state.all, "provider_type"), "All types");
     renderStateLinks();
+    applyUrlToUI();
     render();
   }
 
@@ -432,12 +373,12 @@
     els.modalBody = $("fs-modal-body");
     els.modalClose = $("fs-modal-close");
 
-    els.q.addEventListener("input", (e) => { state.q = e.target.value || ""; state.page = 1; render(); });
-    els.filterState.addEventListener("change", (e) => { state.st = e.target.value || ""; state.page = 1; render(); });
-    els.filterCost.addEventListener("change", (e) => { state.cost = e.target.value || ""; state.page = 1; render(); });
-    els.filterType.addEventListener("change", (e) => { state.type = e.target.value || ""; state.page = 1; render(); });
+    els.q.addEventListener("input", function (e) { state.q = e.target.value || ""; state.page = 1; render(); });
+    els.filterState.addEventListener("change", function (e) { state.st = e.target.value || ""; state.page = 1; render(); });
+    els.filterCost.addEventListener("change", function (e) { state.cost = e.target.value || ""; state.page = 1; render(); });
+    els.filterType.addEventListener("change", function (e) { state.type = e.target.value || ""; state.page = 1; render(); });
 
-    els.clear.addEventListener("click", () => {
+    els.clear.addEventListener("click", function () {
       state.q = ""; state.st = ""; state.cost = ""; state.type = ""; state.page = 1;
       els.q.value = ""; els.filterState.value = ""; els.filterCost.value = ""; els.filterType.value = "";
       render();
@@ -445,32 +386,32 @@
     });
 
     els.modalClose.addEventListener("click", closeModal);
-    els.modalOverlay.addEventListener("click", (e) => { if (e.target === els.modalOverlay) closeModal(); });
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && els.modalOverlay.classList.contains("open")) closeModal(); });
+    els.modalOverlay.addEventListener("click", function (e) { if (e.target === els.modalOverlay) closeModal(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && els.modalOverlay.classList.contains("open")) closeModal(); });
   }
 
   function ensureMarkup() {
-    const host = document.querySelector("[data-fs-directory]");
+    var host = document.querySelector("[data-fs-directory]");
     if (!host) return;
     host.innerHTML = [
       '<div class="fs-dir-head">',
       '  <h1 class="fs-dir-title">Swim Lesson Directory</h1>',
-      '  <div class="fs-dir-sub">Search by provider, city, or state.</div>',
+      '  <div class="fs-dir-sub">Search 1,245+ providers by name, city, state, cost, or type.</div>',
       '</div>',
       '<div class="fs-controls">',
-      '  <input id="fs-q" class="fs-input" type="text" inputmode="search" placeholder="Search" aria-label="Search" />',
+      '  <input id="fs-q" class="fs-input" type="text" inputmode="search" placeholder="Search providers, cities, states..." aria-label="Search providers" />',
       '  <select id="fs-state" class="fs-select" aria-label="State filter"></select>',
       '  <select id="fs-cost" class="fs-select" aria-label="Cost filter"></select>',
       '  <select id="fs-type" class="fs-select" aria-label="Type filter"></select>',
       '  <button id="fs-clear" class="fs-btn" type="button">Clear</button>',
       '</div>',
-      '<div class="fs-state-bar" aria-label="States">',
-      '  <div class="fs-state-bar-title">States</div>',
-      '  <div id="fs-state-links" class="fs-state-links"></div>',
-      '</div>',
-      '<div class="fs-summary">Results: <span id="fs-count">0</span></div>',
+      '<div class="fs-summary">Showing <span id="fs-count">0</span> providers</div>',
       '<div id="fs-results" class="fs-results" aria-live="polite"></div>',
       '<div id="fs-pager" class="fs-pager"></div>',
+      '<div class="fs-state-bar" aria-label="Browse by state">',
+      '  <div class="fs-state-bar-title">Browse by state</div>',
+      '  <div id="fs-state-links" class="fs-state-links"></div>',
+      '</div>',
       '<div id="fs-modal" class="fs-modal" role="dialog" aria-modal="true" aria-label="Provider details">',
       '  <div class="fs-modal-panel" role="document">',
       '    <div class="fs-modal-top">',
@@ -483,21 +424,41 @@
     ].join("");
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", function () {
+    readUrlParams();
     ensureMarkup();
     wire();
-    loadData().then(() => {
-      const q = $("fs-q");
-      if (q) q.focus();
-    }).catch((err) => {
+    loadData().then(function () {
+      var q = $("fs-q");
+      if (q && !state.q) q.focus();
+    }).catch(function (err) {
       console.error(err);
-      const host = document.querySelector("[data-fs-directory]");
-      if (host) host.innerHTML = '<div class="fs-empty">Data load error.</div>';
+      var host = document.querySelector("[data-fs-directory]");
+      if (host) host.innerHTML = '<div class="fs-empty">Data load error. Please try refreshing.</div>';
     });
   });
 })();
 </script>
 
+  <!-- GSAP Animations -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof gsap === "undefined") return;
+    var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray("section").forEach(function (sec) {
+      gsap.from(sec, {
+        opacity: 0, y: 30, duration: 0.7, ease: "power2.out",
+        scrollTrigger: { trigger: sec, start: "top 85%", once: true }
+      });
+    });
+
+    gsap.from(".fs-dir-head", { opacity: 0, y: 20, duration: 0.7, ease: "power2.out" });
+    gsap.from(".fs-controls", { opacity: 0, y: 15, duration: 0.6, delay: 0.2, ease: "power2.out" });
+  });
+  </script>
 </body>
 </html>
-
