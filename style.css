@@ -47,33 +47,27 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 0.55rem;
     }
-    .brand-mark {
-      width: 32px;
-      height: 32px;
-      border-radius: 999px;
-      border: 2px solid var(--accent);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.8rem;
-      color: var(--accent);
-    }
-    .brand-text {
+    .brand a {
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
     }
-    .brand-name {
-      font-weight: 700;
-      font-size: 0.95rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+    .brand-logo {
+      height: 36px;
+      width: auto;
+      display: block;
     }
-    .brand-tagline {
-      font-size: 0.75rem;
-      color: var(--text-muted);
+    @media (min-width: 601px) {
+      .brand-logo { height: 40px; }
+    }
+
+    /* Footer logo */
+    .footer-logo {
+      height: 32px;
+      width: auto;
+      display: block;
+      margin-bottom: 0.4rem;
     }
 
 /* Navigation links */
