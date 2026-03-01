@@ -11,15 +11,15 @@
   gtag("config", "G-4KKZ6MHWGM");
 </script>
   <meta charset="UTF-8" />
-  <title>FloatSwim Dashboard – Drowning Incident Data</title>
+  <title>FloatSwim Dashboard – Water Safety Facts & Directory Stats</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Drowning incident data and water safety statistics across the United States. Track trends and understand why swim lessons save lives." />
+  <meta name="description" content="Water safety statistics and swim lesson directory data across the United States. Real numbers on drowning prevention and how to find lessons near you." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://floatswim.org/dashboard.html" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="FloatSwim Dashboard – Drowning Incident Data" />
-  <meta property="og:description" content="Drowning incident data and water safety statistics across the United States. Track trends and understand why swim lessons save lives." />
+  <meta property="og:title" content="FloatSwim Dashboard – Water Safety Facts & Directory Stats" />
+  <meta property="og:description" content="Water safety statistics and swim lesson directory data across the United States. Real numbers on drowning prevention." />
   <meta property="og:url" content="https://floatswim.org/dashboard.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="FloatSwim" />
@@ -27,8 +27,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FloatSwim Dashboard – Drowning Incident Data" />
-  <meta name="twitter:description" content="Drowning incident data and water safety statistics across the United States." />
+  <meta name="twitter:title" content="FloatSwim Dashboard – Water Safety Facts & Directory Stats" />
+  <meta name="twitter:description" content="Water safety statistics and swim lesson directory data across the United States." />
   <meta name="twitter:image" content="https://floatswim.org/img/banner_1200x630.png" />
 
   <!-- Favicons -->
@@ -89,176 +89,151 @@
       <!-- HERO -->
       <section class="hero">
         <div>
-          <div class="hero-kicker">Early Dashboard Prototype</div>
+          <div class="hero-kicker">FloatSwim by the Numbers</div>
           <h1>
-            A calm, high-level view of <span>drowning and near-drowning incidents</span>.
+            Real data on <span>water safety and swim lesson access</span> across the U.S.
           </h1>
           <p>
-            This early dashboard uses simulated data to show how FloatSwim may eventually visualize real incidents: not to sensationalize, but to help
-            families, communities, and partners see patterns more clearly.
+            FloatSwim maintains a free, searchable directory of swim lesson providers nationwide. Below you'll find our directory stats alongside critical water safety facts from the CDC and other public health sources.
           </p>
           <div class="hero-badges">
-            <span class="badge">Demo data only</span>
-            <span class="badge">Privacy-aware design</span>
-            <span class="badge">Built to expand over time</span>
+            <span class="badge">1,245+ providers</span>
+            <span class="badge">All 50 states</span>
+            <span class="badge">Free to search</span>
           </div>
           <div class="cta-row">
-            <span class="cta-note">
-              Data source (current demo): a static JSON file at <code>data/incidents.json</code>, served by GitHub Pages.
-            </span>
+            <a href="directory.html" class="btn btn-primary">Find lessons near you</a>
+            <a href="resources.html" class="btn btn-outline">Water safety resources</a>
           </div>
         </div>
       </section>
 
-      <!-- SNAPSHOT METRICS -->
-      <section id="snapshot">
-        <h2>Snapshot Metrics (Demo)</h2>
+      <!-- DIRECTORY STATS -->
+      <section id="directory-stats">
+        <h2>Directory at a Glance</h2>
         <p class="lead">
-          These numbers are based on the current demo dataset. In the future, this view may reflect live or regularly updated incident data from
-          carefully selected sources.
+          Our swim lesson directory connects families with providers across the country. Here's a snapshot of what's available.
         </p>
 
         <div class="grid-3">
           <div class="card">
-            <div class="pill">Total incidents (demo)</div>
-            <h3 id="metric-total">&ndash;</h3>
+            <div class="pill">Total providers</div>
+            <h3>1,245+</h3>
             <p class="metric-text">
-              Count of incidents currently in the demo dataset, including both drowning and near-drowning events.
+              Swim lesson providers listed in our directory, from YMCAs and city rec centers to private swim schools and ISR instructors.
             </p>
           </div>
           <div class="card">
-            <div class="pill">Near-drowning (demo)</div>
-            <h3 id="metric-near">&ndash;</h3>
+            <div class="pill">States covered</div>
+            <h3>50</h3>
             <p class="metric-text">
-              Incidents where a person was rescued or revived. These often come with long-term medical or emotional impacts.
+              Every U.S. state is represented in the directory. Coverage is strongest in California, Texas, Florida, and New York.
             </p>
           </div>
           <div class="card">
-            <div class="pill">Drowning (demo)</div>
-            <h3 id="metric-drown">&ndash;</h3>
+            <div class="pill">Cost</div>
+            <h3>Free</h3>
             <p class="metric-text">
-              Incidents currently marked as drowning in the demo data. Real-world views will be handled with extreme care and respect.
+              The FloatSwim directory is completely free to search. Many listed providers offer free or reduced-cost lessons for families in need.
             </p>
           </div>
         </div>
 
         <div class="grid-3" style="margin-top: 1.4rem;">
           <div class="card">
-            <div class="pill">States represented (demo)</div>
-            <h3 id="metric-states">&ndash;</h3>
+            <div class="pill">Provider types</div>
+            <h3>6 categories</h3>
             <p class="metric-text">
-              Number of distinct U.S. states in the current demo dataset. In the future, this may expand to regions and countries.
+              YMCAs, city recreation departments, private swim schools, ISR instructors, community pools, and university aquatic programs.
             </p>
           </div>
           <div class="card">
-            <div class="pill">Last updated (demo)</div>
-            <h3 id="metric-updated">&ndash;</h3>
+            <div class="pill">Age groups served</div>
+            <h3>All ages</h3>
             <p class="metric-text">
-              Timestamp from the demo JSON file, indicating when this sample dataset was last changed.
+              From infant survival swim (6 months+) to adult beginner classes. Many providers offer lessons for every age and skill level.
             </p>
           </div>
           <div class="card">
-            <div class="pill">Important note</div>
-            <p>
-              These numbers are for demonstration only. They do not represent live tracking, and they do not pull directly from official public safety
-              databases yet.
+            <div class="pill">Updated</div>
+            <h3>Regularly</h3>
+            <p class="metric-text">
+              Directory listings are reviewed and updated to keep contact information, pricing, and availability as accurate as possible.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- INCIDENT LIST -->
-      <section id="incidents">
-        <h2>Incident List (Demo Data)</h2>
+      <!-- WATER SAFETY FACTS -->
+      <section id="water-safety-facts">
+        <h2>Water Safety Facts</h2>
         <p class="lead">
-          Each card below represents one incident from the demo dataset at <code>data/incidents.json</code>. Real-world data will be anonymized and
-          aggregated to protect privacy, especially for minors.
+          Drowning is preventable. These statistics from the CDC and national safety organizations show why swim lessons and water safety education matter.
         </p>
 
-        <div id="incident-cards" class="grid-3">
-          <!-- Cards populated by JavaScript -->
+        <div class="grid-3">
+          <div class="card">
+            <div class="pill">CDC</div>
+            <h3>~4,000</h3>
+            <p class="metric-text">
+              People die from unintentional drowning in the U.S. each year. It is the leading cause of death for children ages 1 to 4.
+            </p>
+          </div>
+          <div class="card">
+            <div class="pill">CDC</div>
+            <h3>~8,000</h3>
+            <p class="metric-text">
+              Nonfatal drowning injuries are treated in U.S. emergency departments annually. Many result in long-term disability.
+            </p>
+          </div>
+          <div class="card">
+            <div class="pill">Research</div>
+            <h3>88%</h3>
+            <p class="metric-text">
+              Reduction in drowning risk for children ages 1 to 4 who participate in formal swim lessons, according to a National Institutes of Health study.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top: 1.4rem;">
+          <div class="card">
+            <div class="pill">Timing</div>
+            <h3>May - August</h3>
+            <p class="metric-text">
+              Over half of all drowning deaths occur during the summer months. This is the most critical time for families to prioritize water safety.
+            </p>
+          </div>
+          <div class="card">
+            <div class="pill">Location</div>
+            <h3>Home pools</h3>
+            <p class="metric-text">
+              For children under 5, most drownings occur in home swimming pools. Four-sided pool fencing reduces drowning risk by more than 50%.
+            </p>
+          </div>
+          <div class="card">
+            <div class="pill">Disparity</div>
+            <h3>Unequal risk</h3>
+            <p class="metric-text">
+              Drowning rates are significantly higher among Black children ages 5 to 19, who drown at 2.6x the rate of white children. Access to swim lessons is a key factor.
+            </p>
+          </div>
+        </div>
+
+        <div class="note-box" style="margin-top: 1.4rem;">
+          <strong>Sources:</strong> CDC Injury Center, National Institutes of Health, American Academy of Pediatrics, USA Swimming Foundation. Statistics reflect the most recent published data.
         </div>
       </section>
 
-      <!-- FUTURE VIEW -->
+      <!-- FIND LESSONS CTA -->
       <section>
-        <h2>Future Dashboard Capabilities</h2>
+        <h2>Take the Next Step</h2>
         <p class="lead">
-          Over time, this dashboard may evolve to include map views, trend graphs, filters by age and environment, and tools for local organizers and
-          policymakers.
+          Every child deserves the chance to learn water safety skills. Use our free directory to find swim lessons near you.
         </p>
-
-        <div class="two-col">
-          <div>
-            <ul class="tight">
-              <li>Interactive maps showing anonymized incident clusters and seasonal trends.</li>
-              <li>Filters for age group, water type (pool, lake, ocean, bath), and context.</li>
-              <li>Links from patterns to practical prevention steps and local resources.</li>
-              <li>Exportable summaries to support grant writing and community planning.</li>
-            </ul>
-          </div>
-          <div class="note-box">
-            The dashboard's purpose is to inform and equip—not to shock. Every design decision will be guided by respect for families and a focus on
-            prevention.
-          </div>
-        </div>
-      </section>
-
-      <!-- SAMPLE INCIDENTS TABLE -->
-      <section>
-        <h2>Sample Incident Format (Illustrative Only)</h2>
-        <p class="lead">
-          The table below does not use real data. It simply demonstrates how incidents might be displayed in a future version of the dashboard, using
-          anonymized, pattern-focused information.
-        </p>
-
-        <div class="incidents-table-wrapper">
-          <table class="incidents-table" aria-label="Illustrative incident list">
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Region</th>
-                <th>Age bracket</th>
-                <th>Setting</th>
-                <th>Outcome</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Example: Jun 3 (Weekday)</td>
-                <td>Metro area – Southwest U.S.</td>
-                <td>1–4 years</td>
-                <td>Residential pool</td>
-                <td>Near-drowning, hospitalized</td>
-              </tr>
-              <tr>
-                <td>Example: Jul 12 (Weekend)</td>
-                <td>Suburban community – Midwest</td>
-                <td>5–9 years</td>
-                <td>Lake / open water</td>
-                <td>Fatal, no life jacket</td>
-              </tr>
-              <tr>
-                <td>Example: Aug 20 (Evening)</td>
-                <td>Urban high-rise – East Coast</td>
-                <td>Under 1 year</td>
-                <td>Bathtub</td>
-                <td>Near-drowning, recovered with follow-up care</td>
-              </tr>
-              <tr>
-                <td>Example: Sep 5 (Holiday)</td>
-                <td>Tourist area – Coastal</td>
-                <td>Teen</td>
-                <td>Ocean / rip current</td>
-                <td>Rescued by lifeguards</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="note-box" style="margin-top: 1rem;">
-          In a future phase, this table will be generated from carefully sourced data rather than static examples. The emphasis will remain on
-          anonymized patterns—age, setting, and outcome—rather than personally identifying details.
+        <div class="cta-row" style="justify-content: center;">
+          <a href="directory.html" class="btn btn-primary">Search the directory</a>
+          <a href="infant-swim-lessons.html" class="btn btn-outline">Infant swim lesson guide</a>
+          <a href="pool-safety-checklist.html" class="btn btn-outline">Pool safety checklist</a>
         </div>
       </section>
     </div>
@@ -282,82 +257,7 @@
   </footer>
 
   <script>
-    // Set footer year
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Load incidents from data/incidents.json and populate the dashboard
-    async function loadIncidents() {
-      try {
-        var res = await fetch("data/incidents.json");
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
-
-        var data = await res.json();
-        var incidents = Array.isArray(data.incidents) ? data.incidents : [];
-
-        if (data.last_updated) {
-          document.getElementById("metric-updated").textContent = data.last_updated;
-        } else {
-          document.getElementById("metric-updated").textContent = "N/A";
-        }
-
-        var total = incidents.length;
-        var near = incidents.filter(function (i) {
-          return (i.status || "").toLowerCase().includes("near");
-        }).length;
-        var drown = incidents.filter(function (i) {
-          var status = (i.status || "").toLowerCase();
-          return status.includes("drown") && !status.includes("near");
-        }).length;
-        var statesCount = new Set(incidents.map(function (i) { return i.state || "Unknown"; })).size;
-
-        document.getElementById("metric-total").textContent = total || "0";
-        document.getElementById("metric-near").textContent = near || "0";
-        document.getElementById("metric-drown").textContent = drown || "0";
-        document.getElementById("metric-states").textContent = statesCount || "0";
-
-        var container = document.getElementById("incident-cards");
-
-        if (!incidents.length) {
-          container.innerHTML =
-            '<p class="lead">No demo incidents are available yet. The dataset at <code>data/incidents.json</code> is currently empty.</p>';
-          return;
-        }
-
-        container.innerHTML = incidents
-          .map(function (incident) {
-            var date = incident.date || "Unknown date";
-            var incState = incident.state || "Unknown location";
-            var locationType = incident.location_type || "Water setting not specified";
-            var ageGroup = incident.age_group || "Age not specified";
-            var status = incident.status || "Status not specified";
-            var notes = incident.notes || "No additional notes provided.";
-
-            return '<div class="card">' +
-              '<div class="pill">' + date + ' &middot; ' + incState + '</div>' +
-              '<h3>' + locationType + '</h3>' +
-              '<ul class="tight">' +
-              '<li><strong>Age group:</strong> ' + ageGroup + '</li>' +
-              '<li><strong>Status:</strong> ' + status + '</li>' +
-              '<li><strong>Notes:</strong> ' + notes + '</li>' +
-              '</ul></div>';
-          })
-          .join("");
-      } catch (error) {
-        console.error("Error loading incidents:", error);
-        var container = document.getElementById("incident-cards");
-        container.innerHTML =
-          '<p class="lead">There was a problem loading the demo incident data. This is an early prototype view, and data sources may change.</p>';
-        document.getElementById("metric-total").textContent = "\u2013";
-        document.getElementById("metric-near").textContent = "\u2013";
-        document.getElementById("metric-drown").textContent = "\u2013";
-        document.getElementById("metric-states").textContent = "\u2013";
-        document.getElementById("metric-updated").textContent = "N/A";
-      }
-    }
-
-    loadIncidents();
   </script>
 
   <!-- GSAP Animations -->
