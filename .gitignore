@@ -1,2 +1,6 @@
 .gsc-credentials/
 node_modules/
+
+# Claude Code — keep local, never publish
+CLAUDE.md
+CLAUDE.local.md
