@@ -1,14 +1,5 @@
 {
-  "NA": [
-    "arizona-infant-swim-617513e13308",
-    "floatswim-seed-source-439dd15b5df0",
-    "infant-swimming-resource-2b3bcad7762a",
-    "swim-fit-alaska-1d8fbacfbbac",
-    "swimamerica-20497d316375",
-    "united-states-swim-school-association-5cedbba382fb"
-  ],
   "AK": [
-    "alaska-k9-aquatics-anchorage-ak-4f6969f53bb3",
     "alaska-swimamerica-program-anchorage-ak-d72b47317705",
     "avis-alaska-sports-complex-swimming-pool-anchorage-ak-62ffea53faa7",
     "dimond-pool-anchorage-ak-04730ed6caf2",
@@ -52,7 +43,6 @@
     "aqua-tots-swim-school-hoover-hoover-al-6beb66c14d6b",
     "brock-s-gap-swim-club-private-hoover-al-3a1cf213f359",
     "goldfish-swim-school-hoover-hoover-al-7d59cc4242a3",
-    "sassy-swimmers-alabama-canine-swimming-hoover-al-86986f6218c5",
     "huntsville-aquatics-center-huntsville-al-b29f1862d0a7",
     "oakwood-university-natatorium-huntsville-al-404392af3ae5",
     "redstone-aquatics-center-huntsville-al-fd3173d870c5",
@@ -61,7 +51,6 @@
     "alpine-hills-swim-club-mobile-al-995d0c03ae83",
     "west-mobile-swim-club-mobile-al-079178a992f3",
     "woodland-swim-club-mobile-al-41d1d7f37612",
-    "adventure-sports-ii-inc-montgomery-al-e7baac5369a9",
     "goldfish-swim-school-montgomery-montgomery-al-b1c01f709655",
     "thistledown-swim-academy-mountain-brook-al-697347ec2807",
     "stevens-swim-school-northport-al-d40ffb900540",
@@ -74,7 +63,6 @@
   "AR": [
     "alma-aquatic-park-alma-ar-75f21997a1d7",
     "parting-waters-bryant-ar-fe3ed3f9fcec",
-    "cabot-aquatic-park-cabot-ar-51a104d997ea",
     "clarksville-aquatic-center-clarksville-ar-c8c4a97632d3",
     "fayetteville-athletic-club-fayetteville-ar-f65705d29a3b",
     "spa-city-isr-hot-springs-ar-ee8fb76d3c9f",
@@ -290,7 +278,6 @@
     "club-brennan-bear-de-43133781034a",
     "british-swim-school-at-modern-maturity-center-dover-dover-de-62ebcccf449c",
     "dover-ymca-dover-de-e54cdad1c6c3",
-    "dover-afb-outdoor-recreation-dover-afb-de-8d33b3c6ffe1",
     "house-of-champs-felton-de-091cfc0f38a0",
     "killens-pond-state-park-felton-de-2092e2e6c6a2",
     "sussex-academy-aquatics-center-georgetown-de-fcce1efc1b04",
@@ -298,12 +285,10 @@
     "the-delaware-swim-school-hockessin-de-79a04ad60685",
     "coastal-club-community-clubhouse-lewes-de-7a3c983e245f",
     "middletown-family-ymca-middletown-de-857bf3a0de96",
-    "the-edge-18-middletown-de-33dec36e42c6",
     "dfit-plus-new-castle-de-430c075cfbdf",
     "bear-glasgow-family-ymca-newark-de-9850b903bbab",
     "british-swim-school-at-newark-senior-center-newark-de-a578643448f3",
     "harry-w-rawstrom-natatorium-newark-de-f11cd6b91302",
-    "university-of-delaware-women-s-swimming-and-diving-newark-de-079c73c48cce",
     "western-family-ymca-newark-de-1d07c4fda6b8",
     "seaford-community-swim-center-seaford-de-24be47b3aecf",
     "seaford-swim-association-seaford-de-a1aee6bb68ee",
@@ -571,7 +556,6 @@
     "hoisington-recreation-center-hoisington-ks-7a13d1e957bb",
     "salt-city-splash-aquatic-center-hutchinson-ks-13be85877436",
     "emler-swim-school-of-kansas-city-westwood-kansas-city-ks-d5b2bdc15c26",
-    "great-wolf-lodge-kansas-city-kansas-city-ks-8fee5b70daf3",
     "turner-aquatic-center-kansas-city-ks-737850847aec",
     "lacrosse-swimming-pool-la-crosse-ks-e6d21b9a5923",
     "lawrence-swim-school-lawrence-ks-d7f54a1e3bbc",
@@ -709,7 +693,6 @@
   "ME": [
     "beth-pancoe-aquatic-center-bangor-me-3ba54961a345",
     "bath-area-family-ymca-bath-me-6d41d82fc8ee",
-    "campus-center-biddeford-me-8807e5051670",
     "ymca-of-southern-maine-northern-york-county-branch-biddeford-me-0fe155a8cbb3",
     "brunswick-recreation-center-brunswick-me-216446f06c6e",
     "leroy-greason-pool-brunswick-me-256670ca7800",
@@ -717,8 +700,6 @@
     "southern-maine-swim-academy-eliot-me-bad684868c92",
     "fairfield-community-center-fairfield-me-875140d9533b",
     "fitness-and-recreation-center-farmington-me-307157319938",
-    "wilkies-beach-gray-me-2cc2f56892a8",
-    "red-cross-beach-greenville-me-c95c73878c42",
     "lura-e-hoit-pool-hampden-me-b28b883fa262",
     "ips-surf-and-water-sports-harrison-me-987957b75b90",
     "quest-fitness-kennebunk-me-3b1e4f296acf",
@@ -734,8 +715,7 @@
     "south-portland-community-center-south-portland-me-2a2743e15004",
     "boys-girls-clubs-and-ymca-of-greater-waterville-at-the-alfond-youth-community-center-waterville-me-397cd7a6093f",
     "john-p-davan-pool-westbrook-me-34aba9a6ffd5",
-    "swim-time-westbrook-me-bd20ccdb80d1",
-    "winthrop-town-beach-winthrop-me-8462533fdb5b"
+    "swim-time-westbrook-me-bd20ccdb80d1"
   ],
   "MI": [
     "big-blue-swim-school-ann-arbor-mi-1fdabff7e02f",
@@ -800,7 +780,6 @@
     "student-aquatic-center-cape-girardeau-mo-f39ec58db28e",
     "chesterfield-family-aquatic-center-chesterfield-mo-35a9a4ee05ed",
     "columbia-swim-club-columbia-mo-1ea442abc820",
-    "mizzou-aquatic-center-columbia-mo-26e4f997ae87",
     "mizzourec-columbia-mo-679c6c3c928e",
     "wilson-s-beach-club-columbia-mo-bc2d45f194fc",
     "eldon-aquatic-center-eldon-mo-7951bba688e5",
@@ -874,6 +853,13 @@
     "stanford-pool-stanford-mt-59fbe7f7c448",
     "whitehall-community-pool-whitehall-mt-6ee1fa50c6f9"
   ],
+  "NA": [
+    "arizona-infant-swim-617513e13308",
+    "infant-swimming-resource-2b3bcad7762a",
+    "swim-fit-alaska-1d8fbacfbbac",
+    "swimamerica-20497d316375",
+    "united-states-swim-school-association-5cedbba382fb"
+  ],
   "NC": [
     "goldfish-swim-school-cary-cary-nc-721377050ae3",
     "aqua-tots-swim-school-myers-park-charlotte-nc-a6744078f618",
@@ -884,12 +870,10 @@
     "swimmac-carolina-charlotte-nc-3430e70819e1",
     "the-swim-studio-charlotte-nc-39fb45470d4e",
     "h-l-swim-academy-clayton-nc-c340b933cef2",
-    "great-wolf-lodge-concord-concord-nc-5a80c256d169",
     "phd-swim-school-durham-nc-4e1e3ef5dff3",
     "raynez-swim-school-greenville-nc-24527e20f9c9",
     "safesplash-swim-school-holly-springs-holly-springs-nc-ac2c5a1d50bb",
     "evolution-aquatic-activity-center-huntersville-nc-7558de6877e3",
-    "campbell-university-aquatics-lillington-nc-24335efaf7c7",
     "10dayswim-mooresville-nc-c820781088e3",
     "safesplash-swimlabs-morrisville-triangle-morrisville-nc-03f7074567b3",
     "aqua-tots-swim-school-raleigh-raleigh-nc-df198b52aa07",
@@ -1047,7 +1031,6 @@
     "king-marlin-swim-club-edmond-ok-85f7ca49ae4f",
     "oklahoma-survival-swim-edmond-ok-357efa7e083f",
     "oklahoma-swim-academy-bryant-square-edmond-ok-33e01f29fcea",
-    "rose-state-college-aquatics-center-midwest-city-ok-0562c4dd291e",
     "goldfish-swim-school-moore-moore-ok-2523196c185d",
     "mustang-aquatic-park-mustang-ok-90f3aa792733",
     "murray-case-sells-swim-complex-norman-ok-d1f5741e85d6",
@@ -1115,7 +1098,6 @@
     "cranston-ymca-cranston-ri-dd464834c8a5",
     "anglerfish-aquatics-at-the-bruce-calvert-aquatic-center-cumberland-ri-e064a091c05b",
     "sher-le-mon-swim-club-cumberland-ri-08f462d5d4d1",
-    "the-greenwich-club-east-greenwich-ri-68f6b44e2fe8",
     "pods-swimming-east-providence-ri-735cb8ed1bf8",
     "smithfield-ymca-greenville-ri-1397806b4c26",
     "tootell-aquatic-center-kingston-ri-b5fc15ee1931",
@@ -1188,8 +1170,6 @@
     "ryan-s-swim-academy-nolensville-tn-7b3f6a30b322"
   ],
   "TX": [
-    "blue-pools-dallas-dallas-tx-3d6e9a29da2b",
-    "city-of-dallas-park-and-recreation-dallas-tx-910394afd44e",
     "cowboys-fit-dallas-tx-aa1761c129ba",
     "dallas-infant-aquatics-llc-dallas-tx-50f84e048b2d",
     "dallas-swim-dallas-tx-b67d11e557c7",
