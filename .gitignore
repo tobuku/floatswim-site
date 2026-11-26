@@ -1,6 +1,17 @@
 .gsc-credentials/
 node_modules/
 
-# Claude Code — keep local, never publish
+# Claude Code  keep local, never publish
 CLAUDE.md
 CLAUDE.local.md
+
+# Added by web-dev department
+# Claude Code
+.claude/
+# Credentials
+.env
+.env.*
+credentials.json
+token.json
+*.pem
+*.key
